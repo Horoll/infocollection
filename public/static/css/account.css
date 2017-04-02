@@ -1,0 +1,8 @@
+
+#container .table{
+    min-width: 625px;
+}
+.tab-pane{
+    overflow-x: auto;
+
+}

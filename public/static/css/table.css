@@ -1,0 +1,30 @@
+.mytable-width-xs{
+    width: 100px;
+}
+.mytable-width-s{
+    width: 200px;
+}
+.mytable-width-m{
+    width: 300px;
+}
+.mytable-width-l{
+    width: 500px;
+}
+.mytable-width-xl{
+    width: 600px;
+}
+.mytable-height-xs{
+    height: 50px;
+}
+.mytable-height-s{
+    height: 100px;
+}
+.mytable-height-m{
+    height: 150px;
+}
+.mytable-height-l{
+    height: 200px;
+}
+.mytable-height-xl{
+    height: 250px;
+}

@@ -1,0 +1,31 @@
+.content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.timePicker{
+    width: 50%;
+    float: left;
+}
+.content input{
+    margin-bottom: 15px;
+}
+#formSelect{
+    padding: 20px 0;
+}
+.img-responsive{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#userDefine input{
+    margin-bottom: 0 !important;
+}
+#userDefine{
+    padding: 30px 0;
+}
+#upload{
+    margin-bottom: 10px;
+}
+#formSelect .btn-success,#publish4{
+    margin-top: 10px;
+}
