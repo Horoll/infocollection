@@ -24,24 +24,7 @@ class Releasetask extends Controller
     public function releaseTask(){
         //接收前端的任务发布数据
         $data_array = json_decode(input('post.data'));
-
-
-        $data['taskname'] = input('post.taskname');
-        $data['tastext'] = input('?post.tasktext')?input('post.tasktext'):null;
-        $data['start_date'] = input('post.start_date');
-        $data['end_date'] = input('post.end_date');
-        $data['form_moudle'] = input('?post.form_moudle')?input('post.form_moudle'):null;
-        $data['table_moudle'] = input('?post.table_moudle')?input('post.table_moudle'):null;
-        $data['attachment'] = input('?post.attachment')?input('post.attachment'):null;
-
-        //当提交的是自定义表格的时候，将json转换为字符串格式
-        if($data['table_moudle']!==null) {
-            $data['table_moudle'] = '';
-            $table_mouldle = json_decode($data['table_moudle'], true);
-            foreach ($table_mouldle as $value) {
-                $data['table_moudle'] .= $value . '<&>';
-            }
-        }
+        
 
         //用验证器验证数据格式
         $validate = validate('Task');
