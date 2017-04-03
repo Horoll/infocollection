@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491190204;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,9 +44,9 @@
             </ul>
             <ul class="nav navbar-nav navbar-right" id="sideBarTop">
                 <li><a href="index.html"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
-                <li><a href="{:url('Releasetask/index')}"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</a></li>
+                <li><a href="<?php echo url('Releasetask/index'); ?>"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</a></li>
                 <li><a href="index.html"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
-                <li><a href="{:url('Accountmanage/index')}"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
+                <li><a href="<?php echo url('Accountmanage/index'); ?>"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -54,9 +55,9 @@
 <div id="sideBar">
     <ul class="menu">
         <li><a href="index.html"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
-        <li class="menu-active"><a href="{:url('Releasetask/index')}"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布任务</a></li>
+        <li class="menu-active"><a href="<?php echo url('Releasetask/index'); ?>"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布任务</a></li>
         <li><a href="index.html"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
-        <li><a href="{:url('Accountmanage/index')}"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
+        <li><a href="<?php echo url('Accountmanage/index'); ?>"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
 
     </ul>
 </div>
@@ -66,8 +67,8 @@
     <h1>发布任务</h1>
     <hr/>
     <ul id="mytab" class="nav nav-tabs">
-        <li class="active"><a href="{:url('Releasetask/index')}">选择已有表单</a></li>
-        <li><a href="{:url('Releasetask/table')}">自定义表格</a></li>
+        <li class="active"><a href="<?php echo url('Releasetask/index'); ?>">选择已有表单</a></li>
+        <li><a href="<?php echo url('Releasetask/table'); ?>">自定义表格</a></li>
     </ul>
     <div class="tab-content">
         <div class="content tab-pane fade in active">
