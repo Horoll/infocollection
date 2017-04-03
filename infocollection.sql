@@ -132,13 +132,14 @@ CREATE TABLE `task` (
   `end_date` date NOT NULL COMMENT '任务截止日期',
   `form_moudle` tinyint(3) unsigned DEFAULT NULL COMMENT '表单编号（为空则是表格）',
   `table_moudle` text COMMENT '表格格式（为空则是使用表单）',
-  `attachment` varchar(50) DEFAULT NULL COMMENT '附件模版路径',
+  `attachment_dir` varchar(200) DEFAULT NULL COMMENT '附件模版路径',
+  `attachment_name` varchar(50) DEFAULT NULL COMMENT '附件文件名',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `task` */
 
-insert  into `task`(`id`,`taskname`,`tasktext`,`date`,`start_date`,`end_date`,`form_moudle`,`table_moudle`,`attachment`) values (1,'任务1','这个任务1，要求提交一个自定义表格','2017-03-31','2017-03-31','2017-04-30',NULL,'校区<&>学院<&>班级<&>平均成绩<&>补考、重修人次<&>同年级同专业补考、重修平均人次<&>违规违纪情况<&>支部所获荣誉<&>备注',NULL);
+insert  into `task`(`id`,`taskname`,`tasktext`,`date`,`start_date`,`end_date`,`form_moudle`,`table_moudle`,`attachment_dir`,`attachment_name`) values (1,'任务1','这个任务1，要求提交一个自定义表格','2017-03-31','2017-03-31','2017-04-30',NULL,'校区<&>学院<&>班级<&>平均成绩<&>补考、重修人次<&>同年级同专业补考、重修平均人次<&>违规违纪情况<&>支部所获荣誉<&>备注',NULL,NULL),(2,'任务2','','2017-04-03','2017-04-04','2017-04-06',NULL,'姓名<&>学号<&>班级<&>',NULL,NULL),(26,'任务3','任务3 使用表单一 没有附件','2017-04-03','2017-04-18','2017-04-19',1,NULL,NULL,NULL),(27,'任务4','任务4 使用表单1 附件是组织部--优秀分团委申报材料','2017-04-03','2017-04-19','2017-04-19',1,NULL,'admin/20170403\\d64933249445882ce83d7f2a87f02cc2.doc','组织部--优秀分团委申报材料.doc');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
