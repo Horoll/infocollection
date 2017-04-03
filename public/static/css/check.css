@@ -1,0 +1,23 @@
+.label{
+    font-size: 50%;
+}
+.time1{
+    color: #30a5ff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.time2{
+    color: #5cb85c;
+    font-size: 15px;
+    font-weight: 600;
+}
+.intro{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.well>.btn-danger{
+    margin-left: 20px;
+}
+.well{
+    background-color: #ffffff;
+}
