@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491200072;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491206186;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,7 +72,7 @@
     </ul>
     <div class="tab-content">
         <div class="content tab-pane fade in active">
-            <form action="/index/index/upload" enctype="multipart/form-data" method="post" id="form">
+            <form action="<?php echo url('Releasetask/releaseFormTable'); ?>" enctype="multipart/form-data" method="post" id="form">
                 <input type="text" placeholder="任务名称" class="form-control" name="taskname">
                 <input type="text" class="form-control timePicker" placeholder="任务开始时间" data-date-format="yyyy-mm-dd" name="start_date" readonly>
                 <input type="text" class="form-control timePicker" placeholder="任务结束时间" data-date-format="yyyy-mm-dd" name="end_date" readonly>
@@ -97,11 +97,12 @@
                             <img src="__IMG__/form3.png" alt="表单三" class="img-responsive">
                         </div>
 
-
-                        <input type="file" name="uploadfile" class="btn btn-info" value="上传附件" id="chooseFileButton"/>
-                        <br>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
+                        <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton"/>
+                        <small style="color: red">*上传附件格式只能为.doc、.docx、.xls、.xlsx、.rar、.zip，且文件大小不能超过50M</small><br>
+                        <small style="color: red">*如需要上传多个为文件，请先打包成压缩格式</small>
+                        <br><br>
                         <button class="btn btn-success" type="button" id="publish"><span class="glyphicon glyphicon-floppy-disk"></span>&nbsp;确认发布</button>
-
                     </div>
                 </div>
             </form>

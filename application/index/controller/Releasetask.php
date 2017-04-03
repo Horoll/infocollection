@@ -31,6 +31,23 @@ class Releasetask extends Controller
         //接收表单数据
         $data = $_POST;
 
+        //检测文件大小
+        if($_FILES['uploadfile']['error']==1 || $_FILES['uploadfile']['error']==2)
+            $this->error('文件大小不能超过50M！');
+        // 获取表单上传文件
+        $file = request()->file('uploadfile');
+        if($file){
+            // 移动到框架应用根目录/public/uploads/ 目录下
+            $info = $file->validate(['ext'=>'doc,docx,xls,xlsx,rar,zip'])->move(ROOT_PATH . 'public' . DS . 'uploads/admin');
+            if($info){
+                $data['attachment_dir']='admin/'.$info->getSaveName();
+                $data['attachment_name']=$_FILES['uploadfile']['name'];
+            }else{
+                // 上传失败获取错误信息
+                $this->error($file->getError());
+            }
+        }
+
         //用验证器验证数据格式
         $validate = validate('Task');
         if(!$validate->check($data)){
@@ -40,7 +57,7 @@ class Releasetask extends Controller
         //将这条任务新增到数据库
         $task = model('Task');
         $task->data($data);
-        if($task->save()){
+        if($task->allowField(true)->save()){
             $this->success('任务发布成功!','Admin/index','',2);
         }else{
             $this->error('任务发布失败');
@@ -85,25 +102,6 @@ class Releasetask extends Controller
             return '1';
         }else{
             return '发布失败！';
-        }
-    }
-
-    public function uploadAttachment(){
-        // 获取表单上传文件 例如上传了001.jpg
-        $file = request()->file('uploadfile');
-        // 移动到框架应用根目录/public/uploads/ 目录下
-        $info = $file->validate(['size'=>15678,'ext'=>'jpg,png,gif'])->move(ROOT_PATH . 'public' . DS . 'uploads');
-        if($info){
-            // 成功上传后 获取上传信息
-            // 输出 jpg
-            echo $info->getExtension();
-            // 输出 20160820/42a79759f284b767dfcb2a0197904287.jpg
-            echo $info->getSaveName();
-            // 输出 42a79759f284b767dfcb2a0197904287.jpg
-            echo $info->getFilename();
-        }else{
-            // 上传失败获取错误信息
-            echo $file->getError();
         }
     }
 }
