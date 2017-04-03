@@ -21,10 +21,53 @@ class Releasetask extends Controller
         return $this->fetch();
     }
 
-    public function releaseTask(){
+    public function table(){
+        return $this->fetch();
+
+    }
+
+    //接受处理发布的表单任务
+    public function releaseFormTable(){
+        //接收表单数据
+        $data = $_POST;
+
+        //用验证器验证数据格式
+        $validate = validate('Task');
+        if(!$validate->check($data)){
+            $this->error($validate->getError());
+        }
+
+        //将这条任务新增到数据库
+        $task = model('Task');
+        $task->data($data);
+        if($task->save()){
+            $this->success('任务发布成功!','Admin/index','',2);
+        }else{
+            $this->error('任务发布失败');
+        }
+    }
+
+    //接受处理发布的自定义表格任务
+    public function releaseTableTask(){
         //接收前端的任务发布数据
         $data_array = json_decode(input('post.data'));
-        
+        $data = [];
+
+        //遍历json数组，给data数组赋值
+        foreach ($data_array as $key=>$value){
+            //如果是表格模版的话，则把它转换成字符串，用<&>连接
+            if($key == 'table_moudle'){
+                $table_moudle_array = json_decode($value);
+                $table_moudle_str = '';
+                foreach ($table_moudle_array as $table_value){
+                    $table_moudle_str.=$table_value.'<&>';
+                }
+                $data[$key] = $table_moudle_str;
+                continue;
+            }
+            $data[$key] = $value;
+        }
+
 
         //用验证器验证数据格式
         $validate = validate('Task');
