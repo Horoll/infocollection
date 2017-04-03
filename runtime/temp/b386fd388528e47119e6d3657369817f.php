@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\admin\index.html";i:1491208810;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\admin\index.html";i:1491217701;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +38,7 @@
                 <li><a href="#"><span class="glyphicon glyphicon-off"></span>&emsp;退出登录</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="sideBarTop">
-                <li><a href="index.html"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
+                <li><a href="<?php echo url('Admin/index'); ?>"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
                 <li><a href="<?php echo url('Releasetask/index'); ?>"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</a></li>
                 <li><a href="index.html"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
                 <li><a href="<?php echo url('Accountmanage/index'); ?>"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
@@ -49,7 +49,7 @@
 <!--侧边栏-->
 <div id="sideBar">
     <ul class="menu">
-        <li class="menu-active"><a href="index.html"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
+        <li class="menu-active"><a href="<?php echo url('Admin/index'); ?>"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
         <li><a href="<?php echo url('Releasetask/index'); ?>"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布任务</a></li>
         <li><a href="index.html"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
         <li><a href="<?php echo url('Accountmanage/index'); ?>"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
@@ -62,47 +62,42 @@
     <h1>查看已发布的任务</h1>
     <hr/>
     <div id="content">
+        <?php if(is_array($tasks) || $tasks instanceof \think\Collection || $tasks instanceof \think\Paginator): $i = 0; $__LIST__ = $tasks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$task): $mod = ($i % 2 );++$i;?>
         <div class="well">
-            <h2>任务标题&nbsp;<span class="label label-info">表格一</span></h2>
+            <h2><?php echo $task['taskname']; switch($name=$task['form_moudle']): case "1": ?> <span class="label label-info">表单一</span><?php break; case "2": ?> <span class="label label-info">表单二</span><?php break; case "3": ?> <span class="label label-info">表单三</span><?php break; default: ?> <span class="label label-info"> 自定义表格</span>
+                <?php endswitch; ?>
+                <small> 发布于：<?php echo $task['date']; ?></small>
+            </h2>
             <p>
-                <span class="time1">2017 09-33</span>
+                <h3><small>起止时间：</small></h3>
+                <span class="time1"><?php echo $task['start_date']; ?></span>
                 <span>到</span>
-                <span class="time1">2017 11-04</span>
+                <span class="time1"><?php echo $task['end_date']; ?></span>
             </p>
             <hr>
-            <p class="intro">这是任务的简介零零落落零零落落零零落落公认的给人打工让德国人的个人</p>
-            <button class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button>
-            <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</button>
-        </div>
-        <div class="well">
-            <h2>任务标题&nbsp;<span class="label label-success">自定义表格</span></h2>
-            <p>
-                <span class="time2">2017 09-33</span>
-                <span>到</span>
-                <span class="time2">2017 11-04</span>
-            </p>
-            <hr>
-            <p class="intro">这是任务的简介零零落落零零落落零零落落如果德国日地广人多公认的给人打工</p>
-            <hr>
-            <div>
-                <h4>自定义项目</h4>
+            <?php if($task['form_moudle'] == ''): ?>
+            <div class="table-responsive">
+                <h4>表格格式：</h4>
                 <table class="table table-bordered">
                     <tr>
-                        <th>姓名</th>
-                        <th>专业和年级</th>
-                        <th>性别</th>
-                        <th>年龄</th>
-                        <th>志愿信息</th>
+                        <?php 
+                            $table_moudle_array = explode('<&>',$task['table_moudle']);
+                            foreach($table_moudle_array as $value){
+                                if(!empty($value))
+                                    echo '<th>'.$value.'</th>';
+                            }
+                         ?>
                     </tr>
                 </table>
             </div>
-            <button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button>
+            <?php endif; ?>
+            <p class="intro"><?php echo $task['tasktext']; ?></p>
+            <button class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button>
             <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</button>
         </div>
+        <?php endforeach; endif; else: echo "" ;endif; ?>
+        <?php echo $tasks->render(); ?>
     </div>
-
-
-
 </div>
 
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>

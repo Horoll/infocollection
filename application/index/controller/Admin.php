@@ -20,8 +20,9 @@ class Admin extends Controller
     }
 
     public function index(){
-        //从数据库中找出所有已经发布的任务
-        $tasks = DB('task')->where(1)->select();
+        //从数据库中找出所有已经发布的任务(倒排序)
+        $tasks = DB('task')->where(1)->order('id desc')->paginate(2);
+        $this->assign('tasks',$tasks);
         return $this->fetch();
     }
 
