@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491190204;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491192951;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,7 +76,7 @@
                 <input type="text" placeholder="任务名称" class="form-control" name="taskname">
                 <input type="text" class="form-control timePicker" placeholder="任务开始时间" data-date-format="yyyy-mm-dd" name="start_date">
                 <input type="text" class="form-control timePicker" placeholder="任务结束时间" data-date-format="yyyy-mm-dd" name="end_date">
-                <textarea name="tasktext" cols="30" rows="3" class="form-control" placeholder="任务简介"></textarea>
+                <textarea name="tasktext" cols="30" rows="3" class="form-control" placeholder="任务简介（选填）"></textarea>
 
                 <div>
                     <span>表单类型：</span>

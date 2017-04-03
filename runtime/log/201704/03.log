@@ -263,3 +263,1634 @@
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+[ 2017-04-03T12:22:31+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.077008s][吞吐率：12.99req/s] [内存消耗：2,504.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:22:32+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.041616s][吞吐率：24.03req/s] [内存消耗：2,315.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:22:33+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/index.html
+[ log ] localhost/project/infocollection/index/releasetask/index.html [运行时间：0.118944s][吞吐率：8.41req/s] [内存消耗：2,504.62kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->index[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:22:34+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.028032s][吞吐率：35.67req/s] [内存消耗：2,315.72kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:25:38+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.038668s][吞吐率：25.86req/s] [内存消耗：2,315.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:25:39+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.048526s][吞吐率：20.61req/s] [内存消耗：2,315.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:27:39+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.041824s][吞吐率：23.91req/s] [内存消耗：2,315.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:27:40+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.041294s][吞吐率：24.22req/s] [内存消耗：2,315.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:28:34+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.052363s][吞吐率：19.10req/s] [内存消耗：2,315.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:28:54+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.054291s][吞吐率：18.42req/s] [内存消耗：2,315.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:28:55+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.044734s][吞吐率：22.35req/s] [内存消耗：2,315.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:29:12+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/%7B:url('Releasetask/releaseTableTask')%7D
+[ log ] localhost/project/infocollection/index/releasetask/%7B:url('Releasetask/releaseTableTask')%7D [运行时间：0.256302s][吞吐率：3.90req/s] [内存消耗：2,285.67kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => '{:url(\'Releasetask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '169',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"任务1","start_date":"1899-12-11","end_date":"2017-04-19","tasktext":"","table_moudle":{"task0":"请问","task1":"请问","task2":"请问","task3":"123_"}}' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:30:20+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.056965s][吞吐率：17.55req/s] [内存消耗：2,315.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:33:47+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.087126s][吞吐率：11.48req/s] [内存消耗：2,504.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:33:48+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.050871s][吞吐率：19.66req/s] [内存消耗：2,315.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:34:25+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.212717s][吞吐率：4.70req/s] [内存消耗：2,290.72kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '147',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"任务1","start_date":"2017-04-13","end_date":"2017-04-18","tasktext":"","table_moudle":{"task0":"123","task1":"321","task2":"12345"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Invalid argument supplied for foreach()[D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php:57]
+
+---------------------------------------------------------------
+[ 2017-04-03T12:36:58+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.082274s][吞吐率：12.15req/s] [内存消耗：2,315.92kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:37:15+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.048477s][吞吐率：20.63req/s] [内存消耗：2,240.77kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '158',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"任务1","start_date":"2017-04-14","end_date":"2017-04-27","tasktext":"","table_moudle":{"task0":"无法","task1":"无法w","task2":"无违法"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:40:22+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.070159s][吞吐率：14.25req/s] [内存消耗：2,315.83kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:40:47+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.049133s][吞吐率：20.35req/s] [内存消耗：2,282.43kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '138',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"234","start_date":"1899-12-07","end_date":"2017-04-12","tasktext":"","table_moudle":{"task0":"234","task1":"234","task2":""}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error： array[D:\wamp64\www\project\infocollection\thinkphp\library\think\Response.php:312]
+
+---------------------------------------------------------------
+[ 2017-04-03T12:41:18+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.050265s][吞吐率：19.89req/s] [内存消耗：2,315.87kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:41:26+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.041867s][吞吐率：23.89req/s] [内存消耗：2,290.79kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '142',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"234_","start_date":"1899-12-05","end_date":"2017-04-16","tasktext":"","table_moudle":{"task0":"234","task1":"234","task2":"234"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: taskname[D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php:56]
+
+---------------------------------------------------------------
+[ 2017-04-03T12:42:44+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.042393s][吞吐率：23.59req/s] [内存消耗：2,315.86kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:42:53+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.035458s][吞吐率：28.20req/s] [内存消耗：2,290.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '141',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"234","start_date":"1899-12-31","end_date":"1899-12-05","tasktext":"","table_moudle":{"task0":"234","task1":"234","task2":"234"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: info[D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php:56]
+
+---------------------------------------------------------------
+[ 2017-04-03T12:43:43+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.049864s][吞吐率：20.05req/s] [内存消耗：2,315.83kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:44:10+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.035241s][吞吐率：28.38req/s] [内存消耗：2,240.63kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '141',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"123","start_date":"1899-12-31","end_date":"1899-12-11","tasktext":"","table_moudle":{"task0":"123","task1":"123","task2":"123"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:45:53+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.048090s][吞吐率：20.79req/s] [内存消耗：2,244.77kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '141',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"123","start_date":"1899-12-31","end_date":"1899-12-11","tasktext":"","table_moudle":{"task0":"123","task1":"123","task2":"123"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:47:31+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.051553s][吞吐率：19.40req/s] [内存消耗：2,240.70kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '141',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"123","start_date":"1899-12-31","end_date":"1899-12-11","tasktext":"","table_moudle":{"task0":"123","task1":"123","task2":"123"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:51:51+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.042034s][吞吐率：23.79req/s] [内存消耗：2,290.83kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '141',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"123","start_date":"1899-12-31","end_date":"1899-12-11","tasktext":"","table_moudle":{"task0":"123","task1":"123","task2":"123"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php:64]
+
+---------------------------------------------------------------
+[ 2017-04-03T12:52:21+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.046844s][吞吐率：21.35req/s] [内存消耗：2,319.97kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:52:22+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.035038s][吞吐率：28.54req/s] [内存消耗：2,319.97kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:53:42+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.030655s][吞吐率：32.62req/s] [内存消耗：2,244.77kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '141',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"234","start_date":"1899-12-03","end_date":"2017-04-11","tasktext":"","table_moudle":{"task0":"234","task1":"234","task2":"234"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:55:26+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.033452s][吞吐率：29.89req/s] [内存消耗：2,244.77kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '141',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"234","start_date":"1899-12-03","end_date":"2017-04-11","tasktext":"","table_moudle":{"task0":"234","task1":"234","task2":"234"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T12:55:56+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.031602s][吞吐率：31.64req/s] [内存消耗：2,244.77kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '141',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"234","start_date":"1899-12-03","end_date":"2017-04-11","tasktext":"","table_moudle":{"task0":"234","task1":"234","task2":"234"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T13:01:08+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.034066s][吞吐率：29.35req/s] [内存消耗：2,315.55kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T13:01:09+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.030089s][吞吐率：33.23req/s] [内存消耗：2,315.55kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T13:01:10+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.041603s][吞吐率：24.04req/s] [内存消耗：2,315.55kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T13:01:43+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.036966s][吞吐率：27.05req/s] [内存消耗：2,290.51kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '154',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"任务1","start_date":"2017-04-04","end_date":"2017-04-06","tasktext":"","table_moudle":{"task0":"姓名","task1":"学号","task2":"班级"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php:64]
+
+---------------------------------------------------------------
+[ 2017-04-03T13:02:14+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.034531s][吞吐率：28.96req/s] [内存消耗：2,290.48kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '154',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"任务1","start_date":"2017-04-04","end_date":"2017-04-06","tasktext":"","table_moudle":{"task0":"姓名","task1":"学号","task2":"班级"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php:64]
+
+---------------------------------------------------------------
+[ 2017-04-03T13:05:11+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.133519s][吞吐率：7.49req/s] [内存消耗：3,514.79kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '154',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"任务1","start_date":"2017-04-04","end_date":"2017-04-06","tasktext":"","table_moudle":{"task0":"姓名","task1":"学号","task2":"班级"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001675s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001171s ]
+[ sql ] [ SQL ] INSERT INTO `task` (`taskname` , `start_date` , `end_date` , `tasktext` , `table_moudle` , `date`) VALUES ('任务1' , '2017-04-04' , '2017-04-06' , '' , '姓名<&>学号<&>班级<&>' , '2017-04-03') [ RunTime:0.001841s ]
+
+---------------------------------------------------------------
+[ 2017-04-03T13:05:53+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.037262s][吞吐率：26.84req/s] [内存消耗：2,315.45kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T13:05:54+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.045444s][吞吐率：22.01req/s] [内存消耗：2,315.45kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T13:06:56+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.134979s][吞吐率：7.41req/s] [内存消耗：3,514.77kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '147',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"342","tasktext":"","start_date":"1899-11-28","end_date":"2017-04-13","table_moudle":{"task0":"3","task1":"3","task2":"3","task3":"3"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003140s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.011140s ]
+[ sql ] [ SQL ] INSERT INTO `task` (`taskname` , `tasktext` , `start_date` , `end_date` , `table_moudle` , `date`) VALUES ('342' , '' , '1899-11-28' , '2017-04-13' , '3<&>3<&>3<&>3<&>' , '2017-04-03') [ RunTime:0.001029s ]
+
+---------------------------------------------------------------
+[ 2017-04-03T13:11:47+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.049303s][吞吐率：20.28req/s] [内存消耗：3,514.77kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '147',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"342","tasktext":"","start_date":"1899-11-28","end_date":"2017-04-13","table_moudle":{"task0":"3","task1":"3","task2":"3","task3":"3"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001520s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.005104s ]
+[ sql ] [ SQL ] INSERT INTO `task` (`taskname` , `tasktext` , `start_date` , `end_date` , `table_moudle` , `date`) VALUES ('342' , '' , '1899-11-28' , '2017-04-13' , '3<&>3<&>3<&>3<&>' , '2017-04-03') [ RunTime:0.000469s ]
+
+---------------------------------------------------------------
+[ 2017-04-03T13:11:50+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.050516s][吞吐率：19.80req/s] [内存消耗：3,514.77kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '147',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"342","tasktext":"","start_date":"1899-11-28","end_date":"2017-04-13","table_moudle":{"task0":"3","task1":"3","task2":"3","task3":"3"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001283s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.004446s ]
+[ sql ] [ SQL ] INSERT INTO `task` (`taskname` , `tasktext` , `start_date` , `end_date` , `table_moudle` , `date`) VALUES ('342' , '' , '1899-11-28' , '2017-04-13' , '3<&>3<&>3<&>3<&>' , '2017-04-03') [ RunTime:0.000450s ]
+
+---------------------------------------------------------------
+[ 2017-04-03T13:11:53+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.049204s][吞吐率：20.32req/s] [内存消耗：2,315.45kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T13:13:22+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.038434s][吞吐率：26.02req/s] [内存消耗：2,248.12kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '212',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"22222222222222222222222222222222222222222222222222222222222222222222222222","tasktext":"","start_date":"2017-04-03","end_date":"2017-04-03","table_moudle":{"task0":"234","task1":"234","task2":"234"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T13:16:22+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.034433s][吞吐率：29.04req/s] [内存消耗：2,315.45kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-03T13:16:44+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.050143s][吞吐率：19.94req/s] [内存消耗：3,514.77kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '141',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"123","tasktext":"","start_date":"2017-04-03","end_date":"1899-12-25","table_moudle":{"task0":"123","task1":"123","task2":"123"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002480s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.002247s ]
+[ sql ] [ SQL ] INSERT INTO `task` (`taskname` , `tasktext` , `start_date` , `end_date` , `table_moudle` , `date`) VALUES ('123' , '' , '2017-04-03' , '1899-12-25' , '123<&>123<&>123<&>' , '2017-04-03') [ RunTime:0.000966s ]
+
+---------------------------------------------------------------
+[ 2017-04-03T13:18:33+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releasetabletask.html
+[ log ] localhost/project/infocollection/index/releasetask/releasetabletask.html [运行时间：0.034035s][吞吐率：29.38req/s] [内存消耗：2,244.59kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releasetabletask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '214',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  '{"taskname":"1234444444444444444444444444444444444444444444444444444444444444444444444444","tasktext":"","start_date":"2017-04-03","end_date":"1899-12-25","table_moudle":{"task0":"123","task1":"123","task2":"123"}}' => '',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseTableTask[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

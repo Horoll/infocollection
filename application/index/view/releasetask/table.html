@@ -124,6 +124,16 @@
 
 </div>
 <script src="__JS__/publish-table.js"></script>
+<script>
+    /*对publish按钮的绑定*/
+    document.getElementById("publish").onclick=function(){
+
+        var form=document.getElementById("form");
+        if(checkInput()==true) {
+            getData("{:url('Releasetask/releaseTableTask')}");
+        }
+    }
+</script>
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 </body>

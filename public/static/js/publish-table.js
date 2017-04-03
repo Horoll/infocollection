@@ -51,12 +51,12 @@ addButton.onclick=function () {
 
 
 /*获取自定义表单数据转化为json*/
-function getData() {
+function getData(url) {
     //获取元素的值
     var name=document.getElementsByName("taskname")[0].value;
     var startTime=document.getElementsByName("start_date")[0].value;
     var endTime=document.getElementsByName("end_date")[0].value;
-    var taskText=document.getElementsByName("tasktext")[0].innerHTML;
+    var taskText=document.getElementsByName("tasktext")[0].value;
     var data=document.getElementsByClassName("item");
 
     var dataObj={};
@@ -68,63 +68,39 @@ function getData() {
 
     var info={};
     info.taskname=name;
+    info.tasktext=taskText;
     info.start_date=startTime;
     info.end_date=endTime;
-    info.tasktext=taskText;
     info.table_moudle=dataObj;
 
 
     var dataJson=JSON.stringify(info);
     console.log(dataJson);
     var jsonhttp=new XMLHttpRequest();
+    jsonhttp.open("POST",url,true);
     jsonhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 
     jsonhttp.onreadystatechange=function(){
         if(jsonhttp.readyState==4||jsonhttp.readyState==200){
-
-
+            alert(jsonhttp.responseText);
         }
-    }
-    jsonhttp.open("POST",url,true);
-    jsonhttp.send();
-
+    };
+    jsonhttp.send(dataJson);
 };
 
+/*对自定义表单的非空检查*/
+function checkItem() {
+    var items=document.getElementsByClassName("item");
 
-/*获取任务信息转换为json*/
-/*function getInfo() {
- //获取元素的值
- var name=document.getElementsByName("taskname")[0].value;
- var startTime=document.getElementsByName("start_date")[0].value;
- var endTime=document.getElementsByName("end_date")[0].value;
- var taskText=document.getElementsByName("tasktext")[0].innerHTML;
+    for (var i=0;i<items.length;i++){
+        if(isEmpty(items[i].childNodes[1].childNodes[1].value)==false){
+            return false;
+        }
+    }
+    return true;
+}
 
- var info={};
- info.taskname=name;
- info.start_date=startTime;
- info.end_date=endTime;
- info.tasktext=taskText;
- info.form_moudle=formType;
-
- var infoJSON=JSON.stringify(info);
-
- //以ajax形式发送
- var jsonhttp=new XMLHttpRequest();
- jsonhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
- jsonhttp.onreadystatechange=function(){
- if(jsonhttp.readyState==4||jsonhttp.readyState==200){
-
-
- }
- }
- jsonhttp.open("POST",url,true);
- jsonhttp.send();
-
-
- }*/
-
-
-/*对前三个表单的非空检查*/
+/*非空检查*/
 function checkInput() {
     if(isEmpty(document.getElementsByName("taskname")[0].value)==false){
         swal({
@@ -152,21 +128,20 @@ function checkInput() {
             confirmButtonColor: "#ec6c62"
         });
         return false;
+    } else if(checkItem()==false){
+        swal({
+            title: "自定义项目不能为空",
+            type: "error",
+            confirmButtonText: "知道了",
+            confirmButtonColor: "#ec6c62"
+        });
+        return false;
     }
     else {
         return true;
     }
 };
 
-
-/*对publish按钮的绑定*/
-document.getElementById("publish").onclick=function(){
-
-    var form=document.getElementById("form");
-    if(checkInput()==true) {
-        getData();
-    }
-}
 
 
 
