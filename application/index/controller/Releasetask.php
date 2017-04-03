@@ -75,7 +75,7 @@ class Releasetask extends Controller
         //用验证器验证数据格式
         $validate = validate('Task');
         if(!$validate->check($data)){
-            return '3';
+            return $validate->getError();
         }
 
         //将这条任务新增到数据库
@@ -84,7 +84,7 @@ class Releasetask extends Controller
         if($task->save()){
             return '1';
         }else{
-            return '2';
+            return '发布失败！';
         }
     }
 
