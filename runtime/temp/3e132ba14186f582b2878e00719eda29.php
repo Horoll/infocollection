@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491192951;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491200072;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +43,7 @@
                 <li><a href="#"><span class="glyphicon glyphicon-off"></span>&emsp;退出登录</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="sideBarTop">
-                <li><a href="index.html"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
+                <li><a href="<?php echo url('Admin/index'); ?>"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
                 <li><a href="<?php echo url('Releasetask/index'); ?>"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</a></li>
                 <li><a href="index.html"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
                 <li><a href="<?php echo url('Accountmanage/index'); ?>"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
@@ -54,7 +54,7 @@
 <!--侧边栏-->
 <div id="sideBar">
     <ul class="menu">
-        <li><a href="index.html"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
+        <li><a href="<?php echo url('Admin/index'); ?>"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
         <li class="menu-active"><a href="<?php echo url('Releasetask/index'); ?>"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布任务</a></li>
         <li><a href="index.html"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
         <li><a href="<?php echo url('Accountmanage/index'); ?>"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
@@ -74,8 +74,8 @@
         <div class="content tab-pane fade in active">
             <form action="/index/index/upload" enctype="multipart/form-data" method="post" id="form">
                 <input type="text" placeholder="任务名称" class="form-control" name="taskname">
-                <input type="text" class="form-control timePicker" placeholder="任务开始时间" data-date-format="yyyy-mm-dd" name="start_date">
-                <input type="text" class="form-control timePicker" placeholder="任务结束时间" data-date-format="yyyy-mm-dd" name="end_date">
+                <input type="text" class="form-control timePicker" placeholder="任务开始时间" data-date-format="yyyy-mm-dd" name="start_date" readonly>
+                <input type="text" class="form-control timePicker" placeholder="任务结束时间" data-date-format="yyyy-mm-dd" name="end_date" readonly>
                 <textarea name="tasktext" cols="30" rows="3" class="form-control" placeholder="任务简介（选填）"></textarea>
 
                 <div>

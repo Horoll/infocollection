@@ -51,7 +51,7 @@ addButton.onclick=function () {
 
 
 /*获取自定义表单数据转化为json*/
-function getData(url) {
+function getData(posturl,successurl) {
     //获取元素的值
     var name=document.getElementsByName("taskname")[0].value;
     var startTime=document.getElementsByName("start_date")[0].value;
@@ -77,12 +77,29 @@ function getData(url) {
     var dataJson=JSON.stringify(info);
     console.log(dataJson);
     var jsonhttp=new XMLHttpRequest();
-    jsonhttp.open("POST",url,true);
+    jsonhttp.open("POST",posturl,true);
     jsonhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 
     jsonhttp.onreadystatechange=function(){
         if(jsonhttp.readyState==4||jsonhttp.readyState==200){
-            alert(jsonhttp.responseText);
+            if(jsonhttp.responseText=='1'){
+                swal({
+                    title: "发布成功",
+                    type: "success",
+                    confirmButtonText: "确定",
+                    confirmButtonColor: "#ec6c62"
+                },function () {
+                    window.location.href=successurl;
+                });
+            }
+            else {
+                swal({
+                    title: jsonhttp.responseText,
+                    type: "error",
+                    confirmButtonText: "确定",
+                    confirmButtonColor: "#ec6c62"
+                });
+            }
         }
     };
     jsonhttp.send(dataJson);
