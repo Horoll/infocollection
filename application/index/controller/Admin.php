@@ -13,17 +13,15 @@ class Admin extends Controller
 {
 
     //Admin控制器初始化方法，检测是否管理员登录
-//    public function _initialize(){
-//        if(!cookie('adminname')){
-//            $this->error('请先登录','Login/index','',2);
-//        }
-//    }
+    public function _initialize(){
+        if(!cookie('adminname')){
+            $this->error('请先登录','Login/index','',2);
+        }
+    }
 
     public function index(){
         //从数据库中找出所有已经发布的任务
         $tasks = DB('task')->where(1)->select();
-        var_dump($tasks);
-
         return $this->fetch();
     }
 
