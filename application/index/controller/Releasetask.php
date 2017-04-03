@@ -37,7 +37,7 @@ class Releasetask extends Controller
         // 获取表单上传文件
         $file = request()->file('uploadfile');
         if($file){
-            // 移动到框架应用根目录/public/uploads/ 目录下
+            // 移动到框架应用根目录/public/uploads/amin 目录下
             $info = $file->validate(['ext'=>'doc,docx,xls,xlsx,rar,zip'])->move(ROOT_PATH . 'public' . DS . 'uploads/admin');
             if($info){
                 $data['attachment_dir']='admin/'.$info->getSaveName();
