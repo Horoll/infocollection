@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\admin\index.html";i:1491217701;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\admin\index.html";i:1491225817;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,6 +68,8 @@
                 <?php endswitch; ?>
                 <small> 发布于：<?php echo $task['date']; ?></small>
             </h2>
+
+            <!--起止时间-->
             <p>
                 <h3><small>起止时间：</small></h3>
                 <span class="time1"><?php echo $task['start_date']; ?></span>
@@ -75,23 +77,37 @@
                 <span class="time1"><?php echo $task['end_date']; ?></span>
             </p>
             <hr>
+
+            <!--任务简介-->
+            <h4>任务简介：</h4>
+            <p class="intro"><?php echo $task['tasktext']; ?></p>
+
+            <!--自定义表格格式-->
             <?php if($task['form_moudle'] == ''): ?>
             <div class="table-responsive">
+                <hr>
                 <h4>表格格式：</h4>
                 <table class="table table-bordered">
                     <tr>
                         <?php 
-                            $table_moudle_array = explode('<&>',$task['table_moudle']);
-                            foreach($table_moudle_array as $value){
-                                if(!empty($value))
-                                    echo '<th>'.$value.'</th>';
-                            }
+                        $table_moudle_array = explode('<&>',$task['table_moudle']);
+                        foreach($table_moudle_array as $value){
+                        if(!empty($value))
+                        echo '<th>'.$value.'</th>';
+                        }
                          ?>
                     </tr>
                 </table>
             </div>
             <?php endif; ?>
-            <p class="intro"><?php echo $task['tasktext']; ?></p>
+
+            <!--附件名称-->
+            <?php if($task['attachment_name'] != null): ?>
+            <hr>
+            <h3>附件：<small><?php echo $task['attachment_name']; ?></small></h3>
+            <?php endif; ?>
+
+            <hr>
             <button class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button>
             <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</button>
         </div>

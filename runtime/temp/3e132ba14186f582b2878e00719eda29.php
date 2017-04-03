@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491206186;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491224600;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,6 +98,7 @@
                         </div>
 
                         <input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
+                        <h3>上传附件模版 <small>*可选</small></h3>
                         <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton"/>
                         <small style="color: red">*上传附件格式只能为.doc、.docx、.xls、.xlsx、.rar、.zip，且文件大小不能超过50M</small><br>
                         <small style="color: red">*如需要上传多个为文件，请先打包成压缩格式</small>

@@ -72,6 +72,8 @@
                 {/switch}
                 <small> 发布于：{$task.date}</small>
             </h2>
+
+            <!--起止时间-->
             <p>
                 <h3><small>起止时间：</small></h3>
                 <span class="time1">{$task.start_date}</span>
@@ -79,23 +81,37 @@
                 <span class="time1">{$task.end_date}</span>
             </p>
             <hr>
+
+            <!--任务简介-->
+            <h4>任务简介：</h4>
+            <p class="intro">{$task.tasktext}</p>
+
+            <!--自定义表格格式-->
             {if condition="$task.form_moudle eq ''"}
             <div class="table-responsive">
+                <hr>
                 <h4>表格格式：</h4>
                 <table class="table table-bordered">
                     <tr>
                         {php}
-                            $table_moudle_array = explode('<&>',$task['table_moudle']);
-                            foreach($table_moudle_array as $value){
-                                if(!empty($value))
-                                    echo '<th>'.$value.'</th>';
-                            }
+                        $table_moudle_array = explode('<&>',$task['table_moudle']);
+                        foreach($table_moudle_array as $value){
+                        if(!empty($value))
+                        echo '<th>'.$value.'</th>';
+                        }
                         {/php}
                     </tr>
                 </table>
             </div>
             {/if}
-            <p class="intro">{$task.tasktext}</p>
+
+            <!--附件名称-->
+            {if condition="$task.attachment_name neq null "}
+            <hr>
+            <h3>附件：<small>{$task.attachment_name}</small></h3>
+            {/if}
+
+            <hr>
             <button class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button>
             <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</button>
         </div>
