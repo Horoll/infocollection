@@ -13,10 +13,6 @@ $('.timePicker').datetimepicker({
 });
 
 
-
-
-
-
 /*表单选择器*/
 //获取表单元素
 var forms=new Array();
@@ -56,41 +52,7 @@ document.getElementById("formType").onchange=function () {
             break;
     }
 
-}
-
-/*获取任务信息转换为json*/
-/*function getInfo() {
-    //获取元素的值
-    var name=document.getElementsByName("taskname")[0].value;
-    var startTime=document.getElementsByName("start_date")[0].value;
-    var endTime=document.getElementsByName("end_date")[0].value;
-    var taskText=document.getElementsByName("tasktext")[0].innerHTML;
-    var formType=document.getElementById("formType").value;
-
-    var info={};
-    info.taskname=name;
-    info.start_date=startTime;
-    info.end_date=endTime;
-    info.tasktext=taskText;
-    info.form_moudle=formType;
-
-    var infoJSON=JSON.stringify(info);
-
-    //以ajax形式发送
-    var jsonhttp=new XMLHttpRequest();
-    jsonhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    jsonhttp.onreadystatechange=function(){
-        if(jsonhttp.readyState==4||jsonhttp.readyState==200){
-
-
-        }
-    }
-    jsonhttp.open("POST",url,true);
-    jsonhttp.send();
-
-
-}*/
-
+};
 
 /*对前三个表单的非空检查*/
 function checkInput() {

@@ -24,6 +24,10 @@
 }
 #userDefine{
     padding: 30px 0;
+    overflow-x: auto;
+}
+#userDefine input{
+    min-width: 75px;
 }
 #upload{
     margin-bottom: 10px;
@@ -31,3 +35,4 @@
 #formSelect .btn-success,#publish4{
     margin-top: 10px;
 }
+

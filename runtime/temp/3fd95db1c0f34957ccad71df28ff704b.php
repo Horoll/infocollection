@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html";i:1491285713;s:41:"application/index/view/header/header.html";i:1491279967;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Admin\changetable.html";i:1491288720;s:41:"application/index/view/header/header.html";i:1491279967;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="__CSS__/bootstrap-datetimepicker.css">
     <link rel="stylesheet" href="__CSS__/sweetalert.css">
     <link rel="stylesheet" href="__CSS__/menu.css">
-    <title>发布任务</title>
+    <title>修改自定义任务</title>
 </head>
 <body>
+<!--导航条-->
 <!--导航条-->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -63,79 +64,45 @@
 
 <!--内容栏-->
 <div id="container">
-    <h1>发布任务</h1>
+    <h1>修改任务</h1>
     <hr/>
-    <ul id="mytab" class="nav nav-tabs">
-        <li><a href="<?php echo url('Releasetask/index'); ?>">选择已有表单</a></li>
-        <li class="active"><a href="<?php echo url('Releasetask/table'); ?>">自定义表格</a></li>
-    </ul>
+
     <div class="content">
         <form action="/index/index/upload" enctype="multipart/form-data" method="post" id="form">
-            <input type="text" placeholder="任务名称" class="form-control" name="taskname">
-            <input type="text" class="form-control timePicker" placeholder="任务开始时间" data-date-format="yyyy-mm-dd" name="start_date" readonly>
-            <input type="text" class="form-control timePicker" placeholder="任务结束时间" data-date-format="yyyy-mm-dd" name="end_date" readonly>
-            <textarea name="tasktext" cols="30" rows="3" class="form-control" placeholder="任务简介（选填）"></textarea>
-
+            <input type="hidden" name="id" value="<?php echo $task_data['id']; ?>">
+            <input type="text" value="<?php echo $task_data['taskname']; ?>" placeholder="修改任务名称" class="form-control" name="taskname">
+            <input type="text" class="form-control timePicker" value="<?php echo $task_data['start_date']; ?>" placeholder="修改任务开始时间" data-date-format="yyyy-mm-dd" name="start_date" readonly>
+            <input type="text" class="form-control timePicker" value="<?php echo $task_data['end_date']; ?>" placeholder="修改任务结束时间" data-date-format="yyyy-mm-dd" name="end_date" readonly>
+            <textarea name="tasktext" cols="30" rows="3" class="form-control" placeholder="修改任务简介（选填）"><?php echo $task_data['tasktext']; ?></textarea>
             <div>
-
-                    <div id="userDefine">
-                        <h3>自定义应填项目</h3>
-                        <table class="table">
-                            <tr>
-                                <th>应填项目</th>
-                                <th>操作</th>
-                            </tr>
-                            <tr class="item">
-                                <td>
-                                    <input type="text" class="form-control">
-                                </td>
-                                <td>
-                                    <button class="btn btn-danger remove" type="button"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除本行</button>
-                                </td>
-                            </tr>
-                            <tr class="item">
-                                <td>
-                                    <input type="text" class="form-control">
-                                </td>
-                                <td>
-                                    <button class="btn btn-danger remove" type="button"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除本行</button>
-                                </td>
-                            </tr>
-                            <tr class="item">
-                                <td>
-                                    <input type="text" class="form-control">
-                                </td>
-                                <td>
-                                    <button class="btn btn-danger remove" type="button"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除本行</button>
-                                </td>
-                            </tr>
-                        </table>
-                        <button class="btn btn-info" id="add" type="button"><span class="glyphicon glyphicon-plus"></span>&nbsp;增加一列</button>
-                    </div>
-
-
-                    <br>
-                    <button class="btn btn-success" type="button" id="publish"><span class="glyphicon glyphicon-floppy-disk"></span>&nbsp;确认发布</button>
-
-
+                <div id="userDefine">
+                    <h3>修改项目名称</h3>
+                    <table class="table table-bordered">
+                        <tr>
+                            <?php if(is_array($table_moudle) || $table_moudle instanceof \think\Collection || $table_moudle instanceof \think\Paginator): $i = 0; $__LIST__ = $table_moudle;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$value): $mod = ($i % 2 );++$i;?>
+                            <th>
+                                <input type="text" value="<?php echo $value; ?>" class="form-control item">
+                            </th>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                        </tr>
+                    </table>   
+                </div>
+                <br>
+                <button class="btn btn-success" type="button" id="publish"><span class="glyphicon glyphicon-floppy-disk"></span>&nbsp;确认修改</button>
             </div>
         </form>
     </div>
-
-
 </div>
-<script src="__JS__/publish-table.js"></script>
+<script src="__JS__/change-table.js"></script>
 <script>
     /*对publish按钮的绑定*/
     document.getElementById("publish").onclick=function(){
-
-        var form=document.getElementById("form");
-        if(checkInput()==true) {
-            getData("<?php echo url('Releasetask/releaseTableTask'); ?>","<?php echo url('Admin/index'); ?>");
+        if(checkInput()==true){
+            getData("<?php echo url('Admin/changTable'); ?>","<?php echo url('Admin/index'); ?>");
         }
-    }
+    };
 </script>
-<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 </body>
 </html>

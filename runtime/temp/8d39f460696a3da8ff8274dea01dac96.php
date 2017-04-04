@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491285719;s:41:"application/index/view/header/header.html";i:1491279967;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:81:"D:\wamp64\www\project\infocollection/application/index\view\Admin\changeform.html";i:1491286349;s:41:"application/index/view/header/header.html";i:1491279967;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="__CSS__/sweetalert.css">
     <link rel="stylesheet" href="__CSS__/menu.css">
 
-    <title>发布任务</title>
+    <title>修改任务</title>
 </head>
 <body>
+<!--导航条-->
 <!--导航条-->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -64,56 +65,44 @@
 
 <!--内容栏-->
 <div id="container">
-    <h1>发布任务</h1>
+    <h1>修改任务</h1>
     <hr/>
-    <ul id="mytab" class="nav nav-tabs">
-        <li class="active"><a href="<?php echo url('Releasetask/index'); ?>">选择已有表单</a></li>
-        <li><a href="<?php echo url('Releasetask/table'); ?>">自定义表格</a></li>
-    </ul>
     <div class="tab-content">
         <div class="content tab-pane fade in active">
-            <form action="<?php echo url('Releasetask/releaseFormTable'); ?>" enctype="multipart/form-data" method="post" id="form">
-                <input type="text" placeholder="任务名称" class="form-control" name="taskname">
-                <input type="text" class="form-control timePicker" placeholder="任务开始时间" data-date-format="yyyy-mm-dd" name="start_date" readonly>
-                <input type="text" class="form-control timePicker" placeholder="任务结束时间" data-date-format="yyyy-mm-dd" name="end_date" readonly>
-                <textarea name="tasktext" cols="30" rows="3" class="form-control" placeholder="任务简介（选填）"></textarea>
-
+            <form action="<?php echo url('Admin/changeForm'); ?>" enctype="multipart/form-data" method="post" id="form">
+                <input type="hidden" name="id" value="<?php echo $task_data['id']; ?>">
+                <input type="hidden" name="form_moudle" value="<?php echo $task_data['form_moudle']; ?>">
+                <input type="text" placeholder="修改任务名称" class="form-control" value="<?php echo $task_data['taskname']; ?>" name="taskname">
+                <input type="text" class="form-control timePicker" value="<?php echo $task_data['start_date']; ?>" placeholder="修改任务开始时间" data-date-format="yyyy-mm-dd" name="start_date" readonly>
+                <input type="text" class="form-control timePicker" value="<?php echo $task_data['end_date']; ?>" placeholder="修改任务结束时间" data-date-format="yyyy-mm-dd" name="end_date" readonly>
+                <textarea name="tasktext" cols="30" rows="3" class="form-control" placeholder="修改任务简介（选填）"><?php echo $task_data['tasktext']; ?></textarea>
                 <div>
-                    <span>表单类型：</span>
-                    <select name="form_moudle" id="formType" class="form-control">
-                        <option value="1" selected="selected">表单一</option>
-                        <option value="2">表单二</option>
-                        <option value="3">表单三</option>
-                    </select>
-                    <div id="formSelect">
-                        <div>
-                            <img src="__IMG__/form1.png" alt="表单一" class="img-responsive">
-
-                        </div>
-                        <div>
-                            <img src="__IMG__/form2.png" alt="表单二" class="img-responsive">
-                        </div>
-                        <div>
-                            <img src="__IMG__/form3.png" alt="表单三" class="img-responsive">
-                        </div>
-
-                        <input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
-                        <h3>上传附件模版 <small>*可选</small></h3>
-                        <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton"/>
-                        <small style="color: red">*上传附件格式只能为.doc、.docx、.xls、.xlsx、.rar、.zip，且文件大小不能超过50M</small><br>
-                        <small style="color: red">*如需要上传多个文件，请先打包成压缩格式</small>
-                        <br><br>
-                        <button class="btn btn-success" type="button" id="publish"><span class="glyphicon glyphicon-floppy-disk"></span>&nbsp;确认发布</button>
-                    </div>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
+                    <h3>已上传的附件：<small style="color: #3f89ec"><?php echo isset($task_data['attachment_name']) ? $task_data['attachment_name'] : '无'; ?></small></h3>
+                    <h3>重新上传附件模版 <small>*可选</small></h3>
+                    <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton"/>
+                    <small style="color: red">*上传附件格式只能为.doc、.docx、.xls、.xlsx、.rar、.zip，且文件大小不能超过50M</small><br>
+                    <small style="color: red">*如需要上传多个文件，请先打包成压缩格式</small>
+                    <br><br>
+                    <button class="btn btn-success" type="submit" id="publish"><span class="glyphicon glyphicon-floppy-disk"></span>&nbsp;确认修改</button>
                 </div>
             </form>
         </div>
     </div>
-
-
 </div>
-<script src="__JS__/publish.js"></script>
-<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+    /*时间选择器设置*/
+    $('.timePicker').datetimepicker({
+        format:"yyyy-mm-dd",
+        minView:'month',
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left",
+        language: 'zh-CN',
+    });
+</script>
+<script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 </body>
 </html>

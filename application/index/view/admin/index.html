@@ -15,12 +15,13 @@
     <title>发布任务</title>
 </head>
 <body>
+<!--导航条-->
 {include file="application/index/view/header/header.html" /}
 <!--侧边栏-->
 <div id="sideBar">
     <ul class="menu">
         <li class="menu-active"><a href="{:url('Admin/index')}"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
-        <li><a href="{:url('Releasetask/index')}"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布任务</a></li>
+        <li><a href="{:url('Releasetask/index')}"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</a></li>
         <li><a href="index.html"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
         <li><a href="{:url('Accountmanage/index')}"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
 
@@ -79,12 +80,12 @@
             <!--附件名称-->
             {if condition="$task.attachment_name neq null "}
             <hr>
-            <h3>附件：<small>{$task.attachment_name}</small></h3>
+            <h3>附件：<small style="color: #3f89ec">{$task.attachment_name}</small></h3>
             {/if}
 
             <hr>
 
-            <button class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button>
+            <a href="{:url('Admin/changeTask').'?id='.$task['id']}"><button class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button></a>
             <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</button>
         </div>
         {/volist}
