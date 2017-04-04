@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Admin\changetable.html";i:1491288720;s:41:"application/index/view/header/header.html";i:1491279967;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Admin\changetable.html";i:1491290144;s:41:"application/index/view/header/header.html";i:1491279967;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,7 +98,7 @@
     /*对publish按钮的绑定*/
     document.getElementById("publish").onclick=function(){
         if(checkInput()==true){
-            getData("<?php echo url('Admin/changTable'); ?>","<?php echo url('Admin/index'); ?>");
+            getData("<?php echo url('Admin/changeTable'); ?>","<?php echo url('Admin/index'); ?>");
         }
     };
 </script>
