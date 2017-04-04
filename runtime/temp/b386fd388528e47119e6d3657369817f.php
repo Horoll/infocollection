@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\admin\index.html";i:1491225817;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\admin\index.html";i:1491274829;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,7 +63,7 @@
     <hr/>
     <div id="content">
         <?php if(is_array($tasks) || $tasks instanceof \think\Collection || $tasks instanceof \think\Paginator): $i = 0; $__LIST__ = $tasks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$task): $mod = ($i % 2 );++$i;?>
-        <div class="well">
+        <div class="well" id="<?php echo $task['id']; ?>">
             <h2><?php echo $task['taskname']; switch($name=$task['form_moudle']): case "1": ?> <span class="label label-info">表单一</span><?php break; case "2": ?> <span class="label label-info">表单二</span><?php break; case "3": ?> <span class="label label-info">表单三</span><?php break; default: ?> <span class="label label-info"> 自定义表格</span>
                 <?php endswitch; ?>
                 <small> 发布于：<?php echo $task['date']; ?></small>
@@ -108,6 +108,7 @@
             <?php endif; ?>
 
             <hr>
+
             <button class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button>
             <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</button>
         </div>
@@ -116,7 +117,36 @@
     </div>
 </div>
 
-<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<script src="__JS__/published.js"></script>
+<script>
+    /*给所有删除按钮绑定功能*/
+    var deleteButton=document.getElementsByClassName("btn-danger");
+    for(var i=0;i<deleteButton.length;i++){
+        deleteButton[i].onclick=function () {
+            var that=this;
+            swal({
+                title: "确定要删除这项任务吗？",
+                type: "warning",
+                showCancelButton:true,
+                cancelButtonText:'返回',
+                confirmButtonText: "确定",
+                confirmButtonColor: "#ec6c62",
+                closeOnConfirm: true,
+                closeOnCancel: true
+            },function (isConfirm) {
+                if(isConfirm){
+                    var well=that.parentNode.id;
+                    $.post("<?php echo url('Admin/deleteTask'); ?>",{
+                        id:well
+                    },function (data,status) {
+                        window.location.href="<?php echo url('Admin/index'); ?>";
+                    });
+                }
+            });
+        }
+    }
+</script>
 <script src="__JS__/bootstrap.js"></script>
 </body>
 </html>

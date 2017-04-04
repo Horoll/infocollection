@@ -31,4 +31,14 @@ class Admin extends Controller
         $id = input('post.id');
     }
 
+    //删除任务
+    public function deleteTask(){
+        $id = input('post.id');
+        $task = model('Task');
+        if($task->where('id',$id)->delete()){
+            return '1';
+        }else{
+            return '2';
+        }
+    }
 }

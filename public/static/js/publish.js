@@ -43,19 +43,16 @@ document.getElementById("formType").onchange=function () {
             forms[0].style.display="block";
             forms[1].style.display="none";
             forms[2].style.display="none";
-            forms[3].style.display="none";
             break;
         case '2':
             forms[1].style.display="block";
             forms[0].style.display="none";
             forms[2].style.display="none";
-            forms[3].style.display="none";
             break;
         case'3':
             forms[2].style.display="block";
             forms[1].style.display="none";
             forms[0].style.display="none";
-            forms[3].style.display="none";
             break;
     }
 
