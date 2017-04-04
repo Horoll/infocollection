@@ -31,6 +31,9 @@ class Admin extends Controller
     //显示修改任务页面
     public function changeTask()
     {
+        if(!input('?get.id')){
+            $this->error('非法访问');
+        }
         $id = input('get.id');
         $task_data = db('task')->where('id', $id)->find();
         if($task_data==null){
@@ -52,6 +55,9 @@ class Admin extends Controller
 
     //处理修改表单的信息
     public function changeForm(){
+        if(!isset($_POST)){
+            $this->error('非法访问');
+        }
         //接收表单数据
         $data = $_POST;
 
@@ -92,7 +98,10 @@ class Admin extends Controller
     }
 
     //处理修改表格的信息
-    public function changTable(){
+    public function changeTable(){
+        if(!isset($_POST)){
+            $this->error('非法访问');
+        }
         //接收前端的任务发布数据
         $json = '';
         foreach ($_POST as $key=>$value){
@@ -135,6 +144,9 @@ class Admin extends Controller
 
     //删除任务
     public function deleteTask(){
+        if (!isset($_POST)){
+            $this->error('非法访问');
+        }
         $id = input('post.id');
         $task = model('Task');
         if($task->where('id',$id)->delete()){
