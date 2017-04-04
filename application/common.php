@@ -12,8 +12,9 @@
 // 应用公共文件
 
 /**
- * @param $file_url
- * @param string $new_name
+ * 下载函数
+ * @param string $file_url 文件路径
+ * @param string $new_name 新的文件名（默认为原名）
  * @return string
  */
 function download($file_url,$new_name=''){

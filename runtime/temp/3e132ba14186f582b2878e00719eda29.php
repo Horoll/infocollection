@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491226006;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491226092;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,7 +108,6 @@
                 </div>
             </form>
         </div>
-
     </div>
 
 

@@ -19,6 +19,7 @@ class Admin extends Controller
         }
     }
 
+    //查看所有已经发布的任务
     public function index(){
         //从数据库中找出所有已经发布的任务(倒排序)
         $tasks = DB('task')->where(1)->order('id desc')->paginate(2);
@@ -29,4 +30,5 @@ class Admin extends Controller
     public function changeTask(){
         $id = input('post.id');
     }
+
 }
