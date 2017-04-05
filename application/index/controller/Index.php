@@ -17,7 +17,7 @@ class Index extends Controller
         if(cookie('schoolname') && cookie('schoolid')){
             $schoolname = cookie('schoolname');
             $task = model('Task');
-            $tasks = $task->where(1)->paginate(2);
+            $tasks = $task->where(1)->order('id desc')->paginate(2);
             $this->assign('schoolname',$schoolname);
             $this->assign('tasks',$tasks);
             return $this->fetch();
@@ -38,14 +38,22 @@ class Index extends Controller
         if(!input('?get.id')){
             $this->error('非法访问');
         }
-        //根据任务id来判断是表单任务还是表格任务
+
+        //根据任务id来判断任务是否存在
         $id = input('get.id');
         $task_data = db('task')->where('id', $id)->find();
         if($task_data==null){
             $this->error('该任务不存在');
         }
 
-        //提交、修改表单页面
+        //判断时间是否在任务有效日期内
+        $start_date = $task_data['start_date'];
+        $end_date = $task_data['end_date'];
+        if(!(strtotime($start_date)<time() && strtotime($end_date)>time())){
+            $this->error('当前时间不在任务允许提交时间范围内！');
+        }
+
+        //判断是表单任务还是表格任务
         if($task_data['form_moudle']){
             //根据task表中的form_moudle值到相应的form表中查找该学生
             switch($task_data['form_moudle']){
@@ -69,7 +77,7 @@ class Index extends Controller
                     break;
             }
         }
-        //提交、修改表格页面
+        //表格任务
         else{
             $table_data = db('table_data')->where('id',cookie('schoolid'))->find();
             $this->assign('table_data',$task_data);
@@ -84,6 +92,8 @@ class Index extends Controller
 
     //处理提交的表格
     public function submitTable(){
+        $json = input('post.json');
+        $table_array = json_decode($json);
 
     }
 
