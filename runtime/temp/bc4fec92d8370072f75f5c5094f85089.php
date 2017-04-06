@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491443722;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491445013;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,8 +43,8 @@
                     </ul>
                 </li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>
 <div id="main">
     <header class="jumbotron">
@@ -86,6 +86,5 @@
     </div>
 </div>
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
-<script src="__JS__/bootstrap.js"></script>
 </body>
 </html>
