@@ -68,8 +68,12 @@
             <hr>
             {if condition="($task.attachment_dir!=null) AND ($task.attachment_name!=null)"}
             <h3>
-                附件:<span class="download">{$task.attachment_name}</span>&nbsp;
-                <button class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
+                附件:<span class="download">{$task.attachment_name}</span><br><br>
+                <form action="{:url('index/downloadAttachment')}" method="post">
+                    <input type="hidden" name="attachment_dir" value="{$task.attachment_dir}">
+                    <input type="hidden" name="attachment_name" value="{$task.attachment_name}">
+                    <button type="submit" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
+                </form>
             </h3>
             <hr>
             {/if}

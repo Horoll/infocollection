@@ -28,7 +28,7 @@ class Index extends Controller
 
     //学生下载附件模版
     public function downloadAttachment(){
-        $attachement_dir = input('post.attachment_dir');
+        $attachement_dir = ROOT_PATH.'public/uploads/'.input('post.attachment_dir');
         $attachement_name = input('post.attachment_name');
         download($attachement_dir,$attachement_name);
     }

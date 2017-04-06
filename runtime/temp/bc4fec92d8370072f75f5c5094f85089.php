@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491402651;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491443722;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,8 +69,12 @@
             <hr>
             <?php if(($task['attachment_dir']!=null) AND ($task['attachment_name']!=null)): ?>
             <h3>
-                附件:<span class="download"><?php echo $task['attachment_name']; ?></span>&nbsp;
-                <button class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
+                附件:<span class="download"><?php echo $task['attachment_name']; ?></span><br><br>
+                <form action="<?php echo url('index/downloadAttachment'); ?>" method="post">
+                    <input type="hidden" name="attachment_dir" value="<?php echo $task['attachment_dir']; ?>">
+                    <input type="hidden" name="attachment_name" value="<?php echo $task['attachment_name']; ?>">
+                    <button type="submit" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
+                </form>
             </h3>
             <hr>
             <?php endif; ?>
