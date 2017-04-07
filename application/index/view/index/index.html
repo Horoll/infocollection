@@ -76,7 +76,7 @@
             </h3>
             <hr>
             {/if}
-            <button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>&nbsp;填写 / 修改</button>
+            <a href="{:url('Index/submitTask').'?id='.$task['id']}"><button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>&nbsp;填写 / 修改</button></a>
         </div>
         {/volist}
         {$tasks->render()}

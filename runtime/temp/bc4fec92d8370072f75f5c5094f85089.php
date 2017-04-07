@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491445150;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491534813;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,7 +77,7 @@
             </h3>
             <hr>
             <?php endif; ?>
-            <button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>&nbsp;填写 / 修改</button>
+            <a href="<?php echo url('Index/submitTask').'?id='.$task['id']; ?>"><button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>&nbsp;填写 / 修改</button></a>
         </div>
         <?php endforeach; endif; else: echo "" ;endif; ?>
         <?php echo $tasks->render(); ?>
