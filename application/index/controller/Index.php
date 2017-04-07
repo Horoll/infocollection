@@ -61,19 +61,19 @@ class Index extends Controller
                 case '1':
                     $form1_data = db('form1')->where('id',cookie('schoolid'))->find();
                     $this->assign('form1_data',$form1_data);
-                    return $this->fetch('Index/submitForm1');
+                    return $this->fetch('Index/submitform1');
                     break;
 
                 case '2':
                     $form2_data = db('form2')->where('id',cookie('schoolid'))->find();
                     $this->assign('form2_data',$form2_data);
-                    return $this->fetch('Index/submitForm2');
+                    return $this->fetch('Index/submitform2');
                     break;
 
                 case '3':
                     $form3_data = db('form3')->where('id',cookie('schoolid'))->find();
                     $this->assign('form1_data',$form3_data);
-                    return $this->fetch('Index/submitForm3');
+                    return $this->fetch('Index/submitform3');
                     break;
             }
         }
@@ -81,7 +81,7 @@ class Index extends Controller
         else{
             $table_data = db('table_data')->where('id',cookie('schoolid'))->find();
             $this->assign('table_data',$task_data);
-            return $this->fetch('Index/submitTable');
+            return $this->fetch('Index/submittable');
         }
     }
 

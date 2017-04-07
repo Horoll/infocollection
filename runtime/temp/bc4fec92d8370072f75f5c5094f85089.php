@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491445013;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491445150;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +10,6 @@
     <script src="__JS__/bootstrap.js"></script>
     <link rel="stylesheet" href="__CSS__/bootstrap.css">
     <link rel="stylesheet" href="__CSS__/main.css">
-
     <link rel="stylesheet" href="__CSS__/home.css">
 
     <title>学院用户</title>
