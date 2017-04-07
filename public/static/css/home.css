@@ -1,0 +1,59 @@
+.jumbotron{
+    margin-top: 25px;
+    background-image: -webkit-linear-gradient(0deg, #284a7c 0%, #30a5ff 100%);
+
+
+}
+.jumbotron>.container>h1{
+    font-size: 50px;
+    color: white;
+}
+.jumbotron>.container>p{
+    color: white;
+}
+.jumbotron>.container>p>span{
+    font-size: 35px;
+}
+.time{
+    color: #30a5ff;
+    font-size: 15px;
+    font-weight: 600;
+}
+#display{
+    background-color: #f2f4f8;
+}
+.well{
+    width: 80%;
+    margin: 0 auto;
+}
+.well .label{
+    font-size: 60%;
+}
+.well .download{
+    color: #2b669a;
+    font-size: 20px;
+}
+.well .finish{
+    font-size: 20px;
+    color: #5e5e5e;
+}
+.dropdown-menu{
+    background-color: #101010;
+}
+.dropdown-menu > li > a{
+    color: #9d9d9d;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+    color: white;
+    background-color: #101010;
+}
+.pagination{
+    padding-left: 10%;
+}
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    .well {
+        width: 95%;
+        margin: 0 auto;
+
+    }
+}
