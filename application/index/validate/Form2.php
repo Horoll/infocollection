@@ -12,14 +12,15 @@ use think\Validate;
 class Form2 extends Validate
 {
     protected $rule = [
-        'organization_name'=>'require|max:25',
-        'build_date'=>'require|max:25',
-        'num'=>'require|number',
-        'text1'=>'require|max:500',
+        'project_name'=>'require|max:25',
+        'project_type'=>'require|max:25',
+        'unit'=>'require|max:25',
+        'contacts'=>'require|max:25',
+        'contact_tel'=>'require|max:25',
+        'text1'=>'require|max:1500',
         'text2'=>'require',
-        'text3'=>'require|max:1500',
-        'text4'=>'require',
         'date'=>'date',
-        'attachment'=>'max:25'
+        'attachment_dir'=>'max:200',
+        'attachment_name'=>'max:50'
     ];
 }

@@ -12,6 +12,30 @@
 // 应用公共文件
 
 /**
+ * @param string $filedir
+ * @return array 返回上传文件的文件名和文件路径
+ */
+function uploadAttachement($filedir='admin/'){
+    //检测文件大小
+    if($_FILES['uploadfile']['error']==1 || $_FILES['uploadfile']['error']==2)
+        $this->error('文件大小不能超过50M！');
+    // 获取表单上传文件
+    $file = request()->file('uploadfile');
+    if($file){
+        // 移动到框架应用根目录/public/uploads/amin 目录下
+        $info = $file->validate(['ext'=>'doc,docx,xls,xlsx,rar,zip'])->move(ROOT_PATH . 'public' . DS . 'uploads/'.$filedir);
+        if($info){
+            $upload_data['attachment_dir']=$filedir.$info->getSaveName();
+            $upload_data['attachment_name']=$_FILES['uploadfile']['name'];
+            return $upload_data;
+        }else{
+            // 上传失败获取错误信息
+            return $file->getError();
+        }
+    }
+}
+
+/**
  * 下载函数
  * @param string $file_url 文件路径
  * @param string $new_name 新的文件名（默认为原名）

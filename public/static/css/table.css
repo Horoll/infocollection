@@ -1,30 +1,56 @@
-.mytable-width-xs{
-    width: 100px;
+#display{
+    margin-top: 50px;
 }
-.mytable-width-s{
-    width: 200px;
+.time{
+    color: #30a5ff;
+    font-size: 15px;
+    font-weight: 600;
 }
-.mytable-width-m{
+#table{
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    #table{
+        padding: 0;
+    }
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td{
+    border: 1px solid #3c3c3c;
+}
+.table-bordered{
+    border: 1px solid #3c3c3c;
+}
+#table>h1{
+    text-align: center;
+}
+.table-width-s{
+    width: 150px;
+}
+.table-width-m{
     width: 300px;
 }
-.mytable-width-l{
-    width: 500px;
+.table-width-l{
+    width: 450px;
 }
-.mytable-width-xl{
-    width: 600px;
-}
-.mytable-height-xs{
+.table-height-s{
     height: 50px;
 }
-.mytable-height-s{
+.table-height-m{
     height: 100px;
 }
-.mytable-height-m{
+.table-height-l{
     height: 150px;
 }
-.mytable-height-l{
-    height: 200px;
-}
-.mytable-height-xl{
+.table-height-xl{
     height: 250px;
+}
+.table-height-xxl{
+    height: 400px;
+}
+.table td{
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
 }

@@ -55,24 +55,27 @@ class Index extends Controller
 
         //判断是表单任务还是表格任务
         if($task_data['form_moudle']){
+            //任务要求
+            $this->assign('task_data',$task_data);
+
             //根据task表中的form_moudle值到相应的form表中查找该学生
             switch($task_data['form_moudle']){
 
                 case '1':
-                    $form1_data = db('form1')->where('id',cookie('schoolid'))->find();
+                    $form1_data = db('form1')->where('school_id',cookie('schoolid'))->where('task_id',$id)->find();
                     $this->assign('form1_data',$form1_data);
                     return $this->fetch('Index/submitform1');
                     break;
 
                 case '2':
-                    $form2_data = db('form2')->where('id',cookie('schoolid'))->find();
+                    $form2_data = db('form2')->where('school_id',cookie('schoolid'))->where('task_id',$id)->find();
                     $this->assign('form2_data',$form2_data);
                     return $this->fetch('Index/submitform2');
                     break;
 
                 case '3':
-                    $form3_data = db('form3')->where('id',cookie('schoolid'))->find();
-                    $this->assign('form1_data',$form3_data);
+                    $form3_data = db('form3')->where('school_id',cookie('schoolid'))->where('task_id',$id)->find();
+                    $this->assign('form3_data',$form3_data);
                     return $this->fetch('Index/submitform3');
                     break;
             }
@@ -85,9 +88,65 @@ class Index extends Controller
         }
     }
 
-    //处理提交的表单
+    //处理提交的表单数据
     public function submitForm(){
 
+        $data = $_POST;
+
+        //调用文件上传函数
+        if(isset($_FILES['uploadfile']['name']) && $_FILES['uploadfile']['name']!=null){
+            $upload_data = uploadAttachement($filedir='schools/');
+            if(!is_array($upload_data)){
+                $this->error($upload_data);
+            }
+            $data['attachment_dir'] = $upload_data['attachment_dir'];
+            $data['attachment_name'] = $upload_data['attachment_name'];
+        }
+
+        //判断是那种表单
+        $form_moudel = input('post.form_moudle');
+        switch ($form_moudel){
+            case '1':
+                $form_moudel = 'Form1';
+                break;
+            case '2':
+                $form_moudel = 'Form2';
+                break;
+            case '3':
+                $form_moudel = 'Form3';
+                break;
+        }
+        unset($data['form_moudle']);
+
+        $this->updateForm($data,$form_moudel);
+    }
+
+    //根据表单类型对相应数据表新增或修改数据
+    private function updateForm($data,$form_moudle){
+        //验证器验证
+        $validate = validate($form_moudle);
+        if(!$validate->check($data)){
+            $this->error($validate->getError());
+        }
+        //添加学院id
+        $data['school_id']=cookie('schoolid');
+        //添加对应的任务id
+        $data['task_id']=input('post.task_id');
+        $form = model($form_moudle);
+
+        //判断是第一次提交表单还是修改表单（有无提交任务id）
+        if(input('post.id')!=null){
+            //修改已提交的任务
+            if($form->where('id',input('post.id'))->update($data)){
+                $this->success('修改成功','Index/index');
+            }else{
+                $this->error('没有修改任何数据');
+            }
+        }else{
+            //第一次提交任务
+            $form->allowField(true)->save($data);
+            $this->success('提交成功','Index/index');
+        }
     }
 
     //处理提交的表格

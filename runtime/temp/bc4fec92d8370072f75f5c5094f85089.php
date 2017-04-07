@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491534813;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491550266;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,7 +77,7 @@
             </h3>
             <hr>
             <?php endif; ?>
-            <a href="<?php echo url('Index/submitTask').'?id='.$task['id']; ?>"><button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>&nbsp;填写 / 修改</button></a>
+            <a href="<?php echo url('Index/submitTask').'?id='.$task['id']; ?>" class="btn btn-primary submit" role="button"><span class="glyphicon glyphicon-pencil"></span>&nbsp;填写 / 修改</a>
         </div>
         <?php endforeach; endif; else: echo "" ;endif; ?>
         <?php echo $tasks->render(); ?>
@@ -85,5 +85,6 @@
     </div>
 </div>
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<script src="__JS__/check-time.js"></script>
 </body>
 </html>

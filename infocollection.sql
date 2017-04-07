@@ -37,26 +37,8 @@ DROP TABLE IF EXISTS `form1`;
 
 CREATE TABLE `form1` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `unit` varchar(25) NOT NULL COMMENT '单位',
-  `secretary_name` varchar(20) NOT NULL COMMENT '书记姓名',
-  `num1` smallint(6) NOT NULL COMMENT '团支部数',
-  `num2` smallint(6) NOT NULL COMMENT '团员总数',
-  `num3` smallint(6) NOT NULL COMMENT '年度推优入党人数',
-  `text1` text NOT NULL COMMENT '获奖情况',
-  `text2` text NOT NULL COMMENT '主要成就（2000字）',
-  `text3` text NOT NULL COMMENT '学院党委意见',
-  `attachment` varchar(50) DEFAULT NULL COMMENT '附件',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
-
-/*Data for the table `form1` */
-
-/*Table structure for table `form2` */
-
-DROP TABLE IF EXISTS `form2`;
-
-CREATE TABLE `form2` (
-  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `task_id` mediumint(8) unsigned NOT NULL COMMENT '对应哪个任务',
+  `school_id` smallint(5) unsigned NOT NULL COMMENT '学院id',
   `organization_name` varchar(25) NOT NULL COMMENT '组织名称',
   `build_date` varchar(25) NOT NULL COMMENT '成立时间',
   `num` smallint(5) unsigned NOT NULL COMMENT '注册志愿者人数',
@@ -64,7 +46,32 @@ CREATE TABLE `form2` (
   `text2` text NOT NULL COMMENT '获奖情况',
   `text3` text NOT NULL COMMENT '主要事迹（1500）',
   `text4` text NOT NULL COMMENT '学院团委意见',
-  `attachment` varchar(50) DEFAULT NULL COMMENT '附件',
+  `attachment_dir` varchar(200) DEFAULT NULL COMMENT '附件路径',
+  `attachment_name` varchar(50) DEFAULT NULL COMMENT '附件名',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+
+/*Data for the table `form1` */
+
+insert  into `form1`(`id`,`task_id`,`school_id`,`organization_name`,`build_date`,`num`,`text1`,`text2`,`text3`,`text4`,`attachment_dir`,`attachment_name`) values (2,26,1,'wingstudio工作室','2004',45,'软件开发','略','略','略','schools/20170407\\ce133955f1a7d694263c3edd08e0e2a3.doc','1.2优秀志愿者队伍申报材料.doc'),(4,26,2,'理学院','理学院',23,'理学院',' 阿萨德','阿萨德',' 阿萨德','schools/20170407\\8d5c006f7693ec8c735ed421f48cda08.docx','2.2优秀志愿者项目活动申报材料.docx');
+
+/*Table structure for table `form2` */
+
+DROP TABLE IF EXISTS `form2`;
+
+CREATE TABLE `form2` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `school_id` mediumint(8) unsigned NOT NULL COMMENT '哪个学院提交的任务',
+  `task_id` mediumint(8) unsigned NOT NULL COMMENT '对应的哪个任务',
+  `project_name` varchar(25) NOT NULL COMMENT '项目名称',
+  `project_type` varchar(25) NOT NULL COMMENT '项目类型',
+  `unit` varchar(25) NOT NULL COMMENT '申报单位',
+  `contacts` varchar(25) NOT NULL COMMENT '联系人',
+  `contact_tel` varchar(25) NOT NULL COMMENT '联系电话',
+  `text1` text NOT NULL COMMENT '项目简介（1500）',
+  `text2` text NOT NULL COMMENT '团委意见',
+  `attachment_dir` varchar(200) DEFAULT NULL COMMENT '附件路径',
+  `attachment_name` varchar(50) NOT NULL COMMENT '附件名称',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
@@ -76,14 +83,18 @@ DROP TABLE IF EXISTS `form3`;
 
 CREATE TABLE `form3` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `project_name` varchar(25) NOT NULL COMMENT '项目名称',
-  `project_type` varchar(25) NOT NULL COMMENT '项目类型',
-  `unit` varchar(25) NOT NULL COMMENT '申报单位',
-  `contacts` varchar(25) NOT NULL COMMENT '联系人',
-  `contact_tel` varchar(25) NOT NULL COMMENT '联系电话',
-  `text1` text NOT NULL COMMENT '项目简介（1500）',
-  `text2` text NOT NULL COMMENT '团委意见',
-  `attachment` varchar(50) DEFAULT NULL COMMENT '附件',
+  `school_id` mediumint(8) unsigned NOT NULL COMMENT '哪个学院提交的路径',
+  `task_id` mediumint(9) NOT NULL COMMENT '对应哪个任务',
+  `unit` varchar(25) NOT NULL COMMENT '单位',
+  `secretary_name` varchar(20) NOT NULL COMMENT '书记姓名',
+  `num1` smallint(6) NOT NULL COMMENT '团支部数',
+  `num2` smallint(6) NOT NULL COMMENT '团员总数',
+  `num3` smallint(6) NOT NULL COMMENT '年度推优入党人数',
+  `text1` text NOT NULL COMMENT '获奖情况',
+  `text2` text NOT NULL COMMENT '主要成就（2000字）',
+  `text3` text NOT NULL COMMENT '学院党委意见',
+  `attachment_dir` varchar(200) DEFAULT NULL COMMENT '附件路径',
+  `attachment_name` varchar(50) DEFAULT NULL COMMENT '附件名',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
@@ -135,11 +146,11 @@ CREATE TABLE `task` (
   `attachment_dir` varchar(200) DEFAULT NULL COMMENT '附件模版路径',
   `attachment_name` varchar(50) DEFAULT NULL COMMENT '附件文件名',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `task` */
 
-insert  into `task`(`id`,`taskname`,`tasktext`,`date`,`start_date`,`end_date`,`form_moudle`,`table_moudle`,`attachment_dir`,`attachment_name`) values (1,'任务1','这个任务1，要求提交一个自定义表格','2017-03-31','2017-03-31','2017-04-30',NULL,'校区<&>学院<&>班级<&>平均成绩<&>补考、重修人次<&>同年级同专业补考、重修平均人次<&>违规违纪情况<&>支部所获荣誉<&>备注',NULL,NULL),(2,'任务2','','2017-04-03','2017-04-04','2017-04-06',NULL,'姓名<&>学号<&>班级<&>',NULL,NULL),(26,'任务3','任务3 使用表单一 没有附件','2017-04-03','2017-04-18','2017-04-19',1,NULL,NULL,NULL),(27,'任务4','任务4 使用表单1 附件是组织部--优秀分团委申报材料','2017-04-03','2017-04-19','2017-04-19',1,NULL,'admin/20170403\\d64933249445882ce83d7f2a87f02cc2.doc','组织部--优秀分团委申报材料.doc');
+insert  into `task`(`id`,`taskname`,`tasktext`,`date`,`start_date`,`end_date`,`form_moudle`,`table_moudle`,`attachment_dir`,`attachment_name`) values (1,'任务1','这个任务1，要求提交一个自定义表格','2017-03-31','2017-03-31','2017-04-30',NULL,'校区<&>学院<&>班级<&>平均成绩<&>补考、重修人次<&>同年级同专业补考、重修平均人次<&>违规违纪情况<&>支部所获荣誉<&>备注',NULL,NULL),(2,'任务2','任务2','2017-04-03','2017-04-04','2017-04-06',NULL,'姓名<&>学号<&>专业<&>',NULL,NULL),(31,'任务5','任务5 使用表单二  有附件','2017-04-04','2017-04-04','2017-04-11',2,NULL,'admin/20170404\\689de6fb1c389bb2f5cc127f1fef8aab.doc','1.2优秀志愿者队伍申报材料.doc'),(26,'任务3','任务3 使用表单一 没有附件','2017-04-03','2017-04-04','2017-04-19',1,NULL,NULL,NULL),(27,'任务4','任务4 使用表单1 附件是组织部--优秀分团委申报材料','2017-04-03','2017-04-19','2017-04-19',1,NULL,'admin/20170403\\d64933249445882ce83d7f2a87f02cc2.doc','组织部--优秀分团委申报材料.doc'),(33,'任务6','任务6 表单3 附件是各学院课表.rar','2017-04-04','2017-04-04','2017-04-23',3,NULL,'admin/20170406\\be64653b12e5d3a0a77550189a75e5c0.rar','各学院课表.rar');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

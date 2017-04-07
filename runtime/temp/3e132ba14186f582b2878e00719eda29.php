@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491285719;s:41:"application/index/view/header/header.html";i:1491279967;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491553707;s:41:"application/index/view/header/header.html";i:1491279967;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

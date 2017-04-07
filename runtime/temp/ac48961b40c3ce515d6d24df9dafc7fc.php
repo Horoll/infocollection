@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submitform2.html";i:1491568477;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,7 +35,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="{:url('Index/index')}"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回</a></li>
+                <li><a href="<?php echo url('Index/index'); ?>"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -42,64 +43,64 @@
 
 <div id="display">
     <div id="info" class="well">
-        <h1>{$task_data.taskname}</h1>
+        <h1><?php echo $task_data['taskname']; ?></h1>
         <p>完成时间：<span class="time">
-            {$task_data.start_date}
+            <?php echo $task_data['start_date']; ?>
         </span>到
             <span class="time">
-            {$task_data.end_date}
+            <?php echo $task_data['end_date']; ?>
         </span></p>
-        <p>任务简介：{$task_data.tasktext}</p>
+        <p>任务简介：<?php echo $task_data['tasktext']; ?></p>
     </div>
     <div id="table">
         <h1>优秀志愿服务项目申报表</h1>
-        <form action="{:url('Index/submitForm')}" enctype="multipart/form-data" method="post" id="form">
+        <form action="<?php echo url('Index/submitForm'); ?>" enctype="multipart/form-data" method="post" id="form">
             <!--对应的哪个任务的id-->
-            <input type="hidden" name="task_id" value="{$task_data.id}">
+            <input type="hidden" name="task_id" value="<?php echo $task_data['id']; ?>">
 
             <!--是否有form2中的id（有则表示已经提交过）-->
-            <input type="hidden" name="id" value="{$form2_data.id}">
+            <input type="hidden" name="id" value="<?php echo $form2_data['id']; ?>">
 
             <input type="hidden" name="form_moudle" value="2">
             <table class="table table-bordered">
                 <tr>
                     <td class="table-width-s">项目名称</td>
                     <td colspan="3">
-                        <textarea class="form-control" rows="1" placeholder="文字" name="project_name">{$form2_data.project_name}</textarea>
+                        <textarea class="form-control" rows="1" placeholder="文字" name="project_name"><?php echo $form2_data['project_name']; ?></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td class="table-width-s">项目类型</td>
                     <td colspan="3">
-                        <textarea class="form-control" rows="1" placeholder="文字" name="project_type">{$form2_data.project_type}</textarea>
+                        <textarea class="form-control" rows="1" placeholder="文字" name="project_type"><?php echo $form2_data['project_type']; ?></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td class="table-width-s">申报单位</td>
                     <td colspan="3">
-                        <textarea class="form-control" rows="1" placeholder="文字" name="unit">{$form2_data.unit}</textarea>
+                        <textarea class="form-control" rows="1" placeholder="文字" name="unit"><?php echo $form2_data['unit']; ?></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td class="table-width-s">联系人</td>
                     <td>
-                        <textarea class="form-control" rows="1" placeholder="文字" name="contacts">{$form2_data.contacts}</textarea>
+                        <textarea class="form-control" rows="1" placeholder="文字" name="contacts"><?php echo $form2_data['contacts']; ?></textarea>
                     </td>
                     <td class="table-width-s">联系电话</td>
                     <td>
-                        <textarea class="form-control" rows="1" placeholder="号码" name="contact_tel">{$form2_data.contact_tel}</textarea>
+                        <textarea class="form-control" rows="1" placeholder="号码" name="contact_tel"><?php echo $form2_data['contact_tel']; ?></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td class="table-width-s table-height-xxl">项目简介</td>
                     <td colspan="3">
-                        <textarea class="form-control" rows="19" name="text1" placeholder="文字(1500字以内，涵盖项目内容、社会反响、获奖或资助情况等)+图片（单张不大于5M）">{$form2_data.text1}</textarea>
+                        <textarea class="form-control" rows="19" name="text1" placeholder="文字(1500字以内，涵盖项目内容、社会反响、获奖或资助情况等)+图片（单张不大于5M）"><?php echo $form2_data['text1']; ?></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td class="table-width-s table-height-l">校（区）、院团委意见</td>
                     <td colspan="3">
-                        <textarea class="form-control" rows="6" placeholder="文字" name="text2">{$form2_data.text2}</textarea>
+                        <textarea class="form-control" rows="6" placeholder="文字" name="text2"><?php echo $form2_data['text2']; ?></textarea>
                     </td>
                 </tr>
             </table>
