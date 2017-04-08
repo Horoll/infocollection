@@ -82,8 +82,12 @@ class Index extends Controller
         }
         //表格任务
         else{
-            $table_data = db('table_data')->where('id',cookie('schoolid'))->find();
-            $this->assign('table_data',$task_data);
+            //解析table_moudle格式
+            $table_moudle_array = explode('<&>',$task_data['table_moudle']);
+            $table_data = db('table_data')->where('school_id',cookie('schoolid'))->where('task_id',$id)->select();
+            $this->assign('table_data',$table_data);
+            $this->assign('task_data',$task_data);
+            $this->assign('table_moudel_array',$table_moudle_array);
             return $this->fetch('Index/submittable');
         }
     }
@@ -151,9 +155,39 @@ class Index extends Controller
 
     //处理提交的表格
     public function submitTable(){
-        $json = input('post.json');
-        $table_array = json_decode($json);
+        //接收前端的任务发布数据
+        $json = '';
+        foreach ($_POST as $key=>$value){
+            $json .= $key;
+        }
+        $table_array = json_decode($json,true);
+        $task_id = $table_array['task_id'];
+        foreach ($table_array as $key1=>$row) {
+            if (!is_numeric($key1)){
+                continue;
+            }
+            //将二维数组中的数据连成字符串
+            $table_data = '';
+            foreach ($row as $key2 => $value) {
+                if ($key2 === 'id'){
+                    continue;
+                }
+                $table_data .= $value . '<&>';
+            }
+            $data = [
+                'id' => isset($row['id'])?$row['id']:null,
+                'table_data' => $table_data,
+                'task_id' => $task_id,
+                'school_id'=>cookie('schoolid')
+            ];
 
+            //插入或更新
+            if(isset($row['id']) && $row['id']!=null){
+                db('table_data')->update($data);
+            }else{
+                db('table_data')->insert($data);
+            }
+        }
+        return '1';
     }
-
 };

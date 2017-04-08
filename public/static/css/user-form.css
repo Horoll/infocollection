@@ -1,0 +1,25 @@
+#display{
+    margin-top: 50px;
+}
+.time{
+    color: #30a5ff;
+    font-size: 15px;
+    font-weight: 600;
+}
+#table {
+    padding: 0 50px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    #table{
+        padding: 0;
+    }
+}
+table td{
+    min-width: 100px;
+}
+
+.btn{
+    margin-left: 5%;
+}

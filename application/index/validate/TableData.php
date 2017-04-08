@@ -13,7 +13,7 @@ use think\Validate;
 class TableData extends Validate
 {
     protected $rule = [
-        'data'=>'require',
+        'table_data'=>'require',
         'table_id'=>'require|number',
         'task_id'=>'require|number',
         'school_id'=>'require|number',

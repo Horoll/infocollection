@@ -1,10 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<DOCTYPE html/>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="__JS__/commom.js"></script>
+    <script src="__JS__/sweetalert.js"></script>
+    <link rel="stylesheet" href="__CSS__/bootstrap.css">
+    <link rel="stylesheet" href="__CSS__/sweetalert.css">
+    <link rel="stylesheet" href="__CSS__/main.css">
+    <link rel="stylesheet" href="__CSS__/menu.css">
+    <link rel="stylesheet" href="__CSS__/user-form.css">
+
+    <title>填写表单</title>
 </head>
 <body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">管理员</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">学院用户</a>
+        </div>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{:url('Index/index')}"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div id="display">
+    <div id="info" class="well">
+        <h1>{$task_data.taskname}</h1>
+        <p>完成时间：<span class="time">
+                    {$task_data.start_date}
+                </span>到
+            <span class="time">
+                    {$task_data.end_date}
+                </span></p>
+        <p>{$task_data.tasktext}</p>
+    </div>
+
+    <!--属于哪个任务-->
+    <input type="hidden" name="task_id" value="{$task_data.id}">
+
+    <div id="table">
+        <table class="table table-bordered">
+            <tr id="biaotou">
+                <th></th>
+                {volist name="table_moudel_array" id="table_moudel"}
+                    <th>{$table_moudel}</th>
+                {/volist}
+            </tr>
+
+            {if condition="($table_data==null)"}
+            <tr class="item">
+                <td>
+                    <button class="btn btn-danger">删除本行</button>
+                </td>
+                {volist name="table_moudel_array" id="table_moudel"}
+                    <td>
+                        <input type="text" class="form-control">
+                    </td>
+                {/volist}
+            </tr>
+            <tr class="item">
+                <td>
+                    <button class="btn btn-danger">删除本行</button>
+                </td>
+                {volist name="table_moudel_array" id="table_moudel"}
+                <td>
+                    <input type="text" class="form-control">
+                </td>
+                {/volist}
+            </tr>
+            <tr class="item">
+                <td>
+                    <button class="btn btn-danger">删除本行</button>
+                </td>
+                {volist name="table_moudel_array" id="table_moudel"}
+                <td>
+                    <input type="text" class="form-control">
+                </td>
+                {/volist}
+            </tr>
+            {else /}
+                {volist name = "table_data" id = "table_data_row"}
+                {php}
+                    $table_data_array=explode('<&>',$table_data_row['table_data']);
+                    array_pop($table_data_array);
+                {/php}
+                <tr class="item">
+                    <td>
+                        <button class="btn btn-danger">删除本行</button>
+                    </td>
+                    {volist name="$table_data_array" id="table_data_cell"}
+                        <td>
+                            <input type="text" class="form-control" value="{$table_data_cell}">
+                        </td>
+                    {/volist}
+                        <input type="hidden" name="id" class="form-control" value="{$table_data_row['id']}">
+                </tr>
+                {/volist}
+            {/if}
+        </table>
+    </div>
+    <button class="btn btn-info" id="add"><span class="glyphicon glyphicon-plus"></span>&nbsp;添加一条记录</button>
+    <br>
+    <br>
+    <button class="btn btn-success" id="submit"><span class="glyphicon glyphicon-check"></span>&nbsp;提交表单</button>
+
+
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="__JS__/bootstrap.js"></script>
+<script src="__JS__/user-from.js"></script>
+<script>
+    /*为提交按钮绑定功能*/
+    document.getElementById("submit").onclick=function () {
+        if(checkinput()===false){
+            swal({
+                title: "你还有没有填写的项目",
+                type: "error",
+                confirmButtonText: "知道了",
+            });
+        }
+        else {
+            sendData("{:url('Index/submitTable')}","{:url('Index/index')}");
+        }
+    }
+</script>
 </body>
 </html>
