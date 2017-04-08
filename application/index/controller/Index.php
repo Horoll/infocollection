@@ -190,4 +190,24 @@ class Index extends Controller
         }
         return '1';
     }
+
+    //删除某条数据
+    public function deleteTable(){
+        if(!isset($_POST)){
+            return '没有数据';
+        }
+        //接收前端的任务发布数据
+        $json = '';
+        foreach ($_POST as $key=>$value){
+            $json .= $key;
+        }
+        $json_array = json_decode($json,true);
+        $id = $json_array['id'];
+        $result = db('table_data')->where('id',$id)->delete();
+        if($result){
+            return '1';
+        }else{
+            return '没有删除数据';
+        }
+    }
 };

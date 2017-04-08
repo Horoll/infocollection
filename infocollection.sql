@@ -73,9 +73,11 @@ CREATE TABLE `form2` (
   `attachment_dir` varchar(200) DEFAULT NULL COMMENT '附件路径',
   `attachment_name` varchar(50) NOT NULL COMMENT '附件名称',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `form2` */
+
+insert  into `form2`(`id`,`school_id`,`task_id`,`project_name`,`project_type`,`unit`,`contacts`,`contact_tel`,`text1`,`text2`,`attachment_dir`,`attachment_name`) values (1,1,31,'信息工程学院 表单2','信息工程学院 表单2','信息工程学院 表单2','信息工程学院 表单2','1234124134','信息工程学院 表单2','信息工程学院 表单2','schools/20170407\\34f45291f048ccbd54c5b6b81a415504.docx','2.2优秀志愿者项目活动申报材料.docx'),(2,2,31,'理学院 表单二','理学院 表单二','理学院 表单二','理学院 表单二','123','理学院 表单二理学院 表单二','理学院 表单二','schools/20170407\\9493053d7bbff3dcf4b8a183533628fa.docx','2.2优秀志愿者项目活动申报材料.docx');
 
 /*Table structure for table `form3` */
 
@@ -96,9 +98,11 @@ CREATE TABLE `form3` (
   `attachment_dir` varchar(200) DEFAULT NULL COMMENT '附件路径',
   `attachment_name` varchar(50) DEFAULT NULL COMMENT '附件名',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `form3` */
+
+insert  into `form3`(`id`,`school_id`,`task_id`,`unit`,`secretary_name`,`num1`,`num2`,`num3`,`text1`,`text2`,`text3`,`attachment_dir`,`attachment_name`) values (1,1,33,'信息工程学院 表单三','123',123,123,123,'信息工程学院 表单三','信息工程学院 表单三','信息工程学院 表单三','schools/20170407\\e25bae755ed34053b4b8ffa0151dc177.doc','组织部--优秀分团委申报材料.doc'),(2,2,33,'理学院 表单三','理学院 表单三',123,123,123,'理学院 表单三理学院 表单三理学院 表单三','理学院 表单三','理学院 表单三','schools/20170407\\c61901f6422f4706fd36f2915adf2f4e.doc','组织部--优秀分团委申报材料.doc');
 
 /*Table structure for table `school` */
 
@@ -121,14 +125,15 @@ DROP TABLE IF EXISTS `table_data`;
 
 CREATE TABLE `table_data` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `data` text NOT NULL COMMENT '表格内容',
-  `table_id` smallint(5) unsigned DEFAULT NULL COMMENT '对应的表格模版的id（空的话就是表格）',
+  `table_data` text NOT NULL COMMENT '表格内容',
   `task_id` smallint(5) unsigned NOT NULL COMMENT '对应的任务id',
   `school_id` smallint(5) unsigned NOT NULL COMMENT '上交的学院的id',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `table_data` */
+
+insert  into `table_data`(`id`,`table_data`,`task_id`,`school_id`) values (2,'1<&>2<&>3<&>4<&>5<&>6<&>7<&>8<&>9<&>',1,1);
 
 /*Table structure for table `task` */
 

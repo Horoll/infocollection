@@ -35,27 +35,19 @@ function addItem() {
 
 }
 
-/*给所有删除按钮绑定删除功能的函数*/
-function deleteItem() {
-    var deleteButton=document.querySelectorAll(".btn-danger");
-    for(var m=0;m<deleteButton.length;m++){
-        deleteButton[m].onclick=function () {
-            var table=this.parentNode.parentNode.parentNode;
-            var thisItem=this.parentNode.parentNode;
-            table.removeChild(thisItem);
+function sendId() {
+    var jsonhttp=new XMLHttpRequest();
+    jsonhttp.open("POST",posturl,true);
+    jsonhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+
+    jsonhttp.onreadystatechange=function(){
+        if(jsonhttp.readyState==4||jsonhttp.readyState==200){
+
         }
-    }
-
+    };
+    jsonhttp.send(dataJson);
 }
-deleteItem();
 
-
-/*给添加一列的按钮添加事件*/
-document.getElementById("add").onclick=function () {
-    var table=document.getElementById("table").childNodes[1].childNodes[1];
-    table.appendChild(addItem());
-    deleteItem()
-}
 
 /*检查是否有空的表单*/
 function checkinput() {

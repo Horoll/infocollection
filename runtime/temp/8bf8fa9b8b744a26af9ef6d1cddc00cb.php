@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submittable.html";i:1491649827;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submittable.html";i:1491655653;}*/ ?>
 <DOCTYPE html/>
 <html>
 <head>
@@ -137,6 +137,57 @@
             sendData("<?php echo url('Index/submitTable'); ?>","<?php echo url('Index/index'); ?>");
         }
     }
+
+    /*给所有删除按钮绑定删除功能的函数*/
+    function deleteItem(posturl) {
+        var deleteButton=document.querySelectorAll(".btn-danger");
+        for(var m=0;m<deleteButton.length;m++){
+            deleteButton[m].onclick=function () {
+                var confirm=this.parentNode.parentNode.lastChild.previousSibling;
+                var table=this.parentNode.parentNode.parentNode;
+                var thisItem=this.parentNode.parentNode;
+                if(confirm.name!=="id"){
+                    table.removeChild(thisItem);
+                }
+                else if(confirm.name==="id"){
+                    var dataId=confirm.value;
+                    var myJson={};
+                    myJson.id=dataId;
+                    var dataJson=JSON.stringify(myJson);
+                    console.log(dataJson);
+                    var jsonhttp=new XMLHttpRequest();
+                    jsonhttp.open("POST",posturl,true);
+                    jsonhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    jsonhttp.send(dataJson);
+                    jsonhttp.onreadystatechange=function(){
+                        if(jsonhttp.readyState==4||jsonhttp.readyState==200){
+                            if(jsonhttp.responseText!=='1'){
+                                swal({
+                                    title: jsonhttp.responseText,
+                                    type: "warning",
+                                    confirmButtonText: "确定",
+                                    confirmButtonColor: "#ec6c62"
+                                });
+                            }
+                            else {
+                                table.removeChild(thisItem);
+                            }
+                        }
+                    };
+                }
+            }
+        }
+    }
+    deleteItem("<?php echo url('Index/deleteTable'); ?>");
+
+
+    /*给添加一列的按钮添加事件*/
+    document.getElementById("add").onclick=function () {
+        var table=document.getElementById("table").childNodes[1].childNodes[1];
+        table.appendChild(addItem());
+        deleteItem("<?php echo url('Index/deleteTable'); ?>");
+    }
+
 </script>
 </body>
 </html>
