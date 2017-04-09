@@ -52,6 +52,11 @@
         <p>提交学院：<span class="school">{$schoolname}</span>
         </p>
         <p>提交的附件：<span>{$data.attachment_name}</span>
+        <form action="{:url('Checksubmited/downloadAttachment')}" method="post">
+            <input type="hidden" name="attachment_dir" value="{$data.attachment_dir}">
+            <input type="hidden" name="attachment_name" value="{$data.attachment_name}">
+            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
+        </form>
         </p>
     </div>
     <div id="table">
@@ -84,12 +89,6 @@
                 <td colspan="3">{$data.text4}</td>
             </tr>
         </table>
-        <form action="{:url('Checksubmited/downloadAttachment')}" method="post">
-            <input type="hidden" name="attachment_dir" value="{$data.attachment_dir}">
-            <input type="hidden" name="attachment_name" value="{$data.attachment_name}">
-            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
-        </form>
-        <br>
         <button class="btn btn-success"><span class="glyphicon glyphicon-log-out"></span>&nbsp;导出成word</button>
     </div>
 </div>

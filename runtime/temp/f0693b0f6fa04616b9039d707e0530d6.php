@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform1.html";i:1491716866;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform1.html";i:1491717249;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -40,61 +40,60 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-        <div id="display">
-            <div id="info" class="well">
-                <h1><?php echo $task['taskname']; ?></h1>
-                <p>完成时间：<span class="time">
-                    <?php echo $task['start_date']; ?>
-                </span>到
-                <span class="time">
-                    <?php echo $task['end_date']; ?>
-                </span></p>
-                <p>任务简介：<?php echo $task['tasktext']; ?></p>
-                <p>提交学院：<span class="school"><?php echo $schoolname; ?></span>
-                </p>
-                <p>提交的附件：<span><?php echo $data['attachment_name']; ?></span>
-                </p>
-            </div>
-            <div id="table">
-                <h1>优秀青年志愿者队伍申报表</h1>
-                <table class="table table-bordered">
-                    <tr>
-                        <td class="table-width-s table-height-s">组织名称</td>
-                        <td class="table-width-l"><?php echo $data['organization_name']; ?></td>
-                        <td rowspan="2" class="table-width-s">注册志愿者人数</td>
-                        <td rowspan="2" class="table-width-s"><?php echo $data['num']; ?></td>
-                    </tr>
-                    <tr>
-                        <td class="table-width-s table-height-s">成立时间</td>
-                        <td><?php echo $data['build_date']; ?></td>
-                    </tr>
-                    <tr>
-                        <td class="table-height-l">主要服务内容</td>
-                        <td colspan="3"><?php echo $data['text1']; ?></td>
-                    </tr>
-                    <tr>
-                        <td class="table-height-l">获奖情况</td>
-                        <td colspan="3"><?php echo $data['text2']; ?></td>
-                    </tr>
-                    <tr>
-                        <td class="table-height-l">主要事迹</td>
-                        <td colspan="3"><?php echo $data['text3']; ?></td>
-                    </tr>
-                    <tr>
-                        <td class="table-height-l">学院团委意见</td>
-                        <td colspan="3"><?php echo $data['text4']; ?></td>
-                    </tr>
-                </table>
-                <form action="<?php echo url('Checksubmited/downloadAttachment'); ?>" method="post">
-                    <input type="hidden" name="attachment_dir" value="<?php echo $data['attachment_dir']; ?>">
-                    <input type="hidden" name="attachment_name" value="<?php echo $data['attachment_name']; ?>">
-                    <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
-                </form>
-                <br>
-                <button class="btn btn-success"><span class="glyphicon glyphicon-log-out"></span>&nbsp;导出成word</button>
-            </div>
-        </div>
-		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-		<script src="__JS__/bootstrap.js"></script>
+<div id="display">
+    <div id="info" class="well">
+        <h1><?php echo $task['taskname']; ?></h1>
+        <p>完成时间：<span class="time">
+            <?php echo $task['start_date']; ?>
+        </span>到
+        <span class="time">
+            <?php echo $task['end_date']; ?>
+        </span></p>
+        <p>任务简介：<?php echo $task['tasktext']; ?></p>
+        <p>提交学院：<span class="school"><?php echo $schoolname; ?></span>
+        </p>
+        <p>提交的附件：<span><?php echo $data['attachment_name']; ?></span>
+        <form action="<?php echo url('Checksubmited/downloadAttachment'); ?>" method="post">
+            <input type="hidden" name="attachment_dir" value="<?php echo $data['attachment_dir']; ?>">
+            <input type="hidden" name="attachment_name" value="<?php echo $data['attachment_name']; ?>">
+            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
+        </form>
+        </p>
+    </div>
+    <div id="table">
+        <h1>优秀青年志愿者队伍申报表</h1>
+        <table class="table table-bordered">
+            <tr>
+                <td class="table-width-s table-height-s">组织名称</td>
+                <td class="table-width-l"><?php echo $data['organization_name']; ?></td>
+                <td rowspan="2" class="table-width-s">注册志愿者人数</td>
+                <td rowspan="2" class="table-width-s"><?php echo $data['num']; ?></td>
+            </tr>
+            <tr>
+                <td class="table-width-s table-height-s">成立时间</td>
+                <td><?php echo $data['build_date']; ?></td>
+            </tr>
+            <tr>
+                <td class="table-height-l">主要服务内容</td>
+                <td colspan="3"><?php echo $data['text1']; ?></td>
+            </tr>
+            <tr>
+                <td class="table-height-l">获奖情况</td>
+                <td colspan="3"><?php echo $data['text2']; ?></td>
+            </tr>
+            <tr>
+                <td class="table-height-l">主要事迹</td>
+                <td colspan="3"><?php echo $data['text3']; ?></td>
+            </tr>
+            <tr>
+                <td class="table-height-l">学院团委意见</td>
+                <td colspan="3"><?php echo $data['text4']; ?></td>
+            </tr>
+        </table>
+        <button class="btn btn-success"><span class="glyphicon glyphicon-log-out"></span>&nbsp;导出成word</button>
+    </div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="__JS__/bootstrap.js"></script>
 	</body>
 </html>

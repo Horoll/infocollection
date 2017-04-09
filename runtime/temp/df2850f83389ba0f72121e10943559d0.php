@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform2.html";i:1491716999;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform2.html";i:1491717277;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,6 +54,11 @@
         <p>提交学院：<span class="school"><?php echo $schoolname; ?></span>
         </p>
         <p>提交的附件：<span><?php echo $data['attachment_name']; ?></span>
+        <form action="<?php echo url('Checksubmited/downloadAttachment'); ?>" method="post">
+            <input type="hidden" name="attachment_dir" value="<?php echo $data['attachment_dir']; ?>">
+            <input type="hidden" name="attachment_name" value="<?php echo $data['attachment_name']; ?>">
+            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
+        </form>
         </p>
     </div>
     <div id="table">
@@ -86,12 +91,6 @@
                 <td colspan="3"><?php echo $data['text2']; ?></td>
             </tr>
         </table>
-        <form action="<?php echo url('Checksubmited/downloadAttachment'); ?>" method="post">
-            <input type="hidden" name="attachment_dir" value="<?php echo $data['attachment_dir']; ?>">
-            <input type="hidden" name="attachment_name" value="<?php echo $data['attachment_name']; ?>">
-            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
-        </form>
-        <br>
         <button class="btn btn-success"><span class="glyphicon glyphicon-log-out"></span>&nbsp;导出成word</button>
     </div>
 

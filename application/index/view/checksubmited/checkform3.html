@@ -36,7 +36,6 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{:url('Checksubmited/index')}"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回上页</a></li>
-
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -55,6 +54,11 @@
         <p>提交学院：<span class="school">{$schoolname}</span>
         </p>
         <p>提交的附件：<span>{$data.attachment_name}</span>
+        <form action="{:url('Checksubmited/downloadAttachment')}" method="post">
+            <input type="hidden" name="attachment_dir" value="{$data.attachment_dir}">
+            <input type="hidden" name="attachment_name" value="{$data.attachment_name}">
+            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
+        </form>
         </p>
     </div>
     <div id="table">
@@ -88,12 +92,6 @@
                 <td colspan="6">{$data.text3}</td>
             </tr>
         </table>
-        <form action="{:url('Checksubmited/downloadAttachment')}" method="post">
-            <input type="hidden" name="attachment_dir" value="{$data.attachment_dir}">
-            <input type="hidden" name="attachment_name" value="{$data.attachment_name}">
-            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
-        </form>
-        <br>
         <button class="btn btn-success"><span class="glyphicon glyphicon-log-out"></span>&nbsp;导出成word</button>
     </div>
 </div>

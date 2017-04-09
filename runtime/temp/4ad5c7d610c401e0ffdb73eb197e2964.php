@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform3.html";i:1491717012;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform3.html";i:1491717355;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +37,6 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?php echo url('Checksubmited/index'); ?>"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回上页</a></li>
-
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -56,6 +55,11 @@
         <p>提交学院：<span class="school"><?php echo $schoolname; ?></span>
         </p>
         <p>提交的附件：<span><?php echo $data['attachment_name']; ?></span>
+        <form action="<?php echo url('Checksubmited/downloadAttachment'); ?>" method="post">
+            <input type="hidden" name="attachment_dir" value="<?php echo $data['attachment_dir']; ?>">
+            <input type="hidden" name="attachment_name" value="<?php echo $data['attachment_name']; ?>">
+            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
+        </form>
         </p>
     </div>
     <div id="table">
@@ -89,12 +93,6 @@
                 <td colspan="6"><?php echo $data['text3']; ?></td>
             </tr>
         </table>
-        <form action="<?php echo url('Checksubmited/downloadAttachment'); ?>" method="post">
-            <input type="hidden" name="attachment_dir" value="<?php echo $data['attachment_dir']; ?>">
-            <input type="hidden" name="attachment_name" value="<?php echo $data['attachment_name']; ?>">
-            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
-        </form>
-        <br>
         <button class="btn btn-success"><span class="glyphicon glyphicon-log-out"></span>&nbsp;导出成word</button>
     </div>
 </div>
