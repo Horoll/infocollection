@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="__JS__/commom.js"></script>
+    <script src="__JS__/jquery-3.0.0.min.js"></script>
+    <script src="__JS__/sweetalert.js"></script>
+    <link rel="stylesheet" href="__CSS__/bootstrap.css">
+    <link rel="stylesheet" href="__CSS__/main.css">
+    <link rel="stylesheet" href="__CSS__/sweetalert.css">
+    <link rel="stylesheet" href="__CSS__/check.css">
+    <link rel="stylesheet" href="__CSS__/menu.css">
+    <title>查看已提交的任务</title>
+</head>
+<body>
+<!--导航条-->
+{include file="application/index/view/header/header.html" /}
+<!--侧边栏-->
+<div id="sideBar">
+    <ul class="menu">
+        <li><a href="{:url('Admin/index')}"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
+        <li><a href="{:url('Releasetask/index')}"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</a></li>
+        <li class="menu-active"><a href="{:url('Checksubmited/index')}"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
+        <li><a href="{:url('Accountmanage/index')}"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
+    </ul>
+</div>
+
+<!--内容栏-->
+<div id="container">
+    <h1>查看已提交的任务</h1>
+    <hr/>
+    <div class="container-fluid">
+        <div class="row">
+            {volist name="tasks_list" id="task_list"}
+            <div class="well col-lg-6 col-sm-12">
+                <h2>{$task_list.taskname}&nbsp;
+                    {switch name="$task_list.form_moudle" }
+                    {case value="1"}<span class="label label-info">表单一</span>{/case}
+                    {case value="2"}<span class="label label-info">表单二</span>{/case}
+                    {case value="3"}<span class="label label-info">表单三</span>{/case}
+                    {default /}<span class="label label-info">自定义表格</span>
+                    {/switch}
+                </h2>
+                {php}
+                switch($task_list['form_moudle']){
+                    case '1';
+                        $form_table = 'form1';
+                        break;
+                    case '2';
+                        $form_table = 'form2';
+                        break;
+                    case '3';
+                        $form_table = 'form3';
+                        break;
+                    default:
+                        $form_table = 'table_data';
+                        break;
+                }
+                $form_data = db($form_table)->where('task_id',$task_list['id'])->order('id desc')->select();
+                $schoolnames = [];
+                {/php}
+                <table class="table table-condensed">
+                    <tr>
+                        <th>提交单位</th>
+                        <th>操作</th>
+                    </tr>
+                    {volist name="form_data" id="info"}
+                    {php}
+                        $schoolname = db('school')->where('id',$info['school_id'])->value('schoolname');
+                        if(in_array($schoolname,$schoolnames)){
+                            continue;
+                        }
+                        array_push($schoolnames,$schoolname);
+                    {/php}
+                    <tr>
+                        <td>{$schoolname}</td>
+                        <td>
+                            <a href="{:url('Checksubmited/check'.$form_table).'?taskid='.$task_list['id'].'&schoolid='.$info['school_id']}">
+                            <button class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-search"></span>
+                                &nbsp;查看详情
+                            </button>
+                            </a>
+                        </td>
+                    </tr>
+                    {/volist}
+                </table>
+            </div>
+            {/volist}
+        </div>
+    </div>
+    {$tasks_list->render()}
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<script src="__JS__/bootstrap.js"></script>
+</body>
+</html>
