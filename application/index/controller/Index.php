@@ -84,6 +84,7 @@ class Index extends Controller
         else{
             //解析table_moudle格式
             $table_moudle_array = explode('<&>',$task_data['table_moudle']);
+            array_pop($table_moudle_array);
             $table_data = db('table_data')->where('school_id',cookie('schoolid'))->where('task_id',$id)->select();
             $this->assign('table_data',$table_data);
             $this->assign('task_data',$task_data);

@@ -24,10 +24,11 @@
 <!--侧边栏-->
 <div id="sideBar">
     <ul class="menu">
-        <li class="menu-active"><a href="{:url('Admin/index')}"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
-        <li><a href="{:url('Releasetask/index')}"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</a></li>
-        <li><a href="{:url('Checksubmited/index')}"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
-        <li><a href="{:url('Accountmanage/index')}"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
+        <a href="{:url('Admin/index')}"><li class="menu-active"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</li></a>
+        <a href="{:url('Releasetask/index')}"><li><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</li></a>
+        <a href="{:url('Checksubmited/index')}"><li><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</li></a>
+        <a href="{:url('Accountmanage/index')}"><li><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</li></a>
+
 
     </ul>
 </div>
@@ -40,9 +41,21 @@
     <div class="content">
         <form action="/index/index/upload" enctype="multipart/form-data" method="post" id="form">
             <input type="hidden" name="id" value="{$task_data.id}">
+            <!--[if IE 9]>
+            <span>修改任务名称：</span>
+            <![endif]-->
             <input type="text" value="{$task_data.taskname}" placeholder="修改任务名称" class="form-control" name="taskname">
+            <!--[if IE 9]>
+            <span>修改任务开始时间：</span>
+            <![endif]-->
             <input type="text" class="form-control timePicker" value="{$task_data.start_date}" placeholder="修改任务开始时间" data-date-format="yyyy-mm-dd" name="start_date" readonly>
+            <!--[if IE 9]>
+            <span>修改任务结束时间：</span>
+            <![endif]-->
             <input type="text" class="form-control timePicker" value="{$task_data.end_date}" placeholder="修改任务结束时间" data-date-format="yyyy-mm-dd" name="end_date" readonly>
+            <!--[if IE 9]>
+            <span>修改任务简介：</span>
+            <![endif]-->
             <textarea name="tasktext" cols="30" rows="3" class="form-control" placeholder="修改任务简介（选填）">{$task_data.tasktext}</textarea>
             <div>
                 <div id="userDefine">
@@ -63,6 +76,7 @@
         </form>
     </div>
 </div>
+<script src="__JS__/sidebar.js"></script>
 <script src="__JS__/change-table.js"></script>
 <script>
     /*对publish按钮的绑定*/

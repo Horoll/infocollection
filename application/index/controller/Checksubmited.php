@@ -63,9 +63,11 @@ class Checksubmited extends Controller
             array_pop($data[$key]['cell']);
         }
         $table_moudle = explode('<&>',$task['table_moudle']);
+        array_pop($table_moudle);
 
         $this->assign('task',$task);
         $this->assign('schoolname',$schoolname);
+        $this->assign('schoolid',$schoolid);
         $this->assign('data',$data);
         $this->assign('table_moudle',$table_moudle);
         return $this->fetch();

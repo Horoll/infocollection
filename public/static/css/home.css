@@ -3,6 +3,7 @@
     background-image: -webkit-linear-gradient(0deg, #284a7c 0%, #30a5ff 100%);
 
 
+
 }
 .jumbotron>.container>h1{
     font-size: 50px;
@@ -19,12 +20,10 @@
     font-size: 15px;
     font-weight: 600;
 }
-#display{
-    background-color: #f2f4f8;
-}
+
 .well{
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .well .label{
     font-size: 60%;

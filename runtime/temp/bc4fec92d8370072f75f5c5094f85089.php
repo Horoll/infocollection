@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491550266;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491824562;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,14 +33,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-user"></span>
-                        <?php echo $schoolname; ?><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="<?php echo url('Logout/index'); ?>"><span class="glyphicon glyphicon-off"></span>退出登录</a></li>
-                    </ul>
-                </li>
+                <li><a href="<?php echo url('Logout/index'); ?>"><span class="glyphicon glyphicon-off"></span>&emsp;退出登录</a></li>
             </ul>
         </div>
     </div>
@@ -84,6 +77,8 @@
 
     </div>
 </div>
+<script src="__JS__/sidebar.js"></script>
+
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
 <script src="__JS__/check-time.js"></script>
 </body>

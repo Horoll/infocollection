@@ -36,15 +36,43 @@
 							<div id="myTabContent" class="tab-content">
 								<div class="tab-pane fade in active login-form" id="userlogin">
 									<form action="{:url('Login/schoolLogin')}" method="post" id="userloginform">
+										<!--[if IE 9]>
+										<div class="input-group">
+										<div class="input-group-addon">账号</div>
+										<![endif]-->
 										<input type="text" class="form-control" placeholder="账号" name="schoolname" id="userLoginUserName">
+										<!--[if IE 9]>
+										</div>
+										<![endif]-->
+										<!--[if IE 9]>
+										<div class="input-group">
+										<div class="input-group-addon">密码</div>
+										<![endif]-->
 										<input type="password" class="form-control" placeholder="密码" name="password" id="userLoginPassword">
+										<!--[if IE 9]>
+										</div>
+										<![endif]-->
 										<input type="button" name="" id="userloginbutton" class="btn btn-info" value="学院登录">
 									</form>
 								</div>
 								<div class="tab-pane fade login-form" id="adminlogin">
 									<form action="{:url('Login/adminLogin')}" method="post" id="adminloginform">
+										<!--[if IE 9]>
+										<div class="input-group">
+											<div class="input-group-addon">账号</div>
+										<![endif]-->
 										<input type="text" class="form-control" placeholder="账号" name="adminname" id="adminLoginUserName">
+										<!--[if IE 9]>
+										</div>
+										<![endif]-->
+										<!--[if IE 9]>
+										<div class="input-group">
+											<div class="input-group-addon">密码</div>
+										<![endif]-->
 										<input type="password" class="form-control" placeholder="密码" name="password" id="adminLoginPassword">
+										<!--[if IE 9]>
+										</div>
+										<![endif]-->
 										<input type="button" name="" id="adminloginbutton" class="btn btn-success" value="管理员登录">
 									</form>
 								</div>

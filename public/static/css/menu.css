@@ -1,21 +1,26 @@
 #sideBar{
     width: 200px;
     position: fixed;
-    top:52px;
+    top:50px;
     left: 0;
+    background-color: #37414b;
 }
-.menu>li{
+a:hover{
+    text-decoration: none;
+}
+.menu>a>li{
     height: 40px;
     display: block;
     width: 100%;
     text-align: left;
     line-height: 40px;
-    color: #30a5ff;
+    color: #9d9d9d;
     font-size: 15px;
     padding-left: 20px;
 }
-.menu>li:hover{
-    background-color: #e9ecf2;
+.menu>a>li:hover{
+    background-color: #30a5ff;
+    color:white;
 }
 .menu-active{
     background-color:#30a5ff;

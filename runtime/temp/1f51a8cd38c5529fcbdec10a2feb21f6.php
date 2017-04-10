@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html";i:1491696943;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html";i:1491824120;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,10 +53,10 @@
 <!--侧边栏-->
 <div id="sideBar">
     <ul class="menu">
-        <li><a href="<?php echo url('Admin/index'); ?>"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
-        <li class="menu-active"><a href="<?php echo url('Releasetask/index'); ?>"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</a></li>
-        <li><a href="<?php echo url('Checksubmited/index'); ?>"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
-        <li><a href="<?php echo url('Accountmanage/index'); ?>"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
+        <a href="<?php echo url('Admin/index'); ?>"><li><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</li></a>
+        <a href="<?php echo url('Releasetask/index'); ?>"><li class="menu-active"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</li></a>
+        <a href="<?php echo url('Checksubmited/index'); ?>"><li><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</li></a>
+        <a href="<?php echo url('Accountmanage/index'); ?>"><li><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</li></a>
 
     </ul>
 </div>
@@ -71,10 +71,31 @@
     </ul>
     <div class="content">
         <form action="/index/index/upload" enctype="multipart/form-data" method="post" id="form">
-            <input type="text" placeholder="任务名称" class="form-control" name="taskname">
-            <input type="text" class="form-control timePicker" placeholder="任务开始时间" data-date-format="yyyy-mm-dd" name="start_date" readonly>
-            <input type="text" class="form-control timePicker" placeholder="任务结束时间" data-date-format="yyyy-mm-dd" name="end_date" readonly>
-            <textarea name="tasktext" cols="30" rows="3" class="form-control" placeholder="任务简介（选填）"></textarea>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <!--[if IE 9]>
+                        <span>任务名称：</span>
+                        <![endif]-->
+                        <input type="text" placeholder="任务名称" class="form-control" name="taskname">
+                        <!--[if IE 9]>
+                        <span>任务简介：</span>
+                        <![endif]-->
+                        <textarea name="tasktext" cols="30" rows="3" class="form-control" placeholder="任务简介（选填）"></textarea>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <!--[if IE 9]>
+                        <span>任务开始时间：</span>
+                        <![endif]-->
+                        <input type="text" class="form-control timePicker" placeholder="任务开始时间" data-date-format="yyyy-mm-dd" name="start_date" readonly>
+                        <!--[if IE 9]>
+                        <span>任务结束时间：</span>
+                        <![endif]-->
+                        <input type="text" class="form-control timePicker" placeholder="任务结束时间" data-date-format="yyyy-mm-dd" name="end_date" readonly>
+                    </div>
+                </div>
+            </div>
+
 
             <div>
 
@@ -136,6 +157,8 @@
     }
 </script>
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="__JS__/sidebar.js"></script>
+
 <script src="__JS__/bootstrap.js"></script>
 </body>
 </html>

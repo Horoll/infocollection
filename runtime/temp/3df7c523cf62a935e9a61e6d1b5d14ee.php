@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\accountmanage\admin.html";i:1491277126;s:41:"application/index/view/header/header.html";i:1491279967;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\accountmanage\admin.html";i:1491823809;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +38,7 @@
             <ul class="nav navbar-nav navbar-right" id="sideBarTop">
                 <li><a href="<?php echo url('Admin/index'); ?>"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
                 <li><a href="<?php echo url('Releasetask/index'); ?>"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</a></li>
-                <li><a href="index.html"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
+                <li><a href="<?php echo url('Checksubmited/index'); ?>"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
                 <li><a href="<?php echo url('Accountmanage/index'); ?>"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -47,10 +47,10 @@
 <!--侧边栏-->
 <div id="sideBar">
     <ul class="menu">
-        <li><a href="<?php echo url('Admin/index'); ?>"><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</a></li>
-        <li><a href="<?php echo url('Releasetask/index'); ?>"><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</a></li>
-        <li><a href="index.html"><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</a></li>
-        <li class="menu-active"><a href="<?php echo url('Accountmanage/index'); ?>"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</a></li>
+        <a href="<?php echo url('Admin/index'); ?>"><li><span class="glyphicon glyphicon-th-list"></span>&emsp;已发布的任务</li></a>
+        <a href="<?php echo url('Releasetask/index'); ?>"><li><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</li></a>
+        <a href="<?php echo url('Checksubmited/index'); ?>"><li><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</li></a>
+        <a href="<?php echo url('Accountmanage/index'); ?>"><li class="menu-active"><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</li></a>
     </ul>
 </div>
 
@@ -76,7 +76,11 @@
                 <table class="table table-hover">
                     <tr>
                         <th>账号</th>
-                        <th>密码</th>
+                        <th>密码
+                            <!--[if IE 9]>
+                            <span style="color:red">修改密码（如果不填则不修改密码）</span>
+                            <![endif]-->
+                        </th>
                         <th>操作</th>
                     </tr>
                     <?php if(is_array($admins) || $admins instanceof \think\Collection || $admins instanceof \think\Paginator): $i = 0; $__LIST__ = $admins;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$admin): $mod = ($i % 2 );++$i;?>
@@ -105,9 +109,15 @@
                         <form action="<?php echo url('Accountmanage/addAccount'); ?>" method="post">
                             <input type="hidden" name="identity" value="admin">
                             <td>
+                                <!--[if IE 9]>
+                                <span>用户名：</span>
+                                <![endif]-->
                                 <input type="text" class="form-control" name="adminname" placeholder="添加管理员帐号">
                             </td>
                             <td>
+                                <!--[if IE 9]>
+                                <span>密码：</span>
+                                <![endif]-->
                                 <input type="password" class="form-control" name="password" placeholder="密码">
                             </td>
                             <td>
@@ -124,7 +134,7 @@
     </div>
 
 </div>
-<script src="__JS__/published.js"></script>
+<script src="__JS__/sidebar.js"></script>
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 <script src="__JS__/sweetalert.js"></script>
