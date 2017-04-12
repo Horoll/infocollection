@@ -29,8 +29,6 @@
         <a href="{:url('Releasetask/index')}"><li><span class="glyphicon glyphicon-list-alt"></span>&emsp;发布新任务</li></a>
         <a href="{:url('Checksubmited/index')}"><li><span class="glyphicon glyphicon-check"></span>&emsp;查看已提交的任务</li></a>
         <a href="{:url('Accountmanage/index')}"><li><span class="glyphicon glyphicon-cog"></span>&emsp;账户管理</li></a>
-
-
     </ul>
 </div>
 
@@ -63,7 +61,14 @@
                     <input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
                     <h3>已上传的附件：<small style="color: #3f89ec">{$task_data.attachment_name??'无'}</small></h3>
                     <h3>重新上传附件模版 <small>*如不重新上传，则保持原有的附件</small></h3>
-                    <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton"/>
+                    <div class="new-contentarea tc">
+                        <a href="javascript:void(0)" class="upload">
+                            <label for="upload-file">上传文件</label></a>
+                        <input type="text" id="textName" />
+                        <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton" onchange="document.getElementById('textName').value=this.value.substring(12)"/>
+
+                    </div>
+                    <!--<input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton"/>-->
                     <small style="color: red">*上传附件格式只能为.doc、.docx、.xls、.xlsx、.rar、.zip，且文件大小不能超过50M</small><br>
                     <small style="color: red">*如需要上传多个文件，请先打包成压缩格式</small>
                     <br><br>

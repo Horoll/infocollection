@@ -14,23 +14,22 @@ vendor('phpoffice.phpword.src.PhpWord.PhpWord');
 vendor('phpoffice.phpword.src.PhpWord.TemplateProcessor');
 class Exportfile extends controller
 {
-
     public function exportWord(){
-        $replaceText = '组织名称';
-        $newText = '123321';
-
-        $templateProcessor = new \PhpOffice\PhpWord\TemplateProcessor('public/formmoudle/form1.docx');
-        $templateProcessor->setValue($replaceText, $newText);
-        $templateProcessor->saveAs('test.docx');
+        $form = input('get.form');
+        $id = input('get.id');
+        $result = db($form)->where('id',$id)->find();
+        $templateProcessor = new \PhpOffice\PhpWord\TemplateProcessor('public/formmoudle/'.$form.'.docx');
+        foreach ($result  as $key=>$value){
+            $templateProcessor->setValue($key, (string)$value);
+        }
 
 //        $PHPWord = new \PhpOffice\PhpWord\PhpWord();
-//        //导出word
-//        $fileName = uniqid();
-//        header("Content-type: application/vnd.ms-word");
-//        header("Content-Disposition:attachment;filename=".$fileName.".docx");
-//        header('Cache-Control: max-age=0');
-//        $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($templateProcessor, 'Word2007');
-//        $objWriter->save('php://output');
+        //导出word
+        $fileName = uniqid();
+        header("Content-type: application/vnd.ms-word");
+        header("Content-Disposition:attachment;filename=".$fileName.".docx");
+        header('Cache-Control: max-age=0');
+        $templateProcessor->saveAs('php://output');
     }
 
     public function exportExcel(){

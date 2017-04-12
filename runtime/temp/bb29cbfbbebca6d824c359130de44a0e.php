@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\accountmanage\index.html";i:1491821346;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\accountmanage\index.html";i:1491976578;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,7 +76,10 @@
                 <table class="table table-hover">
                     <tr>
                         <th>账号</th>
-                        <th>密码</th>
+                        <th>密码
+                            <!--[if IE 9]>
+                            <span style="color:red">修改密码（如果不填则不修改密码）</span>
+                            <![endif]--></th>
                         <th>操作</th>
                     </tr>
                     <?php if(is_array($schools) || $schools instanceof \think\Collection || $schools instanceof \think\Paginator): $i = 0; $__LIST__ = $schools;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$school): $mod = ($i % 2 );++$i;?>
@@ -104,9 +107,15 @@
                         <form action="<?php echo url('Accountmanage/addAccount'); ?>" method="post">
                             <input type="hidden" name="identity" value="school">
                             <td>
+                                <!--[if IE 9]>
+                                <span>新增用户名：</span>
+                                <![endif]-->
                                 <input type="text" class="form-control" name="schoolname" placeholder="添加学院帐号">
                             </td>
                             <td>
+                                <!--[if IE 9]>
+                                <span>新增密码：</span>
+                                <![endif]-->
                                 <input type="password" class="form-control" name="password" placeholder="密码">
                             </td>
                             <td>
@@ -124,6 +133,7 @@
 
 </div>
 <script src="__JS__/sidebar.js"></script>
+<script src="__JS__/ie9-table.js"></script>
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 <script src="__JS__/sweetalert.js"></script>

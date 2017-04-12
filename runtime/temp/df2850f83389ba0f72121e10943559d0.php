@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform2.html";i:1491717277;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform2.html";i:1491997862;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -91,10 +91,12 @@
                 <td colspan="3"><?php echo $data['text2']; ?></td>
             </tr>
         </table>
-        <button class="btn btn-success"><span class="glyphicon glyphicon-log-out"></span>&nbsp;导出成word</button>
+        <a href="<?php echo url('Exportfile/exportword').'?form=form2&id='.$data['id']; ?>"><button class="btn btn-success"><span class="glyphicon glyphicon-log-out"></span>&nbsp;导出成word</button></a>
     </div>
 
 </div>
+<script src="__JS__/sidebar.js"></script>
+
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 </body>

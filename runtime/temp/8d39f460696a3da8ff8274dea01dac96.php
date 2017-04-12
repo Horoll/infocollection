@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:81:"D:\wamp64\www\project\infocollection/application/index\view\Admin\changeform.html";i:1491824308;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:81:"D:\wamp64\www\project\infocollection/application/index\view\Admin\changeform.html";i:1491977363;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,7 +93,14 @@
                     <input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
                     <h3>已上传的附件：<small style="color: #3f89ec"><?php echo isset($task_data['attachment_name']) ? $task_data['attachment_name'] : '无'; ?></small></h3>
                     <h3>重新上传附件模版 <small>*如不重新上传，则保持原有的附件</small></h3>
-                    <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton"/>
+                    <div class="new-contentarea tc">
+                        <a href="javascript:void(0)" class="upload">
+                            <label for="upload-file">上传文件</label></a>
+                        <input type="text" id="textName" />
+                        <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton" onchange="document.getElementById('textName').value=this.value.substring(12)"/>
+
+                    </div>
+                    <!--<input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton"/>-->
                     <small style="color: red">*上传附件格式只能为.doc、.docx、.xls、.xlsx、.rar、.zip，且文件大小不能超过50M</small><br>
                     <small style="color: red">*如需要上传多个文件，请先打包成压缩格式</small>
                     <br><br>

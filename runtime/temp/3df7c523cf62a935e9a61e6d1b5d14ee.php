@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\accountmanage\admin.html";i:1491823809;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\accountmanage\admin.html";i:1491976520;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,13 +110,13 @@
                             <input type="hidden" name="identity" value="admin">
                             <td>
                                 <!--[if IE 9]>
-                                <span>用户名：</span>
+                                <span>新增用户名：</span>
                                 <![endif]-->
                                 <input type="text" class="form-control" name="adminname" placeholder="添加管理员帐号">
                             </td>
                             <td>
                                 <!--[if IE 9]>
-                                <span>密码：</span>
+                                <span>新增密码：</span>
                                 <![endif]-->
                                 <input type="password" class="form-control" name="password" placeholder="密码">
                             </td>
@@ -135,12 +135,18 @@
 
 </div>
 <script src="__JS__/sidebar.js"></script>
+<script src="__JS__/ie9-table.js"></script>
+
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 <script src="__JS__/sweetalert.js"></script>
 <script>
     function changeaccount(accountid) {
         document.getElementById(accountid).action="<?php echo url('Accountmanage/changeAccount'); ?>";
+        document.getElementById(accountid).submit();
+    }
+    function deleteaccount(accountid) {
+        document.getElementById(accountid).action="<?php echo url('Accountmanage/deleteAccount'); ?>";
         document.getElementById(accountid).submit();
     }
 </script>

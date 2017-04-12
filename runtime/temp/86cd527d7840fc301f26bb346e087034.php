@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submitform3.html";i:1491820593;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submitform3.html";i:1491977311;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,7 +111,14 @@
                 </tr>
             </table>
             <h3>上传附件模版 <small>*修改表单时如不上传，则保持原有的附件</small></h3>
-            <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton"/>
+            <div class="new-contentarea tc">
+                <a href="javascript:void(0)" class="upload">
+                    <label for="upload-file">上传文件</label></a>
+                <input type="text" id="textName" />
+                <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton" onchange="document.getElementById('textName').value=this.value.substring(12)"/>
+
+            </div>
+            <!--<input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton"/>-->
             <small style="color: red">*上传附件格式只能为.doc、.docx、.xls、.xlsx、.rar、.zip，且文件大小不能超过50M</small><br>
             <small style="color: red">*如需要上传多个文件，请先打包成压缩格式</small>
             <br>
