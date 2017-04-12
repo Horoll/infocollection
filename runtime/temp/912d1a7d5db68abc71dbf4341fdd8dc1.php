@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submitform1.html";i:1491568486;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submitform1.html";i:1491820580;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -113,6 +113,8 @@
         </form>
     </div>
 </div>
+        <script src="__JS__/sidebar.js"></script>
+
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 <script src="__JS__/check-form1.js"></script>

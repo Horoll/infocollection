@@ -17,6 +17,6 @@ class Logout extends Controller
         cookie('adminname', null);
         cookie('adminid', null);
         cookie('superadmin', null);
-        $this->success('注销成功','Login/index');
+        $this->redirect('Login/index');
     }
 }

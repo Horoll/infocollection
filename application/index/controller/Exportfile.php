@@ -10,12 +10,27 @@ namespace app\index\controller;
 use think\Controller;
 
 vendor('phpoffice.phpexcel.Classes.PHPExcel');
-vendor('phpoffice.phpword.src.Phpword');
+vendor('phpoffice.phpword.src.PhpWord.PhpWord');
+vendor('phpoffice.phpword.src.PhpWord.TemplateProcessor');
 class Exportfile extends controller
 {
 
     public function exportWord(){
-        vendor('phpoffice.phpword.src.Phpword');
+        $replaceText = '组织名称';
+        $newText = '123321';
+
+        $templateProcessor = new \PhpOffice\PhpWord\TemplateProcessor('public/formmoudle/form1.docx');
+        $templateProcessor->setValue($replaceText, $newText);
+        $templateProcessor->saveAs('test.docx');
+
+//        $PHPWord = new \PhpOffice\PhpWord\PhpWord();
+//        //导出word
+//        $fileName = uniqid();
+//        header("Content-type: application/vnd.ms-word");
+//        header("Content-Disposition:attachment;filename=".$fileName.".docx");
+//        header('Cache-Control: max-age=0');
+//        $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($templateProcessor, 'Word2007');
+//        $objWriter->save('php://output');
     }
 
     public function exportExcel(){
@@ -43,7 +58,6 @@ class Exportfile extends controller
             array_push($data,$row);
         }
 
-        vendor('phpoffice.phpexcel.Classes.PHPExcel');
         $objPHPExcel = new \PHPExcel();
 
         //设置sheet

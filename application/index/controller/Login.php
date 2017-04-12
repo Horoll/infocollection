@@ -25,7 +25,7 @@ class Login extends Controller
             if($result['password']==sha1(md5($password))){
                 cookie('schoolname',$schoolname);
                 cookie('schoolid',$result['id']);
-                $this->success('登录成功！','Index/index','',2);
+                $this->redirect('Index/index','');
             }else{
                 $this->error('密码输入错误！');
             }
@@ -47,7 +47,7 @@ class Login extends Controller
                 if($adminname=='root'){
                     cookie('superadmin','root');
                 }
-                $this->success('登录成功！','Admin/index','',2);
+                $this->redirect('Admin/index');
             }else{
                 $this->error('密码输入错误！');
             }

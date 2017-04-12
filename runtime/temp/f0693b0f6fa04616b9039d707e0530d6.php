@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform1.html";i:1491717249;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform1.html";i:1491820524;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -93,7 +93,8 @@
         <button class="btn btn-success"><span class="glyphicon glyphicon-log-out"></span>&nbsp;导出成word</button>
     </div>
 </div>
-<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        <script src="__JS__/sidebar.js"></script>
+        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 	</body>
 </html>
