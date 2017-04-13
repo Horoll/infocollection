@@ -33,26 +33,61 @@
     <h1>查看已发布的任务</h1>
     <hr/>
     <div id="content">
-        <table class="table table-bordered">
-            <tr>
-                <th>任务名称</th>
-                <th>任务简介</th>
-                <th>操作</th>
-            </tr>
-            {volist name='tasks' id='task'}
-            <tr id="{$task.id}">
-                <td>{$task.taskname}</td>
-                <td class="short-intro">{$task.tasktext}</td>
-                <td>
-                    <a href="{:url('Admin/checkTask').'?id='.$task['id']}"><button class="btn btn-info"><span class="glyphicon glyphicon-search"></span>&nbsp;查看</button></a>
-                    <a href="{:url('Admin/changeTask').'?id='.$task['id']}"><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button></a>
-                    <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</button>
-                </td>
-            </tr>
-            {/volist}
-        </table>
+        <div class="well" id="{$task.id}">
+            <h2>{$task.taskname}
+                {switch name=$task.form_moudle}
+                {case value="1"} <span class="label label-info">表单一</span>{/case}
+                {case value="2"} <span class="label label-info">表单二</span>{/case}
+                {case value="3"} <span class="label label-info">表单三</span>{/case}
+                {default /} <span class="label label-info"> 自定义表格</span>
+                {/switch}
+                <small> 发布于：{$task.date}</small>
+            </h2>
+
+            <!--起止时间-->
+            <p>
+            <h3><small>起止时间：</small></h3>
+            <span class="time1">{$task.start_date}</span>
+            <span>到</span>
+            <span class="time1">{$task.end_date}</span>
+            </p>
+            <hr>
+
+            <!--任务简介-->
+            <h4>任务简介：</h4>
+            <p class="intro">{$task.tasktext}</p>
+
+            <!--自定义表格格式-->
+            {if condition="$task.form_moudle eq ''"}
+            <div class="table-responsive">
+                <hr>
+                <h4>表格格式：</h4>
+                <table class="table table-bordered">
+                    <tr>
+                        {php}
+                        $table_moudle_array = explode('<&>',$task['table_moudle']);
+                        foreach($table_moudle_array as $value){
+                        if(!empty($value))
+                        echo '<th>'.$value.'</th>';
+                        }
+                        {/php}
+                    </tr>
+                </table>
+            </div>
+            {/if}
+
+            <!--附件名称-->
+            {if condition="$task.attachment_name neq null "}
+            <hr>
+            <h3>附件：<small style="color: #3f89ec">{$task.attachment_name}</small></h3>
+            {/if}
+
+            <hr>
+
+            <a href="{:url('Admin/changeTask').'?id='.$task['id']}"><button class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button></a>
+            <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</button>
+        </div>
     </div>
-    {$tasks->render()}
 </div>
 
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
@@ -74,9 +109,9 @@
                 closeOnCancel: true
             },function (isConfirm) {
                 if(isConfirm){
-                    var id=that.parentNode.parentNode.id;
+                    var well=that.parentNode.id;
                     $.post("{:url('Admin/deleteTask')}",{
-                        id:id
+                        id:well
                     },function (data,status) {
                         window.location.href="{:url('Admin/index')}";
                     });
@@ -85,7 +120,6 @@
         }
     }
 </script>
-<script src="__JS__/short-intro.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 </body>
 </html>

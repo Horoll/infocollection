@@ -23,8 +23,22 @@ class Admin extends Controller
     public function index()
     {
         //从数据库中找出所有已经发布的任务(倒排序)
-        $tasks = DB('task')->where(1)->order('id desc')->paginate(2);
+        $tasks = DB('task')->where(1)->order('id desc')->paginate(10);
         $this->assign('tasks', $tasks);
+        return $this->fetch();
+    }
+
+    //查看某个任务
+    public function checkTask(){
+        if(!input('?get.id')){
+            $this->error('非法访问');
+        }
+        $id = input('get.id');
+        $task = db('task')->where('id', $id)->find();
+        if($task==null){
+            $this->error('该任务不存在');
+        }
+        $this->assign('task',$task);
         return $this->fetch();
     }
 
