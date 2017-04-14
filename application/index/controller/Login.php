@@ -17,7 +17,7 @@ class Login extends Controller
 
     //学院登录
     public function schoolLogin(){
-        $schoolname = input('post.schoolname');
+        $schoolname = strtolower(input('post.schoolname'));
         $password = input('post.password');
         $school = model('School');
         $result = $school->where('schoolname',$schoolname)->find();
@@ -36,7 +36,7 @@ class Login extends Controller
 
     //管理员登录
     public function adminLogin(){
-        $adminname = input('post.adminname');
+        $adminname = strtolower(input('post.adminname'));
         $password = input('post.password');
         $admin = model('Admin');
         $result = $admin->where('adminname',$adminname)->find();
@@ -44,7 +44,7 @@ class Login extends Controller
             if($result['password']==sha1(md5($password))){
                 cookie('adminname',$adminname);
                 cookie('adminid',$result['id']);
-                if($adminname=='root'){
+                if(strtolower($adminname)=='root'){
                     cookie('superadmin','root');
                 }
                 $this->redirect('Admin/index');

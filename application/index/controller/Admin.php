@@ -73,7 +73,7 @@ class Admin extends Controller
             $this->error('非法访问');
         }
         //接收表单数据
-        $data = $_POST;
+        $data = input('post.');
 
         //调用文件上传函数
         if($_FILES['uploadfile']['name']){
@@ -111,7 +111,7 @@ class Admin extends Controller
         }
         //接收前端的任务发布数据
         $json = '';
-        foreach ($_POST as $key=>$value){
+        foreach (input('post.') as $key=>$value){
             $json .= $key;
         }
         //将json转化成数组
@@ -124,12 +124,12 @@ class Admin extends Controller
                 $table_moudle_array = $value;
                 $table_moudle_str = '';
                 foreach ($table_moudle_array as $table_value){
-                    $table_moudle_str.=$table_value.'<&>';
+                    $table_moudle_str.=htmlspecialchars($table_value).'<&>';
                 }
                 $data[$key] = $table_moudle_str;
                 continue;
             }
-            $data[$key] = $value;
+            $data[$key] = htmlspecialchars($value);
         }
 
         //用验证器验证数据格式

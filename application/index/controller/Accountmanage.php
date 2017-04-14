@@ -40,7 +40,7 @@ class Accountmanage extends Controller
         $identity = input('post.identity');
         if($identity=='admin'){
             $admin = model('Admin');
-            $data['adminname'] = input('post.adminname');
+            $data['adminname'] = strtolower(input('post.adminname'));
             $data['password'] = input('post.password');
             //验证器验证
             $result = $this->validate($data,'Admin');
@@ -55,7 +55,7 @@ class Accountmanage extends Controller
             }
         }elseif($identity=='school'){
             $school = model('School');
-            $data['schoolname'] = input('post.schoolname');
+            $data['schoolname'] = strtolower(input('post.schoolname'));
             $data['password'] = input('post.password');
             //验证器验证
             $result = $this->validate($data,'School');
@@ -104,7 +104,7 @@ class Accountmanage extends Controller
         $id = input('post.id');
         if($identity=='admin'){
             $admin = model('Admin');
-            $data = ['adminname'=>input('post.adminname')];
+            $data = ['adminname'=>strtolower(input('post.adminname'))];
             //判断是否有密码输入，若有则说明更改了密码
             if(!empty(input('post.password'))){
                 $data['password']=input('post.password');
@@ -135,7 +135,7 @@ class Accountmanage extends Controller
             $data = ['schoolname'=>input('post.schoolname')];
             //判断是否有密码输入，若有则说明更改了密码
             if(!empty(input('post.password'))){
-                $data['password']=input('post.password');
+                $data['password']=strtolower(input('post.password'));
             }
             //验证
             $result = $this->validate(

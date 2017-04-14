@@ -12,6 +12,7 @@ use think\Controller;
 class Releasetask extends Controller
 {
     //检测是否管理员登录
+    //检测是否管理员登录
     public function _initialize(){
         if(!cookie('adminname')){
             $this->error('请先登录','Login/index','',2);
@@ -29,7 +30,7 @@ class Releasetask extends Controller
     //接受处理发布的表单任务
     public function releaseFormTable(){
         //接收表单数据
-        $data = $_POST;
+        $data = input('post.');
 
         //调用文件上传函数
         if($_FILES['uploadfile']['name']){
@@ -61,7 +62,7 @@ class Releasetask extends Controller
     public function releaseTableTask(){
         //接收前端的任务发布数据
         $json = '';
-        foreach ($_POST as $key=>$value){
+        foreach (input('post.') as $key=>$value){
             $json .= $key;
         }
         //将json转化成数组
@@ -74,12 +75,12 @@ class Releasetask extends Controller
                 $table_moudle_array = $value;
                 $table_moudle_str = '';
                 foreach ($table_moudle_array as $table_value){
-                    $table_moudle_str.=$table_value.'<&>';
+                    $table_moudle_str.=htmlspecialchars($table_value).'<&>';
                 }
                 $data[$key] = $table_moudle_str;
                 continue;
             }
-            $data[$key] = $value;
+            $data[$key] = htmlspecialchars($value);
         }
 
         //用验证器验证数据格式

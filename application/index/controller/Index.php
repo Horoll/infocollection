@@ -96,7 +96,7 @@ class Index extends Controller
     //处理提交的表单数据
     public function submitForm(){
 
-        $data = $_POST;
+        $data = input('post.');
 
         //调用文件上传函数
         if(isset($_FILES['uploadfile']['name']) && $_FILES['uploadfile']['name']!=null){
@@ -158,9 +158,10 @@ class Index extends Controller
     public function submitTable(){
         //接收前端的任务发布数据
         $json = '';
-        foreach ($_POST as $key=>$value){
+        foreach (input('post.') as $key=>$value){
             $json .= $key;
         }
+
         $table_array = json_decode($json,true);
         $task_id = $table_array['task_id'];
         foreach ($table_array as $key1=>$row) {
@@ -173,7 +174,7 @@ class Index extends Controller
                 if ($key2 === 'id'){
                     continue;
                 }
-                $table_data .= $value . '<&>';
+                $table_data .= htmlspecialchars($value) . '<&>';
             }
             $data = [
                 'id' => isset($row['id'])?$row['id']:null,
@@ -199,7 +200,7 @@ class Index extends Controller
         }
         //接收前端的任务发布数据
         $json = '';
-        foreach ($_POST as $key=>$value){
+        foreach (input('post.') as $key=>$value){
             $json .= $key;
         }
         $json_array = json_decode($json,true);
