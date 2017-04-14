@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1491977045;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1492161913;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,7 +125,7 @@
                         <div class="new-contentarea tc">
                             <a href="javascript:void(0)" class="upload">
                                 <label for="upload-file">上传文件</label></a>
-                            <input type="text" id="textName" />
+                            <input type="text" id="textName" readonly/>
                             <input type="file" name="uploadfile" class="btn btn-info" id="chooseFileButton" onchange="document.getElementById('textName').value=this.value.substring(12)"/>
 
                         </div>

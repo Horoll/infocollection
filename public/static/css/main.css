@@ -85,3 +85,4 @@ a.upload:hover{
     width: 400px;
     color: #31b0d5;
 }
+textarea{ resize:none;}

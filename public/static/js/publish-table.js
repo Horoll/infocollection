@@ -36,8 +36,21 @@ var addButton=document.getElementById("add");
 
 function add() {
 
-    var addItem=document.getElementsByClassName("item")[0].cloneNode(true);
-    addItem.childNodes[1].childNodes[1].value="";
+    var addItem=document.createElement("tr");
+    addItem.className="item";
+    var td1=document.createElement("td");
+    var input=document.createElement("input");
+    input.type="text";
+    input.className="form-control";
+    td1.appendChild(input);
+    var td2=document.createElement("td");
+    var button=document.createElement("button");
+    button.className="btn btn-danger remove";
+    button.type="button";
+    button.innerHTML="<span class='glyphicon glyphicon-trash'></span>&nbsp;删除本行";
+    td2.appendChild(button);
+    addItem.appendChild(td1);
+    addItem.appendChild(td2);
     var table=addButton.previousSibling.previousSibling.childNodes[1];
     table.appendChild(addItem);
 }

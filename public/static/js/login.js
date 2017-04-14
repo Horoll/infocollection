@@ -60,3 +60,18 @@ function checkAdminLogin() {
         form.submit();
     }
 }
+
+/*回车登录*/
+document.body.onkeydown=function () {
+    if (event.keyCode==13) { //回车键的键值为13]
+        if(document.getElementById("myTab").firstElementChild.className==="active"){
+            document.getElementById("userloginbutton").click();
+        }
+        else {
+            document.getElementById("adminloginbutton").click(); //调用登录按钮的登录事件
+        }
+
+    }
+}
+
+
