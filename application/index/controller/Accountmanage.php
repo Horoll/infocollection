@@ -132,10 +132,10 @@ class Accountmanage extends Controller
             }
         }elseif($identity=='school'){
             $school = model('School');
-            $data = ['schoolname'=>input('post.schoolname')];
+            $data = ['schoolname'=>strtolower(input('post.schoolname'))];
             //判断是否有密码输入，若有则说明更改了密码
             if(!empty(input('post.password'))){
-                $data['password']=strtolower(input('post.password'));
+                $data['password']=input('post.password');
             }
             //验证
             $result = $this->validate(
