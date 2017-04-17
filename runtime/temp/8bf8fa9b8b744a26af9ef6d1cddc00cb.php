@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submittable.html";i:1492413278;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submittable.html";i:1492427880;}*/ ?>
 <DOCTYPE html/>
 <html>
 <head>
@@ -122,8 +122,6 @@
 </div>
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
-<script src="__JS__/sidebar.js"></script>
-
 <script src="__JS__/user-from.js"></script>
 <script>
     /*为提交按钮绑定功能*/

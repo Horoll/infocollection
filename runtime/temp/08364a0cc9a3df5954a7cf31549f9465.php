@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checktable_data.html";i:1491820541;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checktable_data.html";i:1492413318;}*/ ?>
 <DOCTYPE html/>
 <html>
 <head>
@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo url('Checksubmited/index'); ?>"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回上页</a></li>
+                <li><a href="#" onClick="javascript :history.back(-1);"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回上页</a></li>
 
             </ul>
         </div><!-- /.navbar-collapse -->

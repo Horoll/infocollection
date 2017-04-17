@@ -70,7 +70,7 @@
                     {volist name="form_data" id="info"}
                     {php}
                         $schoolname = db('school')->where('id',$info['school_id'])->value('schoolname');
-                        if(in_array($schoolname,$schoolnames)){
+                        if($form_table=='table_data' && in_array($schoolname,$schoolnames)){
                             continue;
                         }
                         array_push($schoolnames,$schoolname);

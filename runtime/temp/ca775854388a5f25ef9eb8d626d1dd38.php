@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\index.html";i:1491821458;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\index.html";i:1492428668;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -95,7 +95,7 @@
                     </tr>
                     <?php if(is_array($form_data) || $form_data instanceof \think\Collection || $form_data instanceof \think\Paginator): $i = 0; $__LIST__ = $form_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$info): $mod = ($i % 2 );++$i;
                         $schoolname = db('school')->where('id',$info['school_id'])->value('schoolname');
-                        if(in_array($schoolname,$schoolnames)){
+                        if($form_table=='table_data' && in_array($schoolname,$schoolnames)){
                             continue;
                         }
                         array_push($schoolnames,$schoolname);
