@@ -17,13 +17,51 @@ class Index extends Controller
         if(cookie('schoolname') && cookie('schoolid')){
             $schoolname = cookie('schoolname');
             $task = model('Task');
-            $tasks = $task->where(1)->order('id desc')->paginate(2);
+            $tasks = $task->where(1)->order('id desc')->paginate(10);
             $this->assign('schoolname',$schoolname);
             $this->assign('tasks',$tasks);
             return $this->fetch();
         }else{
             return $this->fetch('Login/index');
         }
+    }
+
+    public function detail(){
+        $task_id = input('id');
+        $form_moudle = input('form_moudle');
+        switch ($form_moudle){
+            case '1':
+                $table = 'form1';
+                break;
+            case '2':
+                $table = 'form2';
+                break;
+            case '3':
+                $table = 'form3';
+                break;
+            case null:
+                $table = 'table_data';
+                break;
+            default:
+                $this->error('非法访问');
+                break;
+        }
+        $task_data = db('task')->where('id',$task_id)->find();
+        if(!$task_data){
+            $this->error('该任务不存在');
+        }
+
+        $school_data = db($table)->where('task_id',$task_id)->where('school_id',cookie('schoolid'))->select();
+        $this->assign('task',$task_data);
+        $this->assign('school',$school_data);
+
+        //表格格式
+        if($task_data['form_moudle'] == null){
+            $table_moudle = explode('<&>',$task_data['table_moudle']);
+            array_pop($table_moudle);
+            $this->assign('table_moudle',$table_moudle);
+        }
+        return $this->fetch();
     }
 
     //学生下载附件模版
@@ -35,12 +73,14 @@ class Index extends Controller
 
     //提交任务页面
     public function submitTask(){
-        if(!input('?get.id')){
+        if(!input('?get.taskid')){
             $this->error('非法访问');
         }
+        //提交的任务的id
+        $submit_id = input('submitid');
 
         //根据任务id来判断任务是否存在
-        $id = input('get.id');
+        $id = input('get.taskid');
         $task_data = db('task')->where('id', $id)->find();
         if($task_data==null){
             $this->error('该任务不存在');
@@ -62,19 +102,19 @@ class Index extends Controller
             switch($task_data['form_moudle']){
 
                 case '1':
-                    $form1_data = db('form1')->where('school_id',cookie('schoolid'))->where('task_id',$id)->find();
+                    $form1_data = db('form1')->where('id',$submit_id)->where('task_id',$id)->find();
                     $this->assign('form1_data',$form1_data);
                     return $this->fetch('Index/submitform1');
                     break;
 
                 case '2':
-                    $form2_data = db('form2')->where('school_id',cookie('schoolid'))->where('task_id',$id)->find();
+                    $form2_data = db('form2')->where('id',$submit_id)->where('task_id',$id)->find();
                     $this->assign('form2_data',$form2_data);
                     return $this->fetch('Index/submitform2');
                     break;
 
                 case '3':
-                    $form3_data = db('form3')->where('school_id',cookie('schoolid'))->where('task_id',$id)->find();
+                    $form3_data = db('form3')->where('id',$submit_id)->where('task_id',$id)->find();
                     $this->assign('form3_data',$form3_data);
                     return $this->fetch('Index/submitform3');
                     break;

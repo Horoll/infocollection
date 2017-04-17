@@ -13120,3 +13120,466 @@
 [ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.000630s ]
 
 ---------------------------------------------------------------
+[ 2017-04-14T18:49:02+08:00 ] ::1 ::1 GET /project/infocollection/
+[ log ] localhost/project/infocollection/ [运行时间：0.633714s][吞吐率：1.58req/s] [内存消耗：2,516.41kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-14T18:49:11+08:00 ] ::1 ::1 POST /project/infocollection/index/login/schoollogin.html
+[ log ] localhost/project/infocollection/index/login/schoollogin.html [运行时间：0.292587s][吞吐率：3.42req/s] [内存消耗：4,212.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'schoollogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '81',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787',
+)
+[ info ] [ PARAM ] array (
+  'schoolname' => '信息工程学院',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->schoolLogin[ D:\wamp64\www\project\infocollection\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007275s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `school` [ RunTime:0.037313s ]
+[ sql ] [ SQL ] SELECT * FROM `school` WHERE  `schoolname` = '信息工程学院' LIMIT 1 [ RunTime:0.000615s ]
+
+---------------------------------------------------------------
+[ 2017-04-14T18:49:11+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html
+[ log ] localhost/project/infocollection/index/index/index.html [运行时间：0.166566s][吞吐率：6.00req/s] [内存消耗：4,542.45kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001413s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.029562s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 0,2 [ RunTime:0.000576s ]
+
+---------------------------------------------------------------
+[ 2017-04-14T18:52:17+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html?page=2
+[ log ] localhost/project/infocollection/index/index/index.html?page=2 [运行时间：0.052917s][吞吐率：18.90req/s] [内存消耗：4,543.29kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001695s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 2,2 [ RunTime:0.000533s ]
+
+---------------------------------------------------------------
+[ 2017-04-14T18:52:20+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html?page=3
+[ log ] localhost/project/infocollection/index/index/index.html?page=3 [运行时间：0.039436s][吞吐率：25.36req/s] [内存消耗：4,542.60kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001900s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 4,2 [ RunTime:0.000652s ]
+
+---------------------------------------------------------------
+[ 2017-04-14T18:52:21+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html?page=4
+[ log ] localhost/project/infocollection/index/index/index.html?page=4 [运行时间：0.037749s][吞吐率：26.49req/s] [内存消耗：4,537.67kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html?page=3',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001400s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 6,2 [ RunTime:0.000598s ]
+
+---------------------------------------------------------------
+[ 2017-04-14T18:52:23+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html?page=1
+[ log ] localhost/project/infocollection/index/index/index.html?page=1 [运行时间：0.038786s][吞吐率：25.78req/s] [内存消耗：4,543.09kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html?page=4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001440s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 0,2 [ RunTime:0.000549s ]
+
+---------------------------------------------------------------
+[ 2017-04-14T18:52:59+08:00 ] ::1 ::1 GET /project/infocollection/index/index/submittask.html?id=39
+[ log ] localhost/project/infocollection/index/index/submittask.html?id=39 [运行时间：0.260234s][吞吐率：3.84req/s] [内存消耗：3,872.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'submittask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html?page=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '39',
+)
+[ info ] [ RUN ] app\index\controller\Index->submitTask[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Index\submittable.html [ array (
+  0 => 'table_data',
+  1 => 'task_data',
+  2 => 'table_moudel_array',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001671s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001126s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 39 LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001439s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `table_data` [ RunTime:0.070295s ]
+[ sql ] [ SQL ] SELECT * FROM `table_data` WHERE  `school_id` = 1  AND `task_id` = 39 [ RunTime:0.000939s ]
+
+---------------------------------------------------------------
+[ 2017-04-14T18:53:03+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html?page=2
+[ log ] localhost/project/infocollection/index/index/index.html?page=2 [运行时间：0.041272s][吞吐率：24.23req/s] [内存消耗：4,543.22kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html?page=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001397s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001085s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 2,2 [ RunTime:0.000506s ]
+
+---------------------------------------------------------------
+[ 2017-04-14T18:53:04+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html?page=3
+[ log ] localhost/project/infocollection/index/index/index.html?page=3 [运行时间：0.043100s][吞吐率：23.20req/s] [内存消耗：4,542.60kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001452s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001200s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 4,2 [ RunTime:0.000754s ]
+
+---------------------------------------------------------------
+[ 2017-04-14T18:53:05+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html?page=4
+[ log ] localhost/project/infocollection/index/index/index.html?page=4 [运行时间：0.039521s][吞吐率：25.30req/s] [内存消耗：4,537.67kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html?page=3',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001484s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001170s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 6,2 [ RunTime:0.000615s ]
+
+---------------------------------------------------------------
+[ 2017-04-14T18:53:08+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html?page=1
+[ log ] localhost/project/infocollection/index/index/index.html?page=1 [运行时间：0.039248s][吞吐率：25.48req/s] [内存消耗：4,543.09kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html?page=4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001380s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001188s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 0,2 [ RunTime:0.000485s ]
+
+---------------------------------------------------------------

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1491976383;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1492411087;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +26,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">学院用户</a>
+            <a class="navbar-brand" href="#"><?php echo $schoolname; ?></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,44 +44,32 @@
             <h1>欢迎使用校团委信息采集平台</h1>
         </div>
     </header>
-    <div id="display">
+    <div id="display" class="table-responsive well">
 
-        <?php if(is_array($tasks) || $tasks instanceof \think\Collection || $tasks instanceof \think\Paginator): $i = 0; $__LIST__ = $tasks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$task): $mod = ($i % 2 );++$i;?>
-        <div class="well">
-            <h2><?php echo $task['taskname']; ?> <small><?php echo $task['date']; ?></small></h2>
-            <p>
-                <span class="finish">完成时间：</span><br><br>
-                <span class="time"><?php echo $task['start_date']; ?></span>
-                到
-                <span class="time"><?php echo $task['end_date']; ?></span>
-            </p>
-            <hr>
-            <h4>任务简介：</h4>
-            <p><?php echo $task['tasktext']; ?></p>
-            <hr>
-            <?php if(($task['attachment_dir']!=null) AND ($task['attachment_name']!=null)): ?>
-            <h3>
-                附件:<span class="download"><?php echo $task['attachment_name']; ?></span><br><br>
-                <form action="<?php echo url('index/downloadAttachment'); ?>" method="post">
-                    <input type="hidden" name="attachment_dir" value="<?php echo $task['attachment_dir']; ?>">
-                    <input type="hidden" name="attachment_name" value="<?php echo $task['attachment_name']; ?>">
-                    <button type="submit" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-save"></span>&nbsp;下载附件</button>
-                </form>
-            </h3>
-            <hr>
-            <?php endif; ?>
-            <a href="<?php echo url('Index/submitTask').'?id='.$task['id']; ?>" class="btn btn-primary submit" role="button"><span class="glyphicon glyphicon-pencil"></span>&nbsp;填写 / 修改</a>
-        </div>
-        <?php endforeach; endif; else: echo "" ;endif; ?>
+        <table class="table table-bordered table-hover">
+            <tr>
+                <th>任务名称</th>
+                <th>任务简介</th>
+                <th>任务时间</th>
+                <th>附件</th>
+                <th>查看详情</th>
+            </tr>
+            <?php if(is_array($tasks) || $tasks instanceof \think\Collection || $tasks instanceof \think\Paginator): $i = 0; $__LIST__ = $tasks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$task): $mod = ($i % 2 );++$i;?>
+            <tr>
+                <td><?php echo $task['taskname']; ?></td>
+                <td><?php echo $task['tasktext']; ?></td>
+                <td><?php echo $task['start_date']; ?> 至 <?php echo $task['end_date']; ?></td>
+                <td><?php echo $task['attachment_name']; ?></td>
+                <td>
+                    <a href="<?php echo url('Index/detail').'?id='.$task['id'].'&form_moudle='.$task['form_moudle']; ?>"><button class="btn btn-info"><span class="glyphicon glyphicon-search"></span>&nbsp;查看详情</button></a>
+                </td>
+            </tr>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+        </table>
         <?php echo $tasks->render(); ?>
-
     </div>
 </div>
-<script src="__JS__/sidebar.js"></script>
 <script src="__JS__/ie9-color.js"></script>
-
-
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
-<script src="__JS__/check-time.js"></script>
 </body>
 </html>
