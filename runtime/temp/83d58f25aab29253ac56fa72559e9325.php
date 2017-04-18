@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\index.html";i:1492525220;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:90:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkschool.html";i:1492529006;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,76 +60,52 @@
 
 <!--内容栏-->
 <div id="container">
-    <h1>查看已提交的任务</h1>
-    <hr/>
+    <br>
     <div>
-        <?php if(is_array($tasks_list) || $tasks_list instanceof \think\Collection || $tasks_list instanceof \think\Paginator): $i = 0; $__LIST__ = $tasks_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$task_list): $mod = ($i % 2 );++$i;?>
         <div class="well">
-            <h2><?php echo $task_list['taskname']; ?>&nbsp;
-                <?php switch($task_list['form_moudle']): case "1": ?><span class="label label-info">表单一</span><?php break; case "2": ?><span class="label label-info">表单二</span><?php break; case "3": ?><span class="label label-info">表单三</span><?php break; default: ?><span class="label label-info">自定义表格</span>
+            <h2><?php echo $task['taskname']; ?>&nbsp;
+                <?php switch($task['form_moudle']): case "1": ?><span class="label label-info">表单一</span><?php break; case "2": ?><span class="label label-info">表单二</span><?php break; case "3": ?><span class="label label-info">表单三</span><?php break; default: ?><span class="label label-info">自定义表格</span>
                 <?php endswitch; ?>
             </h2>
             <p>
                 <span class="finish">完成时间：</span>
-                <span class="time1"><?php echo $task_list['start_date']; ?></span>
+                <span class="time1"><?php echo $task['start_date']; ?></span>
                 到
-                <span class="time1"><?php echo $task_list['end_date']; ?></span>
+                <span class="time1"><?php echo $task['end_date']; ?></span>
             </p>
             <p>
                 任务简介：
-                <span><?php echo $task_list['tasktext']; ?></span>
+                <span><?php echo $task['tasktext']; ?></span>
             </p>
-            <?php 
-            switch($task_list['form_moudle']){
-            case '1';
-            $form_table = 'form1';
-            break;
-            case '2';
-            $form_table = 'form2';
-            break;
-            case '3';
-            $form_table = 'form3';
-            break;
-            default:
-            $form_table = 'table_data';
-            break;
-            }
-            $form_data = db($form_table)->where('task_id',$task_list['id'])->order('id desc')->select();
-            $schoolnames = [];
-             ?>
-            <table class="table">
+            <hr>
+            <h2><?php echo $schoolname; ?>的提交</h2>
+            <hr>
+            <table class="table table-bordered">
+                <?php if(is_array($school) || $school instanceof \think\Collection || $school instanceof \think\Paginator): $i = 0; $__LIST__ = $school;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$submit): $mod = ($i % 2 );++$i;?>
                 <tr>
-                    <th>提交单位</th>
-                    <th>查看详情</th>
-                </tr>
-                <?php if(is_array($form_data) || $form_data instanceof \think\Collection || $form_data instanceof \think\Paginator): $i = 0; $__LIST__ = $form_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$info): $mod = ($i % 2 );++$i;
-                $schoolname = db('school')->where('id',$info['school_id'])->value('schoolname');
-                if(in_array($schoolname,$schoolnames)){
-                continue;
-                }
-                array_push($schoolnames,$schoolname);
-                 ?>
-                <tr>
-                    <td><?php echo $schoolname; ?></td>
+                    <?php 
+                    $i = 0;
+                    foreach($submit as $vo){
+                    if($i<3){
+                    $i++;
+                    continue;
+                    }elseif($i>7){
+                    break;
+                    }
+                     ?>
+                    <td><?php echo $vo; ?></td>
+                    <?php  $i++;} ?>
                     <td>
-                        <?php if($form_table == 'table_data'): ?>
-                        <a href="<?php echo url('Checksubmited/check'.$form_table).'?taskid='.$task_list['id'].'&schoolid='.$info['school_id']; ?>">
-                        <?php else: ?>
-                        <a href="<?php echo url('Checksubmited/checkschool').'?taskid='.$task_list['id'].'&schoolid='.$info['school_id']; ?>">
-                        <?php endif; ?>
-                        <button class="btn btn-info btn-sm">
-                            <span class="glyphicon glyphicon-search"></span>
-                            &nbsp;查看详情
-                        </button>
+                        <a href="<?php echo url('Checksubmited/checkForm'.$task['form_moudle']).'?schoolid='.$submit['school_id'].'&id='.$submit['id']; ?>" class="btn btn-primary submit" role="button">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;查看/修改
                         </a>
                     </td>
                 </tr>
                 <?php endforeach; endif; else: echo "" ;endif; ?>
             </table>
         </div>
-        <?php endforeach; endif; else: echo "" ;endif; ?>
-        <?php echo $tasks_list->render(); ?>
     </div>
+
 </div>
 <script src="__JS__/sidebar.js"></script>
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>

@@ -21,8 +21,37 @@ class Checksubmited extends Controller
 
     public function index(){
         $task = model('Task');
-        $tasks_list = $task->where(1)->order('id desc')->paginate(2);
+        $tasks_list = $task->where(1)->order('id desc')->paginate(1);
         $this->assign('tasks_list',$tasks_list);
+        return $this->fetch();
+    }
+
+    public function checkSchool(){
+        $task_id = input('taskid');
+        $school_id = input('schoolid');
+        $school_name = db('school')->where('id',$school_id)->value('schoolname');
+        $task_data = db('task')->where('id',$task_id)->find();
+        if(!$task_data){
+            $this->error('该任务不存在');
+        }
+        switch ($task_data['form_moudle']){
+            case '1':
+                $table = 'form1';
+                break;
+            case '2':
+                $table = 'form2';
+                break;
+            case '3':
+                $table = 'form3';
+                break;
+            default:
+                $this->error('非法访问');
+                break;
+        }
+        $school_data = db($table)->where('school_id',$school_id)->where('task_id',$task_id)->select();
+        $this->assign('schoolname',$school_name);
+        $this->assign('task',$task_data);
+        $this->assign('school',$school_data);
         return $this->fetch();
     }
 
@@ -42,12 +71,10 @@ class Checksubmited extends Controller
     }
 
     private function checkForm($formtable){
-        $taskid = input('get.taskid');
+        $id = input('get.id');
         $schoolid = input('get.schoolid');
-        $task = db('task')->where('id',$taskid)->find();
         $schoolname = db('school')->where('id',$schoolid)->value('schoolname');
-        $data = db($formtable)->where('task_id',$taskid)->where('school_id',$schoolid)->find();
-        $this->assign('task',$task);
+        $data = db($formtable)->where('id',$id)->find();
         $this->assign('schoolname',$schoolname);
         $this->assign('data',$data);
     }

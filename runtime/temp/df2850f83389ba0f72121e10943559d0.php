@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform2.html";i:1491997862;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform2.html";i:1492428711;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo url('Checksubmited/index'); ?>"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回上页</a></li>
+                <li><a href="#" onClick="javascript :history.back(-1);"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回上页</a></li>
 
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -95,8 +95,6 @@
     </div>
 
 </div>
-<script src="__JS__/sidebar.js"></script>
-
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 </body>

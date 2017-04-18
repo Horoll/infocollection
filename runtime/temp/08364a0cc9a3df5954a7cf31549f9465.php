@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checktable_data.html";i:1492413318;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checktable_data.html";i:1492428765;}*/ ?>
 <DOCTYPE html/>
 <html>
 <head>
@@ -75,11 +75,7 @@
     <a href="<?php echo url('Exportfile/exportExcel').'?taskid='.$task['id'].'&schoolid='.$schoolid; ?>">
         <button class="btn btn-success" id="submit"><span class="glyphicon glyphicon-log-out"></span>&nbsp;导出为ecexl</button>
     </a>
-
-
 </div>
-<script src="__JS__/sidebar.js"></script>
-
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 </body>

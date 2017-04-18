@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform3.html";i:1492428711;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkform3.html";i:1492528953;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,16 +44,8 @@
 
 <div id="display">
     <div id="info" class="well">
-        <h1><?php echo $task['taskname']; ?></h1>
-        <p>完成时间：<span class="time">
-                    <?php echo $task['start_date']; ?>
-                </span>到
-            <span class="time">
-                    <?php echo $task['end_date']; ?>
-                </span></p>
-        <p>任务简介：<?php echo $task['tasktext']; ?></p>
-        <p>提交学院：<span class="school"><?php echo $schoolname; ?></span>
-        </p>
+        <h2>提交学院：<span class="school"><?php echo $schoolname; ?></span>
+        </h2>
         <p>提交的附件：<span><?php echo $data['attachment_name']; ?></span>
         <form action="<?php echo url('Checksubmited/downloadAttachment'); ?>" method="post">
             <input type="hidden" name="attachment_dir" value="<?php echo $data['attachment_dir']; ?>">

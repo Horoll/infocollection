@@ -43,16 +43,9 @@
 
 <div id="display">
     <div id="info" class="well">
-        <h1>{$task.taskname}</h1>
-        <p>完成时间：<span class="time">
-                    {$task.start_date}
-                </span>到
-            <span class="time">
-                    {$task.end_date}
-                </span></p>
-        <p>任务简介：{$task.tasktext}</p>
-        <p>提交学院：<span class="school">{$schoolname}</span>
-        </p>
+        <br>
+        <h2>提交学院：<span class="school">{$schoolname}</span></h2>
+        <hr>
         <p>提交的附件：<span>{$data.attachment_name}</span>
         <form action="{:url('Checksubmited/downloadAttachment')}" method="post">
             <input type="hidden" name="attachment_dir" value="{$data.attachment_dir}">
