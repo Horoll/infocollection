@@ -16,7 +16,7 @@ class Task extends Validate
         'taskname' => 'require|max:25',
         'start_date' => 'require|date',
         'end_date' => 'require|date',
-        'form_moudle' => 'number'
+        'form_moudle' => 'number|in:1,2,3'
     ];
 
     protected $message = [
@@ -25,6 +25,7 @@ class Task extends Validate
         'start_date.require'=>'开始时间不能为空',
         'end_date.require'=>'截止时间不能为空',
         'form_moudle.number'=>'表单模版编号必须是数字',
+        'form_moudle.in'=>'表单模版编号错误',
         'start_date.date'=>'开始时间格式错误',
         'end_date.date'=>'结束时间格式错误',
     ];

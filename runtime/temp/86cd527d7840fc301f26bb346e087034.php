@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submitform3.html";i:1492427890;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submitform3.html";i:1492614547;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>

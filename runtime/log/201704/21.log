@@ -1,0 +1,1824 @@
+[ 2017-04-21T16:35:39+08:00 ] ::1 ::1 GET /project/infocollection/
+[ log ] localhost/project/infocollection/ [运行时间：1.914100s][吞吐率：0.52req/s] [内存消耗：2,530.16kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T16:35:39+08:00 ] ::1 ::1 GET /project/infocollection/
+[ log ] localhost/project/infocollection/ [运行时间：1.630492s][吞吐率：0.61req/s] [内存消耗：2,530.16kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T16:36:41+08:00 ] ::1 ::1 POST /project/infocollection/index/login/schoollogin.html
+[ log ] localhost/project/infocollection/index/login/schoollogin.html [运行时间：0.515655s][吞吐率：1.94req/s] [内存消耗：4,212.75kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'schoollogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '81',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787',
+)
+[ info ] [ PARAM ] array (
+  'schoolname' => '信息工程学院',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->schoolLogin[ D:\wamp64\www\project\infocollection\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026187s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `school` [ RunTime:0.089024s ]
+[ sql ] [ SQL ] SELECT * FROM `school` WHERE  `schoolname` = '信息工程学院' LIMIT 1 [ RunTime:0.000727s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:36:42+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html
+[ log ] localhost/project/infocollection/index/index/index.html [运行时间：0.339793s][吞吐率：2.94req/s] [内存消耗：4,583.47kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001228s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.094772s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.001048s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 0,10 [ RunTime:0.027865s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:37:29+08:00 ] ::1 ::1 POST /project/infocollection/index/login/adminlogin.html
+[ log ] localhost/project/infocollection/index/login/adminlogin.html [运行时间：0.142371s][吞吐率：7.02req/s] [内存消耗：4,212.86kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'adminlogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'adminname' => 'root',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->adminLogin[ D:\wamp64\www\project\infocollection\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001498s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.063782s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `adminname` = 'root' LIMIT 1 [ RunTime:0.000534s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:37:29+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/index.html
+[ log ] localhost/project/infocollection/index/admin/index.html [运行时间：0.203744s][吞吐率：4.91req/s] [内存消耗：4,016.45kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->index[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\admin\index.html [ array (
+  0 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001496s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000685s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:37:35+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/changetask.html?id=39
+[ log ] localhost/project/infocollection/index/admin/changetask.html?id=39 [运行时间：0.213836s][吞吐率：4.68req/s] [内存消耗：3,805.34kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'changetask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '39',
+)
+[ info ] [ RUN ] app\index\controller\Admin->changeTask[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Admin\changetable.html [ array (
+  0 => 'task_data',
+  1 => 'table_moudle',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001350s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 39 LIMIT 1 [ RunTime:0.019523s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:00+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/index.html
+[ log ] localhost/project/infocollection/index/releasetask/index.html [运行时间：0.140842s][吞吐率：7.10req/s] [内存消耗：2,463.60kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/changetask.html?id=39',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->index[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:02+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.161951s][吞吐率：6.17req/s] [内存消耗：2,463.64kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:03+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/index.html
+[ log ] localhost/project/infocollection/index/releasetask/index.html [运行时间：0.020881s][吞吐率：47.89req/s] [内存消耗：2,463.64kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->index[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:12+08:00 ] ::1 ::1 GET /project/infocollection/index/logout/index.html
+[ log ] localhost/project/infocollection/index/logout/index.html [运行时间：0.077416s][吞吐率：12.92req/s] [内存消耗：2,389.97kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'logout',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Logout->index[ D:\wamp64\www\project\infocollection\application\index\controller\Logout.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:13+08:00 ] ::1 ::1 GET /project/infocollection/index/login/index.html
+[ log ] localhost/project/infocollection/index/login/index.html [运行时间：0.046072s][吞吐率：21.71req/s] [内存消耗：2,408.20kb] [文件加载：36]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\wamp64\www\project\infocollection\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:21+08:00 ] ::1 ::1 POST /project/infocollection/index/login/schoollogin.html
+[ log ] localhost/project/infocollection/index/login/schoollogin.html [运行时间：0.038264s][吞吐率：26.13req/s] [内存消耗：4,115.05kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'schoollogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '81',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787',
+)
+[ info ] [ PARAM ] array (
+  'schoolname' => '信息工程学员',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->schoolLogin[ D:\wamp64\www\project\infocollection\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001482s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `school` [ RunTime:0.001147s ]
+[ sql ] [ SQL ] SELECT * FROM `school` WHERE  `schoolname` = '信息工程学员' LIMIT 1 [ RunTime:0.000658s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:28+08:00 ] ::1 ::1 POST /project/infocollection/index/login/schoollogin.html
+[ log ] localhost/project/infocollection/index/login/schoollogin.html [运行时间：0.037259s][吞吐率：26.84req/s] [内存消耗：4,212.79kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'schoollogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '81',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787',
+)
+[ info ] [ PARAM ] array (
+  'schoolname' => '信息工程学院',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->schoolLogin[ D:\wamp64\www\project\infocollection\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001278s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `school` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `school` WHERE  `schoolname` = '信息工程学院' LIMIT 1 [ RunTime:0.000533s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:28+08:00 ] ::1 ::1 GET /project/infocollection/index/index/index.html
+[ log ] localhost/project/infocollection/index/index/index.html [运行时间：0.042612s][吞吐率：23.47req/s] [内存消耗：4,583.65kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/login/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\index.html [ array (
+  0 => 'schoolname',
+  1 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001912s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000647s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:32+08:00 ] ::1 ::1 GET /project/infocollection/index/index/detail.html?id=26&form_moudle=1
+[ log ] localhost/project/infocollection/index/index/detail.html?id=26&form_moudle=1 [运行时间：0.129614s][吞吐率：7.72req/s] [内存消耗：3,914.36kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '26',
+  'form_moudle' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->detail[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\detail.html [ array (
+  0 => 'task',
+  1 => 'school',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001208s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.002177s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001379s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `form1` [ RunTime:0.075391s ]
+[ sql ] [ SQL ] SELECT * FROM `form1` WHERE  `task_id` = 26  AND `school_id` = 1 [ RunTime:0.001778s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:35+08:00 ] ::1 ::1 GET /project/infocollection/index/index/submittask.html?taskid=26&submitid=2
+[ log ] localhost/project/infocollection/index/index/submittask.html?taskid=26&submitid=2 [运行时间：0.108378s][吞吐率：9.23req/s] [内存消耗：3,693.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'submittask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/detail.html?id=26&form_moudle=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'taskid' => '26',
+  'submitid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->submitTask[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002354s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001053s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.000669s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:50+08:00 ] ::1 ::1 GET /project/infocollection/index/login
+[ log ] localhost/project/infocollection/index/login [运行时间：0.020455s][吞吐率：48.89req/s] [内存消耗：2,407.77kb] [文件加载：36]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\wamp64\www\project\infocollection\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:56+08:00 ] ::1 ::1 POST /project/infocollection/index/login/adminlogin.html
+[ log ] localhost/project/infocollection/index/login/adminlogin.html [运行时间：0.036547s][吞吐率：27.36req/s] [内存消耗：4,213.19kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'adminlogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1',
+)
+[ info ] [ PARAM ] array (
+  'adminname' => 'root',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->adminLogin[ D:\wamp64\www\project\infocollection\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001286s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `adminname` = 'root' LIMIT 1 [ RunTime:0.000467s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:40:56+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/index.html
+[ log ] localhost/project/infocollection/index/admin/index.html [运行时间：0.043783s][吞吐率：22.84req/s] [内存消耗：4,016.19kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/login',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->index[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\admin\index.html [ array (
+  0 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001256s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001052s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000624s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:41:01+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/index.html
+[ log ] localhost/project/infocollection/index/releasetask/index.html [运行时间：0.022239s][吞吐率：44.97req/s] [内存消耗：2,463.77kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->index[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T16:41:04+08:00 ] ::1 ::1 GET /project/infocollection/index/checksubmited/index.html
+[ log ] localhost/project/infocollection/index/checksubmited/index.html [运行时间：0.363628s][吞吐率：2.75req/s] [内存消耗：4,597.70kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'checksubmited',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Checksubmited->index[ D:\wamp64\www\project\infocollection\application\index\controller\Checksubmited.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\checksubmited\index.html [ array (
+  0 => 'tasks_list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001552s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001988s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 0,1 [ RunTime:0.000586s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001266s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `table_data` [ RunTime:0.067235s ]
+[ sql ] [ SQL ] SELECT * FROM `table_data` WHERE  `task_id` = 39 ORDER BY id desc [ RunTime:0.001433s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003257s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `school` [ RunTime:0.002971s ]
+[ sql ] [ SQL ] SELECT `schoolname` FROM `school` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.026528s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003190s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `schoolname` FROM `school` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001226s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:41:05+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/index.html
+[ log ] localhost/project/infocollection/index/admin/index.html [运行时间：0.036235s][吞吐率：27.60req/s] [内存消耗：4,016.23kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/checksubmited/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->index[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\admin\index.html [ array (
+  0 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001578s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000651s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:41:08+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/changetask.html?id=26
+[ log ] localhost/project/infocollection/index/admin/changetask.html?id=26 [运行时间：0.074727s][吞吐率：13.38req/s] [内存消耗：3,804.07kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'changetask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '26',
+)
+[ info ] [ RUN ] app\index\controller\Admin->changeTask[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Admin\changeform.html [ array (
+  0 => 'task_data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001252s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.000574s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:41:17+08:00 ] ::1 ::1 POST /project/infocollection/index/admin/changeform.html
+[ log ] localhost/project/infocollection/index/admin/changeform.html [运行时间：0.386225s][吞吐率：2.59req/s] [内存消耗：4,770.27kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'changeform',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '937',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary2vTCc1ejZCNCNja2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/changetask.html?id=26',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '26',
+  'form_moudle' => '1',
+  'taskname' => '任务3',
+  'start_date' => '2017-04-04',
+  'end_date' => '2017-04-30',
+  'tasktext' => '任务3 使用表单一 没有附件',
+  'MAX_FILE_SIZE' => '52428800',
+)
+[ info ] [ RUN ] app\index\controller\Admin->changeForm[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001459s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.000988s ]
+[ sql ] [ SQL ] UPDATE `task`  SET `form_moudle`=1,`taskname`='任务3',`start_date`='2017-04-04',`end_date`='2017-04-30',`tasktext`='任务3 使用表单一 没有附件'  WHERE  `id` = 26 [ RunTime:0.074502s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:41:18+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/index.html
+[ log ] localhost/project/infocollection/index/admin/index.html [运行时间：0.049900s][吞吐率：20.04req/s] [内存消耗：4,016.23kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/changeform.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Admin->index[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\admin\index.html [ array (
+  0 => 'tasks',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001727s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 0,10 [ RunTime:0.001274s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:41:20+08:00 ] ::1 ::1 GET /project/infocollection/index/index/submittask.html?taskid=26&submitid=2
+[ log ] localhost/project/infocollection/index/index/submittask.html?taskid=26&submitid=2 [运行时间：0.383841s][吞吐率：2.61req/s] [内存消耗：4,130.48kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'submittask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/detail.html?id=26&form_moudle=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'taskid' => '26',
+  'submitid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->submitTask[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Index\submitform1.html [ array (
+  0 => 'task_data',
+  1 => 'form1_data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001351s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.007657s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001781s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `form1` [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SELECT * FROM `form1` WHERE  `id` = 2  AND `task_id` = 26 LIMIT 1 [ RunTime:0.000690s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:50:48+08:00 ] ::1 ::1 GET /project/infocollection/index/index/submittask.html?taskid=26&submitid=2
+[ log ] localhost/project/infocollection/index/index/submittask.html?taskid=26&submitid=2 [运行时间：0.640334s][吞吐率：1.56req/s] [内存消耗：3,863.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'submittask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/detail.html?id=26&form_moudle=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'taskid' => '26',
+  'submitid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->submitTask[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Index\submitform1.html [ array (
+  0 => 'task_data',
+  1 => 'form1_data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001512s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001229s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `form1` [ RunTime:0.004203s ]
+[ sql ] [ SQL ] SELECT * FROM `form1` WHERE  `id` = 2  AND `task_id` = 26 LIMIT 1 [ RunTime:0.000709s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T16:50:59+08:00 ] ::1 ::1 POST /project/infocollection/index/index/submitform.html
+[ log ] localhost/project/infocollection/index/index/submitform.html [运行时间：0.080317s][吞吐率：12.45req/s] [内存消耗：2,697.76kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'submitform',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '7905',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryKllI225oU1LYOMk3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/submittask.html?taskid=26&submitid=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'task_id' => '26',
+  'id' => '2',
+  'form_moudle' => '1',
+  'organization_name' => 'wingstudio工作室',
+  'num' => '1000000000000000000000000000000000000000000000000',
+  'build_date' => '2004',
+  'text1' => '作者：nyzlbtbjf
+链接：https://www.zhihu.com/question/26682043/answer/156404511
+来源：知乎
+著作权归作者所有，转载请联系作者获得授权。
+
+最近很多朋友都在问，如何学习嵌入式，作为嵌入式的老鸟，我想我可以做一些唠叨，嵌入式的入门门槛稍微高一点，但是再高的城墙也是小砖头筑起来的，所以没有必要因为门槛高就觉得很困难，一步一个脚印，贵在坚持就可以了。 学习嵌入式，该学习什么基本的知识呢？ 首先C语言，这个是毋庸置疑的，不管是做嵌入式软件还是硬件开发的人员，对C语言的掌握这个是必需的，特别是对于以后致力于嵌入式软件开发的人，现在绝大部分都是用C语言，你说不掌握它可以吗？至于如何学习C语言，我想这些基础的知识每个人都有自己的方法，关键要去学习，看书也好，网上找些视频看也好。很多人会问，C语言要学到怎么样，我觉得这没有标准的答案。我想至少你在明白了一些基础的概念后，就该写代码了，动手才是最重要的，当你动手了，遇到问题了，再反过来学习，反过来查查课本，那时的收获就不是你死看书能得到的。 其次，应该对操作系统有所了解，这对你对硬件和软件的理解，绝对有很大的帮助。应该把系统的管理理解一下，比如进程、线程，系统如何来分配资源的，系统如何来管理硬件的，当然，不是看书就能把这些理解透，如果不是一时能理解，没关系，多看看，结合以后的项目经验，会有更好的理解的。',
+  'text2' => '作者：nyzlbtbjf
+链接：https://www.zhihu.com/question/26682043/answer/156404511
+来源：知乎
+著作权归作者所有，转载请联系作者获得授权。
+
+最近很多朋友都在问，如何学习嵌入式，作为嵌入式的老鸟，我想我可以做一些唠叨，嵌入式的入门门槛稍微高一点，但是再高的城墙也是小砖头筑起来的，所以没有必要因为门槛高就觉得很困难，一步一个脚印，贵在坚持就可以了。 学习嵌入式，该学习什么基本的知识呢？ 首先C语言，这个是毋庸置疑的，不管是做嵌入式软件还是硬件开发的人员，对C语言的掌握这个是必需的，特别是对于以后致力于嵌入式软件开发的人，现在绝大部分都是用C语言，你说不掌握它可以吗？至于如何学习C语言，我想这些基础的知识每个人都有自己的方法，关键要去学习，看书也好，网上找些视频看也好。很多人会问，C语言要学到怎么样，我觉得这没有标准的答案。我想至少你在明白了一些基础的概念后，就该写代码了，动手才是最重要的，当你动手了，遇到问题了，再反过来学习，反过来查查课本，那时的收获就不是你死看书能得到的。 其次，应该对操作系统有所了解，这对你对硬件和软件的理解，绝对有很大的帮助。应该把系统的管理理解一下，比如进程、线程，系统如何来分配资源的，系统如何来管理硬件的，当然，不是看书就能把这些理解透，如果不是一时能理解，没关系，多看看，结合以后的项目经验，会有更好的理解的。',
+  'text3' => '略作者：nyzlbtbjf
+链接：https://www.zhihu.com/question/26682043/answer/156404511
+来源：知乎
+著作权归作者所有，转载请联系作者获得授权。
+
+最近很多朋友都在问，如何学习嵌入式，作为嵌入式的老鸟，我想我可以做一些唠叨，嵌入式的入门门槛稍微高一点，但是再高的城墙也是小砖头筑起来的，所以没有必要因为门槛高就觉得很困难，一步一个脚印，贵在坚持就可以了。 学习嵌入式，该学习什么基本的知识呢？ 首先C语言，这个是毋庸置疑的，不管是做嵌入式软件还是硬件开发的人员，对C语言的掌握这个是必需的，特别是对于以后致力于嵌入式软件开发的人，现在绝大部分都是用C语言，你说不掌握它可以吗？至于如何学习C语言，我想这些基础的知识每个人都有自己的方法，关键要去学习，看书也好，网上找些视频看也好。很多人会问，C语言要学到怎么样，我觉得这没有标准的答案。我想至少你在明白了一些基础的概念后，就该写代码了，动手才是最重要的，当你动手了，遇到问题了，再反过来学习，反过来查查课本，那时的收获就不是你死看书能得到的。 其次，应该对操作系统有所了解，这对你对硬件和软件的理解，绝对有很大的帮助。应该把系统的管理理解一下，比如进程、线程，系统如何来分配资源的，系统如何来管理硬件的，当然，不是看书就能把这些理解透，如果不是一时能理解，没关系，多看看，结合以后的项目经验，会有更好的理解的。',
+  'text4' => '作者：nyzlbtbjf
+链接：https://www.zhihu.com/question/26682043/answer/156404511
+来源：知乎
+著作权归作者所有，转载请联系作者获得授权。
+
+最近很多朋友都在问，如何学习嵌入式，作为嵌入式的老鸟，我想我可以做一些唠叨，嵌入式的入门门槛稍微高一点，但是再高的城墙也是小砖头筑起来的，所以没有必要因为门槛高就觉得很困难，一步一个脚印，贵在坚持就可以了。 学习嵌入式，该学习什么基本的知识呢？ 首先C语言，这个是毋庸置疑的，不管是做嵌入式软件还是硬件开发的人员，对C语言的掌握这个是必需的，特别是对于以后致力于嵌入式软件开发的人，现在绝大部分都是用C语言，你说不掌握它可以吗？至于如何学习C语言，我想这些基础的知识每个人都有自己的方法，关键要去学习，看书也好，网上找些视频看也好。很多人会问，C语言要学到怎么样，我觉得这没有标准的答案。我想至少你在明白了一些基础的概念后，就该写代码了，动手才是最重要的，当你动手了，遇到问题了，再反过来学习，反过来查查课本，那时的收获就不是你死看书能得到的。 其次，应该对操作系统有所了解，这对你对硬件和软件的理解，绝对有很大的帮助。应该把系统的管理理解一下，比如进程、线程，系统如何来分配资源的，系统如何来管理硬件的，当然，不是看书就能把这些理解透，如果不是一时能理解，没关系，多看看，结合以后的项目经验，会有更好的理解的。',
+)
+[ info ] [ RUN ] app\index\controller\Index->submitForm[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T17:00:05+08:00 ] ::1 ::1 GET /project/infocollection/index/index/detail.html?id=31&form_moudle=2
+[ log ] localhost/project/infocollection/index/index/detail.html?id=31&form_moudle=2 [运行时间：0.272521s][吞吐率：3.67req/s] [内存消耗：3,898.55kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '31',
+  'form_moudle' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->detail[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\detail.html [ array (
+  0 => 'task',
+  1 => 'school',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001511s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.009002s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001216s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `form2` [ RunTime:0.124294s ]
+[ sql ] [ SQL ] SELECT * FROM `form2` WHERE  `task_id` = 31  AND `school_id` = 1 [ RunTime:0.001199s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:00:08+08:00 ] ::1 ::1 GET /project/infocollection/index/index/submittask.html?taskid=31&submitid=3
+[ log ] localhost/project/infocollection/index/index/submittask.html?taskid=31&submitid=3 [运行时间：0.197149s][吞吐率：5.07req/s] [内存消耗：4,104.69kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'submittask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/detail.html?id=31&form_moudle=2',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'taskid' => '31',
+  'submitid' => '3',
+)
+[ info ] [ RUN ] app\index\controller\Index->submitTask[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Index\submitform2.html [ array (
+  0 => 'task_data',
+  1 => 'form2_data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001240s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.000932s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001266s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `form2` [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SELECT * FROM `form2` WHERE  `id` = 3  AND `task_id` = 31 LIMIT 1 [ RunTime:0.000641s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:10:49+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/changetask.html?id=33
+[ log ] localhost/project/infocollection/index/admin/changetask.html?id=33 [运行时间：0.087674s][吞吐率：11.41req/s] [内存消耗：3,804.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'changetask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '33',
+)
+[ info ] [ RUN ] app\index\controller\Admin->changeTask[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Admin\changeform.html [ array (
+  0 => 'task_data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001670s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001086s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.000584s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:11:00+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/changetask.html?id=33
+[ log ] localhost/project/infocollection/index/admin/changetask.html?id=33 [运行时间：0.035202s][吞吐率：28.41req/s] [内存消耗：3,804.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'changetask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '33',
+)
+[ info ] [ RUN ] app\index\controller\Admin->changeTask[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Admin\changeform.html [ array (
+  0 => 'task_data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001335s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001068s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.000554s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:11:07+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/checktask.html?id=33
+[ log ] localhost/project/infocollection/index/admin/checktask.html?id=33 [运行时间：0.110044s][吞吐率：9.09req/s] [内存消耗：3,804.37kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'checktask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '33',
+)
+[ info ] [ RUN ] app\index\controller\Admin->checkTask[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\admin\checktask.html [ array (
+  0 => 'task',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001451s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001093s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.000624s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:11:09+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/changetask.html?id=33
+[ log ] localhost/project/infocollection/index/admin/changetask.html?id=33 [运行时间：0.033916s][吞吐率：29.48req/s] [内存消耗：3,804.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'changetask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '33',
+)
+[ info ] [ RUN ] app\index\controller\Admin->changeTask[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Admin\changeform.html [ array (
+  0 => 'task_data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001356s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.000598s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:11:13+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/checktask.html?id=33
+[ log ] localhost/project/infocollection/index/admin/checktask.html?id=33 [运行时间：0.034749s][吞吐率：28.78req/s] [内存消耗：3,804.37kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'checktask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '33',
+)
+[ info ] [ RUN ] app\index\controller\Admin->checkTask[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\admin\checktask.html [ array (
+  0 => 'task',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001290s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.000630s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:11:15+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/changetask.html?id=33
+[ log ] localhost/project/infocollection/index/admin/changetask.html?id=33 [运行时间：0.033930s][吞吐率：29.47req/s] [内存消耗：3,804.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'changetask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '33',
+)
+[ info ] [ RUN ] app\index\controller\Admin->changeTask[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Admin\changeform.html [ array (
+  0 => 'task_data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001336s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.001641s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:11:17+08:00 ] ::1 ::1 GET /project/infocollection/index/admin/changetask.html?id=33
+[ log ] localhost/project/infocollection/index/admin/changetask.html?id=33 [运行时间：0.033294s][吞吐率：30.04req/s] [内存消耗：3,804.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'admin',
+    2 => 'changetask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '33',
+)
+[ info ] [ RUN ] app\index\controller\Admin->changeTask[ D:\wamp64\www\project\infocollection\application\index\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Admin\changeform.html [ array (
+  0 => 'task_data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001389s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001141s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.000631s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:11:26+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/index.html
+[ log ] localhost/project/infocollection/index/releasetask/index.html [运行时间：0.059486s][吞吐率：16.81req/s] [内存消耗：2,463.77kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/admin/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->index[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T17:11:28+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/table.html
+[ log ] localhost/project/infocollection/index/releasetask/table.html [运行时间：0.051233s][吞吐率：19.52req/s] [内存消耗：2,463.64kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->table[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\table.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T17:11:28+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/index.html
+[ log ] localhost/project/infocollection/index/releasetask/index.html [运行时间：0.021080s][吞吐率：47.44req/s] [内存消耗：2,463.64kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->index[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T17:16:25+08:00 ] ::1 ::1 GET /project/infocollection/index/index/detail.html?id=26&form_moudle=1
+[ log ] localhost/project/infocollection/index/index/detail.html?id=26&form_moudle=1 [运行时间：0.041214s][吞吐率：24.26req/s] [内存消耗：3,914.09kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'id' => '26',
+  'form_moudle' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->detail[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\index\detail.html [ array (
+  0 => 'task',
+  1 => 'school',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001564s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001752s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.000594s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001228s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `form1` [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SELECT * FROM `form1` WHERE  `task_id` = 26  AND `school_id` = 1 [ RunTime:0.000563s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:16:27+08:00 ] ::1 ::1 GET /project/infocollection/index/index/submittask.html?taskid=26&submitid=2
+[ log ] localhost/project/infocollection/index/index/submittask.html?taskid=26&submitid=2 [运行时间：0.036629s][吞吐率：27.30req/s] [内存消耗：3,863.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'submittask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/detail.html?id=26&form_moudle=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'taskid' => '26',
+  'submitid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->submitTask[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\Index\submitform1.html [ array (
+  0 => 'task_data',
+  1 => 'form1_data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001331s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001225s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `form1` [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SELECT * FROM `form1` WHERE  `id` = 2  AND `task_id` = 26 LIMIT 1 [ RunTime:0.000590s ]
+
+---------------------------------------------------------------
+[ 2017-04-21T17:16:41+08:00 ] ::1 ::1 POST /project/infocollection/index/index/submitform.html
+[ log ] localhost/project/infocollection/index/index/submitform.html [运行时间：0.027285s][吞吐率：36.65req/s] [内存消耗：2,698.66kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'submitform',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '7862',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarysM7wALz2NrRKf5gS',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/index/submittask.html?taskid=26&submitid=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'task_id' => '26',
+  'id' => '2',
+  'form_moudle' => '1',
+  'organization_name' => 'wingstudio工作室',
+  'num' => '100000',
+  'build_date' => '2004',
+  'text1' => '作者：nyzlbtbjf
+链接：https://www.zhihu.com/question/26682043/answer/156404511
+来源：知乎
+著作权归作者所有，转载请联系作者获得授权。
+
+最近很多朋友都在问，如何学习嵌入式，作为嵌入式的老鸟，我想我可以做一些唠叨，嵌入式的入门门槛稍微高一点，但是再高的城墙也是小砖头筑起来的，所以没有必要因为门槛高就觉得很困难，一步一个脚印，贵在坚持就可以了。 学习嵌入式，该学习什么基本的知识呢？ 首先C语言，这个是毋庸置疑的，不管是做嵌入式软件还是硬件开发的人员，对C语言的掌握这个是必需的，特别是对于以后致力于嵌入式软件开发的人，现在绝大部分都是用C语言，你说不掌握它可以吗？至于如何学习C语言，我想这些基础的知识每个人都有自己的方法，关键要去学习，看书也好，网上找些视频看也好。很多人会问，C语言要学到怎么样，我觉得这没有标准的答案。我想至少你在明白了一些基础的概念后，就该写代码了，动手才是最重要的，当你动手了，遇到问题了，再反过来学习，反过来查查课本，那时的收获就不是你死看书能得到的。 其次，应该对操作系统有所了解，这对你对硬件和软件的理解，绝对有很大的帮助。应该把系统的管理理解一下，比如进程、线程，系统如何来分配资源的，系统如何来管理硬件的，当然，不是看书就能把这些理解透，如果不是一时能理解，没关系，多看看，结合以后的项目经验，会有更好的理解的。',
+  'text2' => '作者：nyzlbtbjf
+链接：https://www.zhihu.com/question/26682043/answer/156404511
+来源：知乎
+著作权归作者所有，转载请联系作者获得授权。
+
+最近很多朋友都在问，如何学习嵌入式，作为嵌入式的老鸟，我想我可以做一些唠叨，嵌入式的入门门槛稍微高一点，但是再高的城墙也是小砖头筑起来的，所以没有必要因为门槛高就觉得很困难，一步一个脚印，贵在坚持就可以了。 学习嵌入式，该学习什么基本的知识呢？ 首先C语言，这个是毋庸置疑的，不管是做嵌入式软件还是硬件开发的人员，对C语言的掌握这个是必需的，特别是对于以后致力于嵌入式软件开发的人，现在绝大部分都是用C语言，你说不掌握它可以吗？至于如何学习C语言，我想这些基础的知识每个人都有自己的方法，关键要去学习，看书也好，网上找些视频看也好。很多人会问，C语言要学到怎么样，我觉得这没有标准的答案。我想至少你在明白了一些基础的概念后，就该写代码了，动手才是最重要的，当你动手了，遇到问题了，再反过来学习，反过来查查课本，那时的收获就不是你死看书能得到的。 其次，应该对操作系统有所了解，这对你对硬件和软件的理解，绝对有很大的帮助。应该把系统的管理理解一下，比如进程、线程，系统如何来分配资源的，系统如何来管理硬件的，当然，不是看书就能把这些理解透，如果不是一时能理解，没关系，多看看，结合以后的项目经验，会有更好的理解的。',
+  'text3' => '略作者：nyzlbtbjf
+链接：https://www.zhihu.com/question/26682043/answer/156404511
+来源：知乎
+著作权归作者所有，转载请联系作者获得授权。
+
+最近很多朋友都在问，如何学习嵌入式，作为嵌入式的老鸟，我想我可以做一些唠叨，嵌入式的入门门槛稍微高一点，但是再高的城墙也是小砖头筑起来的，所以没有必要因为门槛高就觉得很困难，一步一个脚印，贵在坚持就可以了。 学习嵌入式，该学习什么基本的知识呢？ 首先C语言，这个是毋庸置疑的，不管是做嵌入式软件还是硬件开发的人员，对C语言的掌握这个是必需的，特别是对于以后致力于嵌入式软件开发的人，现在绝大部分都是用C语言，你说不掌握它可以吗？至于如何学习C语言，我想这些基础的知识每个人都有自己的方法，关键要去学习，看书也好，网上找些视频看也好。很多人会问，C语言要学到怎么样，我觉得这没有标准的答案。我想至少你在明白了一些基础的概念后，就该写代码了，动手才是最重要的，当你动手了，遇到问题了，再反过来学习，反过来查查课本，那时的收获就不是你死看书能得到的。 其次，应该对操作系统有所了解，这对你对硬件和软件的理解，绝对有很大的帮助。应该把系统的管理理解一下，比如进程、线程，系统如何来分配资源的，系统如何来管理硬件的，当然，不是看书就能把这些理解透，如果不是一时能理解，没关系，多看看，结合以后的项目经验，会有更好的理解的。',
+  'text4' => '作者：nyzlbtbjf
+链接：https://www.zhihu.com/question/26682043/answer/156404511
+来源：知乎
+著作权归作者所有，转载请联系作者获得授权。
+
+最近很多朋友都在问，如何学习嵌入式，作为嵌入式的老鸟，我想我可以做一些唠叨，嵌入式的入门门槛稍微高一点，但是再高的城墙也是小砖头筑起来的，所以没有必要因为门槛高就觉得很困难，一步一个脚印，贵在坚持就可以了。 学习嵌入式，该学习什么基本的知识呢？ 首先C语言，这个是毋庸置疑的，不管是做嵌入式软件还是硬件开发的人员，对C语言的掌握这个是必需的，特别是对于以后致力于嵌入式软件开发的人，现在绝大部分都是用C语言，你说不掌握它可以吗？至于如何学习C语言，我想这些基础的知识每个人都有自己的方法，关键要去学习，看书也好，网上找些视频看也好。很多人会问，C语言要学到怎么样，我觉得这没有标准的答案。我想至少你在明白了一些基础的概念后，就该写代码了，动手才是最重要的，当你动手了，遇到问题了，再反过来学习，反过来查查课本，那时的收获就不是你死看书能得到的。 其次，应该对操作系统有所了解，这对你对硬件和软件的理解，绝对有很大的帮助。应该把系统的管理理解一下，比如进程、线程，系统如何来分配资源的，系统如何来管理硬件的，当然，不是看书就能把这些理解透，如果不是一时能理解，没关系，多看看，结合以后的项目经验，会有更好的理解的。',
+)
+[ info ] [ RUN ] app\index\controller\Index->submitForm[ D:\wamp64\www\project\infocollection\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T17:16:49+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/index.html
+[ log ] localhost/project/infocollection/index/releasetask/index.html [运行时间：0.034845s][吞吐率：28.70req/s] [内存消耗：2,464.05kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->index[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T17:17:56+08:00 ] ::1 ::1 GET /project/infocollection/index/releasetask/index.html
+[ log ] localhost/project/infocollection/index/releasetask/index.html [运行时间：0.037948s][吞吐率：26.35req/s] [内存消耗：2,464.05kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/table.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->index[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-21T17:18:35+08:00 ] ::1 ::1 POST /project/infocollection/index/releasetask/releaseformtable.html
+[ log ] localhost/project/infocollection/index/releasetask/releaseformtable.html [运行时间：0.026456s][吞吐率：37.80req/s] [内存消耗：2,672.23kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'releasetask',
+    2 => 'releaseformtable',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '809',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNtbAr4oJCa5CXBHh',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/releasetask/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; schoolname=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2; schoolid=1; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'taskname' => '123',
+  'tasktext' => '123',
+  'start_date' => '2017-04-17',
+  'end_date' => '2017-04-07',
+  'form_moudle' => '0',
+  'MAX_FILE_SIZE' => '52428800',
+)
+[ info ] [ RUN ] app\index\controller\Releasetask->releaseFormTable[ D:\wamp64\www\project\infocollection\application\index\controller\Releasetask.php ]
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

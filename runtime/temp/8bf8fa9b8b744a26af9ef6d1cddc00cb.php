@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submittable.html";i:1492503352;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submittable.html";i:1492615409;}*/ ?>
 <DOCTYPE html/>
 <html>
 <head>
@@ -134,7 +134,7 @@
             });
         }
         else {
-            sendData("<?php echo url('Index/submitTable'); ?>","javascript:window.history.go(-1);");
+            sendData("<?php echo url('Index/submitTable'); ?>","javascript:location.href=document.referrer");
         }
     }
 

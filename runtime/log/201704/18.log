@@ -16502,3 +16502,197 @@
 [ sql ] [ SQL ] SELECT * FROM `form2` WHERE  `school_id` = 2  AND `task_id` = 31 [ RunTime:0.000637s ]
 
 ---------------------------------------------------------------
+[ 2017-04-18T23:28:42+08:00 ] ::1 ::1 GET /project/infocollection/index/checksubmited/index.html?page=3
+[ log ] localhost/project/infocollection/index/checksubmited/index.html?page=3 [运行时间：0.054429s][吞吐率：18.37req/s] [内存消耗：4,637.02kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'checksubmited',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/checksubmited/index.html?page=4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ RUN ] app\index\controller\Checksubmited->index[ D:\wamp64\www\project\infocollection\application\index\controller\Checksubmited.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\checksubmited\index.html [ array (
+  0 => 'tasks_list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001460s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.001074s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 2,1 [ RunTime:0.000567s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001216s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `form2` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT * FROM `form2` WHERE  `task_id` = 31 ORDER BY id desc [ RunTime:0.000696s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001164s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `school` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT `schoolname` FROM `school` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001215s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `schoolname` FROM `school` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001168s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `schoolname` FROM `school` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000570s ]
+
+---------------------------------------------------------------
+[ 2017-04-18T23:28:44+08:00 ] ::1 ::1 GET /project/infocollection/index/checksubmited/index.html?page=6
+[ log ] localhost/project/infocollection/index/checksubmited/index.html?page=6 [运行时间：0.057727s][吞吐率：17.32req/s] [内存消耗：4,625.71kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'checksubmited',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/checksubmited/index.html?page=3',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'page' => '6',
+)
+[ info ] [ RUN ] app\index\controller\Checksubmited->index[ D:\wamp64\www\project\infocollection\application\index\controller\Checksubmited.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\checksubmited\index.html [ array (
+  0 => 'tasks_list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001299s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `task` LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `task` ORDER BY id desc LIMIT 5,1 [ RunTime:0.000558s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001566s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `table_data` [ RunTime:0.001081s ]
+[ sql ] [ SQL ] SELECT * FROM `table_data` WHERE  `task_id` = 2 ORDER BY id desc [ RunTime:0.000541s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001355s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `school` [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT `schoolname` FROM `school` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001197s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `schoolname` FROM `school` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001391s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `schoolname` FROM `school` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000563s ]
+
+---------------------------------------------------------------
+[ 2017-04-18T23:28:45+08:00 ] ::1 ::1 GET /project/infocollection/index/checksubmited/checktable_data.html?taskid=2&schoolid=1
+[ log ] localhost/project/infocollection/index/checksubmited/checktable_data.html?taskid=2&schoolid=1 [运行时间：0.042175s][吞吐率：23.71req/s] [内存消耗：3,877.03kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'checksubmited',
+    2 => 'checktable_data',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/checksubmited/index.html?page=6',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'taskid' => '2',
+  'schoolid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Checksubmited->checkTable_data[ D:\wamp64\www\project\infocollection\application\index\controller\Checksubmited.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checktable_data.html [ array (
+  0 => 'task',
+  1 => 'schoolname',
+  2 => 'schoolid',
+  3 => 'data',
+  4 => 'table_moudle',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001221s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000576s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001217s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `school` [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SELECT `schoolname` FROM `school` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001172s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `table_data` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT * FROM `table_data` WHERE  `task_id` = 2  AND `school_id` = 1 [ RunTime:0.000521s ]
+
+---------------------------------------------------------------
+[ 2017-04-18T23:28:49+08:00 ] ::1 ::1 GET /project/infocollection/index/exportfile/exportexcel.html?taskid=2&schoolid=1
+[ log ] localhost/project/infocollection/index/exportfile/exportexcel.html?taskid=2&schoolid=1 [运行时间：1.945860s][吞吐率：0.51req/s] [内存消耗：10,034.57kb] [文件加载：99]
+[ info ] [ LANG ] D:\wamp64\www\project\infocollection\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'exportfile',
+    2 => 'exportexcel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/project/infocollection/index/checksubmited/checktable_data.html?taskid=2&schoolid=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787; adminname=root; adminid=1; superadmin=root',
+)
+[ info ] [ PARAM ] array (
+  'taskid' => '2',
+  'schoolid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Exportfile->exportExcel[ D:\wamp64\www\project\infocollection\application\index\controller\Exportfile.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001362s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `task` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT * FROM `task` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000564s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001230s ] mysql:dbname=infocollection;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `table_data` [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT * FROM `table_data` WHERE  `school_id` = 1  AND `task_id` = 2 [ RunTime:0.000543s ]
+
+---------------------------------------------------------------
