@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\admin\index.html";i:1492089925;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\admin\index.html";i:1492952013;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +67,9 @@
             <tr>
                 <th>任务名称</th>
                 <th>任务简介</th>
-                <th>操作</th>
+                <th>查看</th>
+                <th>修改</th>
+                <th>删除</th>
             </tr>
             <?php if(is_array($tasks) || $tasks instanceof \think\Collection || $tasks instanceof \think\Paginator): $i = 0; $__LIST__ = $tasks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$task): $mod = ($i % 2 );++$i;?>
             <tr id="<?php echo $task['id']; ?>">
@@ -75,7 +77,11 @@
                 <td class="short-intro"><?php echo $task['tasktext']; ?></td>
                 <td>
                     <a href="<?php echo url('Admin/checkTask').'?id='.$task['id']; ?>"><button class="btn btn-info"><span class="glyphicon glyphicon-search"></span>&nbsp;查看</button></a>
+                </td>
+                <td>
                     <a href="<?php echo url('Admin/changeTask').'?id='.$task['id']; ?>"><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改</button></a>
+                </td>
+                <td>
                     <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</button>
                 </td>
             </tr>
@@ -97,7 +103,7 @@
                 title: "确定要删除这项任务吗？",
                 type: "warning",
                 showCancelButton:true,
-                cancelButtonText:'返回',
+                cancelButtonText:'取消',
                 confirmButtonText: "确定",
                 confirmButtonColor: "#ec6c62",
                 closeOnConfirm: true,

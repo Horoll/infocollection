@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\wamp64\www\project\infocollection/application/index\view\index\detail.html";i:1492614556;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\wamp64\www\project\infocollection/application/index\view\index\detail.html";i:1492951745;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" onClick="javascript :history.back(-1);"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回</a></li>
+                <li><a href="<?php echo url('Logout/index'); ?>"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;退出</a></li>
             </ul>
         </div>
     </div>
@@ -44,11 +44,13 @@
             <h1>欢迎使用校团委信息采集平台</h1>
         </div>
     </header>
+        <a href="#" onClick="javascript :history.back(-1);"><button class="btn btn-primary col-md-offset-1"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;返回上页</button></a>
+
     <div id="display">
         <div class="well">
             <h2><?php echo $task['taskname']; ?> <small><?php echo $task['date']; ?></small></h2>
             <div class="container">
-                <div class="col-md-3">
+                <div>
                     <p>
                         <span class="finish">完成时间：</span><br>
                         <span class="time"><?php echo $task['start_date']; ?></span>
@@ -56,7 +58,7 @@
                         <span class="time"><?php echo $task['end_date']; ?></span>
                     </p>
                 </div>
-                <div class="col-md-9">
+                <div>
                     <h4>任务简介：</h4>
                     <p><?php echo $task['tasktext']; ?></p>
                 </div>
@@ -136,6 +138,8 @@
     </div>
 </div>
 <script src="__JS__/ie9-color.js"></script>
+<script src="__JS__/font-limit.js"></script>
+
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
 </body>
 </html>

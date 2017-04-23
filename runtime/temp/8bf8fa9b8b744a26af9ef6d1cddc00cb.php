@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submittable.html";i:1492615409;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\Index\submittable.html";i:1492950885;}*/ ?>
 <DOCTYPE html/>
 <html>
 <head>
@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" onClick="javascript :history.back(-1);"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;返回</a></li>
+                <li><a href="<?php echo url('Logout/index'); ?>"><span class="glyphicon glyphicon-circle-arrow-left"></span>&emsp;退出</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -51,10 +51,13 @@
                 </span></p>
         <p><?php echo $task_data['tasktext']; ?></p>
     </div>
-
+    <a href="#" onClick="javascript :history.back(-1);">
+        <button class="btn btn-primary col-md-offset-1" style="margin-bottom: 20px;">
+            <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;返回上页
+        </button>
+    </a>
     <!--属于哪个任务-->
     <input type="hidden" name="task_id" value="<?php echo $task_data['id']; ?>">
-
     <div id="table">
         <table class="table table-bordered">
             <tr id="biaotou">

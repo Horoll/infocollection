@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1492161913;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1492952099;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,23 +77,16 @@
                 <div class="contianer">
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-                            <!--[if IE 9]>
+
                             <span>任务名称:</span>
-                            <![endif]-->
                             <input type="text" placeholder="任务名称" class="form-control" name="taskname">
-                            <!--[if IE 9]>
                             <span>任务简介:</span>
-                            <![endif]-->
                             <textarea name="tasktext" cols="30" rows="5" class="form-control" placeholder="任务简介（选填）"></textarea>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <!--[if IE 9]>
                             <span>任务开始时间:</span>
-                            <![endif]-->
                             <input type="text" class="form-control timePicker" placeholder="任务开始时间" data-date-format="yyyy-mm-dd" name="start_date" readonly>
-                            <!--[if IE 9]>
                             <span>任务结束时间:</span>
-                            <![endif]-->
                             <input type="text" class="form-control timePicker" placeholder="任务结束时间" data-date-format="yyyy-mm-dd" name="end_date" readonly>
                             <span>表单类型：</span>
                             <select name="form_moudle" id="formType" class="form-control">
