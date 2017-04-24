@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\wamp64\www\project\infocollection/application/index\view\index\detail.html";i:1492951745;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\wamp64\www\project\infocollection/application/index\view\index\detail.html";i:1493039240;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,7 +60,7 @@
                 </div>
                 <div>
                     <h4>任务简介：</h4>
-                    <p><?php echo $task['tasktext']; ?></p>
+                    <p id="intro"><?php echo $task['tasktext']; ?></p>
                 </div>
             </div>
             <?php if(($task['attachment_dir']!=null) AND ($task['attachment_name']!=null)): ?>
@@ -139,6 +139,7 @@
 </div>
 <script src="__JS__/ie9-color.js"></script>
 <script src="__JS__/font-limit.js"></script>
+<script src="__JS__/intro-limit.js"></script>
 
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
 </body>

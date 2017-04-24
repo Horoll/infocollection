@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\index.html";i:1492525220;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\index.html";i:1493039478;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -77,7 +77,7 @@
             </p>
             <p>
                 任务简介：
-                <span><?php echo $task_list['tasktext']; ?></span>
+                <span id="intro"><?php echo $task_list['tasktext']; ?></span>
             </p>
             <?php 
             switch($task_list['form_moudle']){
@@ -132,6 +132,7 @@
     </div>
 </div>
 <script src="__JS__/sidebar.js"></script>
+<script src="__JS__/intro-limit.js"></script>
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 </body>

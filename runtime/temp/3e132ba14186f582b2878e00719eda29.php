@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1492952099;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\project\infocollection/application/index\view\releasetask\index.html";i:1492952107;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,7 +77,6 @@
                 <div class="contianer">
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-
                             <span>任务名称:</span>
                             <input type="text" placeholder="任务名称" class="form-control" name="taskname">
                             <span>任务简介:</span>

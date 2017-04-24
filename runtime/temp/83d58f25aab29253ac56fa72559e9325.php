@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:90:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkschool.html";i:1492529006;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:90:"D:\wamp64\www\project\infocollection/application/index\view\checksubmited\checkschool.html";i:1493039592;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -108,6 +108,7 @@
 
 </div>
 <script src="__JS__/sidebar.js"></script>
+<script src="__JS__/table-limit.js"></script>
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 </body>

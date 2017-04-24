@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:80:"D:\wamp64\www\project\infocollection/application/index\view\admin\checktask.html";i:1492090537;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:80:"D:\wamp64\www\project\infocollection/application/index\view\admin\checktask.html";i:1493040187;s:41:"application/index/view/header/header.html";i:1491696943;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +80,7 @@
 
             <!--任务简介-->
             <h4>任务简介：</h4>
-            <p class="intro"><?php echo $task['tasktext']; ?></p>
+            <p class="intro" id="intro"><?php echo $task['tasktext']; ?></p>
 
             <!--自定义表格格式-->
             <?php if($task['form_moudle'] == ''): ?>
@@ -145,6 +145,7 @@
         }
     }
 </script>
+<script src="__JS__/intro-limit.js"></script>
 <script src="__JS__/bootstrap.js"></script>
 </body>
 </html>

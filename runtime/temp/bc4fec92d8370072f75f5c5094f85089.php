@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1492949520;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\wamp64\www\project\infocollection/application/index\view\index\index.html";i:1493038611;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,6 +70,7 @@
     </div>
 </div>
 <script src="__JS__/ie9-color.js"></script>
+<script src="__JS__/font-limit.js"></script>
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
 </body>
 </html>
